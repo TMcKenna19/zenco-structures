@@ -34,3 +34,5 @@ module.exports.deleteLead = (req, res) => {
     .then(res.json({message: "Lead was successfully deleted"}))
     .catch(err => res.json({message: "Error deleteLead", error: err}))
 };
+
+// All controllers working 

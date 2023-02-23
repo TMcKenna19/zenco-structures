@@ -16,4 +16,7 @@ module.exports = app => {
 
     // delete
     app.delete("/api/leads/delete/:_id", LeadController.deleteLead);
-}
+};
+
+//All routes working 
+
