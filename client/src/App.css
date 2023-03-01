@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-family: 'Kalam', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: ;
 }
 
 .App-logo {
@@ -24,6 +27,8 @@
   color: white;
 }
 
+
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +40,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBarLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 17px;
+  height: 75px;
+  color: azure;
+  background-color: #292828;
+}
+
+
+.leadCard {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgb(47, 47, 44);
+  margin: 5px;
+  color: rgb(232, 226, 226);
+  text-decoration: none;
 }
