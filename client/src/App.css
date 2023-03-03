@@ -52,8 +52,8 @@
   justify-content: space-around;
   padding: 17px;
   height: 75px;
-  color: azure;
-  background-color: #292828;
+  color: rgb(0, 0, 0);
+  background-color: #c3bdbd;
 }
 
 
@@ -63,7 +63,7 @@
   border: 2px solid black;
   border-radius: 10px;
   padding: 25px;
-  background-color: rgb(47, 47, 44);
+  background-color: rgba(205, 205, 193, 0);
   margin: 5px;
   color: rgb(232, 226, 226);
   text-decoration: none;

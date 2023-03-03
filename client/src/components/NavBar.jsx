@@ -1,18 +1,29 @@
+import React from "react";
 import {Link} from "react-router-dom";
+
 
 const NavBar = props => {
     return (
-        <>
+
         <div className="navBarLogo">
-            <h2>Zenco Structures</h2><p>Residential Painting</p><p>Commercial Painting</p><p>Portfolio</p><p>Request a Quote</p>
+            <h2>
+             <Link to={'/'}>Zenco Structures</Link> 
+            </h2> 
+            <p>
+              <Link to={"/residentialPainting"}>Residential Painting</Link>
+            </p>
+            <p>
+              <Link to={'/commercialPainting'}>Commercial Painting</Link>  
+            </p>    
+            <p>
+              <Link to={'/about'}>About</Link>  
+            </p>    
+            <p>
+              <Link to={'/quote'}>Request a Quote</Link>  
+            </p>    
         </div>
         
-       
-        
-        
-         
-        </>
-    )
+    )    
 };
 
 export default NavBar;
