@@ -12,7 +12,7 @@ import Quote from './Components/Quote';
 function App() {
   return (
     <div className="App">
-      
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/residentialPainting" element={<ResPainting />} />
