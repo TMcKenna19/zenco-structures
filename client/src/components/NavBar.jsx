@@ -2,25 +2,25 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 
-const NavBar = props => {
+const NavBar = () => {
     return (
 
-        <div className="navBar">
-            <h2>
-             <Link to={'/'}>Zenco Structures</Link> 
-            </h2> 
-            <p>
-              <Link to={'/residentialPainting'}>Residential Painting</Link>
-            </p>
-            <p>
-              <Link to={'/commercialPainting'}>Commercial Painting</Link>  
-            </p>    
-            <p>
-              <Link to={'/about'}>About</Link>  
-            </p>    
-            <p>
-              <Link to={'/quote'}>Request a Quote</Link>  
-            </p>    
+        <div className="navBar" >
+            <h5>
+             <Link to={'/'} style={{ textDecoration: 'none', color:'rgb(194, 193, 193)' }}>Zenco Structures</Link> 
+            </h5> 
+            <h5>
+              <Link to={'/residentialPainting'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>Residential Painting</Link>
+            </h5>
+            <h5>
+              <Link to={'/commercialPainting'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>Commercial Painting</Link>  
+            </h5>    
+            <h5>
+              <Link to={'/about'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>About</Link>  
+            </h5>    
+            <h5>
+              <Link to={'/quote'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>Request a Quote</Link>  
+            </h5>    
         </div>
         
     )    

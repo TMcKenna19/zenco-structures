@@ -19,6 +19,7 @@ function App() {
         <Route path="/commercialPainting" element={<ComPainting/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/quote" element={<Quote/>} />
+        <Route path="/leads" element={<AllLeads />} />
       </Routes>
    
       

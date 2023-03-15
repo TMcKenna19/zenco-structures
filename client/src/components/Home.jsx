@@ -4,24 +4,18 @@ import {Link} from "react-router-dom";
 
 
 const Home = () => {
-    const myStyle = {
-        backgroundImage: `url(${coverHouse})`,
-        height:'92vh',
-        width: 'auto',
-        fontSize:'50px',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-    }
+    // const myStyle = {
+    //     backgroundImage: `url(${coverHouse})`,
+    //     height:'92vh',
+    //     width: 'auto',
+    //     fontSize:'50px',
+    //     backgroundSize: 'cover',
+    //     backgroundRepeat: 'no-repeat',
+    // }
     return(
         <>
-        <div style={myStyle}>
-            {/* <div className="homeText">
-                <h1>ZENCO STRUCTURES</h1>
-                <p><Link to={'/residentialPainting'}>Residential Painting</Link></p>
-                <p><Link to={'/commercialPainting'}>Commercial Painting</Link></p>
-                <p><Link to={'/about'}>About</Link></p>
-                <p><Link to={'/quote'}>Request a Quote</Link></p>       
-            </div> */}
+        <div className="homePage">   
+           <h1>Color your world with our expertise.</h1>
         </div>
         
         </>

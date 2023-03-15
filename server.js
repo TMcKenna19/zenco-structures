@@ -14,4 +14,4 @@ app.use(express.json(), express.urlencoded({extended: true})); // <- post reques
 // MAKE SURE THIS IS BELOW THE CODE FOR POST REQUESTS 
 require("./server/routes/lead.routes")(app);
 
-app.listen(port, () => console.log(`Running on port ${port}`));
+app.listen(port, () => console.log(`*** Running on port ${port}`));

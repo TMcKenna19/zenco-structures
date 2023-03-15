@@ -47,20 +47,25 @@
   justify-content: space-around;
 }
 
+
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 17px;
-  height: 75px;
-  color: rgb(0, 0, 0);
-  background-color: #c3bdbd;
-  text-decoration: none;
+  align-items: center;
+  height: 70px;
+  color: rgb(194, 193, 193);
+  background-color: rgb(40, 40, 40);
   
 }
 
-.homeText {
-  color: #61dafb;
+.homePage {
+  background-image: url(./Images/coverHouse.jpeg);
+  height: 92vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .leadCard {
@@ -71,6 +76,6 @@
   padding: 25px;
   background-color: rgba(205, 205, 193, 0);
   margin: 5px;
-  color: rgb(232, 226, 226);
+  color: rgb(42, 41, 41);
   text-decoration: none;
 }
