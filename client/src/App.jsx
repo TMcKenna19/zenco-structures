@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import ResPainting from './Components/ResPainting';
 import AllLeads from './Components/AllLeads';
+import OneLead from './Components/OneLead';
 import Home from './Components/Home';
 import ComPainting from './Components/ComPainting';
 import About from './Components/About';
@@ -21,7 +22,9 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/quote" element={<Quote/>} />
         <Route path="/leads" element={<AllLeads />} />
+        <Route path="/lead/:_id" element={<OneLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />
+
       </Routes>
    
       

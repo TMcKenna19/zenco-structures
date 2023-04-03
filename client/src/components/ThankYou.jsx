@@ -11,7 +11,7 @@ const ThankYou = () => {
         setTimeout(() => {
           navigate("/")
         }, 3000)
-      }, [])
+      })
     
     return(
         <>

@@ -17,10 +17,12 @@ const AllLeads = props => {
         <h1>Leads:</h1>
         <div className="flex">
         {
-            leads ? leads.map((leads, i) => <div key={i} className="leadCard">
-                <h3>{leads.firstName} {leads.lastName}</h3>
-                <h3>{leads.phoneNumber}</h3>
-                <h3>{leads.email}</h3>
+            leads ? leads.map((lead, i) => <div key={i} className="leadCard">
+                <Link to={`/lead/${lead._id}`}>
+                <h3>{lead.firstName} {lead.lastName}</h3>
+                <h3>{lead.phoneNumber}</h3>
+                <h3>{lead.email}</h3>
+                </Link>
             </div>) : ""
         }
 
