@@ -4,14 +4,7 @@ import {Link} from "react-router-dom";
 
 
 const Home = () => {
-    // const myStyle = {
-    //     backgroundImage: `url(${coverHouse})`,
-    //     height:'92vh',
-    //     width: 'auto',
-    //     fontSize:'50px',
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    // }
+    
     return(
         <>
         <div className="homePage">   
