@@ -38,7 +38,7 @@ const Quote = props => {
             }
         })
         .catch(err => console.log(err))
-    }
+    };
 
     return(
         <>
