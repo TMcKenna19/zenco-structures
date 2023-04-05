@@ -10,6 +10,7 @@ import ComPainting from './Components/ComPainting';
 import About from './Components/About';
 import Quote from './Components/Quote';
 import ThankYou from './Components/ThankYou';
+import UpdateLead from './Components/UpdateLead';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
         <Route path="/quote" element={<Quote/>} />
         <Route path="/leads" element={<AllLeads />} />
         <Route path="/lead/:_id" element={<OneLead/>} />
+        <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />
-
       </Routes>
    
       

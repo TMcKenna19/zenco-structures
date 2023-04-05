@@ -37,7 +37,7 @@ const OneLead = () => {
                 <h2>Time Frame: {oneLead.timeFrame}</h2>
                 <h2>Notes: {oneLead.notes}</h2>
                 <h2>Called: {oneLead.isCalled ? "Called":"Not Called"}</h2>
-                <button type="submit" className="btn btn-outline-danger mt-3" onClick={ ()=> handleDelete(oneLead._id)}>Delete Lead</button>
+                <button type="submit" className="btn btn-outline-danger mt-3" onClick={ ()=> handleDelete(oneLead._id)}>Delete Lead</button><Link to={`/update/${oneLead._id}`}><button type="submit" className="btn btn-outline-dark mt-3">Edit</button></Link>
             </div> : ""
         }
         </>

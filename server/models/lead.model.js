@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const LeadSchema = new mongoose.Schema({
     firstName: {
         type: String,
-        required: [true, "What shall I call you?"]
+        required: [true, "First name is required"]
     },
     lastName: {
         type: String, 
@@ -11,7 +11,7 @@ const LeadSchema = new mongoose.Schema({
     },
     phoneNumber: {
         type: String,
-        required: [true, "How can I call you without a phone number?"]
+        required: [true, "Phone number is required"]
     },
     email: {
         type: String,
@@ -26,7 +26,7 @@ const LeadSchema = new mongoose.Schema({
         required: [true, "Interior, Exterior or Both"]
     },
     serviceRequested: {
-        type: [String],
+        type: String,
         required: [true, "What service(s) are needed?"]
     },
     timeFrame: {
