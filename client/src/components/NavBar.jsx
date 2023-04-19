@@ -7,7 +7,7 @@ const NavBar = () => {
 
         <div className="navBar" >
             <h5>
-             <Link to={'/'} style={{ textDecoration: 'none', color:'rgb(194, 193, 193)' }}>Zenco Structures</Link> 
+             <Link to={'/'} >Zenco Structures</Link> 
             </h5> 
             <h5>
               <Link to={'/residentialPainting'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>Residential Painting</Link>

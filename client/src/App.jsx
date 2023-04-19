@@ -15,7 +15,6 @@ import UpdateLead from './Components/UpdateLead';
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/residentialPainting" element={<ResPainting />} />
@@ -27,8 +26,6 @@ function App() {
         <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
-   
-      
     </div>
   );
 }
