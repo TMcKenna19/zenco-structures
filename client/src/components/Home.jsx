@@ -1,28 +1,26 @@
 import React from "react";
-import coverHouse from "../Images/coverHouse.jpeg";
 import {Link} from "react-router-dom";
 
 
+
 const Home = () => {
-    
+
+const navStyles = {
+  textDecoration: "none",
+  color: "white"
+};
+
     return(
         <>
         <div className="homePage"> 
-            <div className="homePageNavBar">
-                <h5>
-                 <Link to={'/'} style={{ textDecoration: 'none', color:'rgb(50, 49, 49)' }}>Zenco Structures</Link> 
-                </h5> 
-                <h5>
-                  <Link to={'/residentialPainting'} style={{ textDecoration: 'none', color: 'rgb(50, 49, 49)' }}>Services</Link>
-                </h5>  
-                <h5>
-                  <Link to={'/about'} style={{ textDecoration: 'none', color: 'rgb(50, 49, 49)' }}>About</Link>  
-                </h5>    
-                <h5>
-                  <Link to={'/quote'} style={{ textDecoration: 'none', color: 'rgb(50, 49, 49)' }}>Request a Quote</Link>  
-                </h5>  
-            </div>  
-            
+
+          <ul className="navBar">
+            <Link to={'/'} style={navStyles} > <li>Zenco Structures</li> </Link>
+            <Link to={'/services'} style={navStyles}> <li>Services</li> </Link>
+            <Link to={'/about'} style={navStyles}> <li>About</li> </Link>
+            <Link to={'/quote'} style={navStyles}> <li>Request a quote</li> </Link> 
+          </ul>
+
         </div>
         
         </>

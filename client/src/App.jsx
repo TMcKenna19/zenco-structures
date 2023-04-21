@@ -12,6 +12,7 @@ import Quote from './Components/Quote';
 import ThankYou from './Components/ThankYou';
 import UpdateLead from './Components/UpdateLead';
 
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
         <Route path="/lead/:_id" element={<OneLead/>} />
         <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />
+        
       </Routes>
     </div>
   );

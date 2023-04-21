@@ -15,7 +15,7 @@ const AllLeads = props => {
     return(
         <>
         <h1>Leads:</h1>
-        <div className="flex">
+        <div className="allLeadsPage">
         {
             leads ? leads.map((lead, i) => <div key={i} className="leadCard">
                 <Link to={`/lead/${lead._id}`} style={{textDecoration: "none", color: "black"}}>
