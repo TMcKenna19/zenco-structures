@@ -7,20 +7,24 @@ import AllLeads from './Components/AllLeads';
 import OneLead from './Components/OneLead';
 import Home from './Components/Home';
 import ComPainting from './Components/ComPainting';
+import Reviews from './Components/Reviews';
 import About from './Components/About';
 import Quote from './Components/Quote';
 import ThankYou from './Components/ThankYou';
 import UpdateLead from './Components/UpdateLead';
 
 
+
 function App() {
   return (
     <div className="App">
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/residentialPainting" element={<ResPainting />} />
         <Route path="/commercialPainting" element={<ComPainting/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/reviews" element={<Reviews/>} />
         <Route path="/quote" element={<Quote/>} />
         <Route path="/leads" element={<AllLeads />} />
         <Route path="/lead/:_id" element={<OneLead/>} />

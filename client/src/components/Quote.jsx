@@ -44,7 +44,7 @@ const Quote = props => {
         <>
         <h5>Request a Quote</h5>
         <form onSubmit={submitHandler}>
-            <div>
+            <div className="quote-form">
                 <div>
                     <label htmlFor="firstName">First Name: </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" value={formData.firstName} onChange={changeHandler} />

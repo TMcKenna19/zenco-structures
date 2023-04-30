@@ -28,15 +28,17 @@ const OneLead = () => {
         <>
         {
             oneLead ? <div>
-                <h2>Name: {oneLead.firstName} {oneLead.lastName}</h2>
-                <h2>Phone: {oneLead.phoneNumber}</h2>
-                <h2>Email: {oneLead.email}</h2>
-                <h2>Propety: {oneLead.propertyType}</h2>
-                <h2>Surface: {oneLead.surfaceLocation}</h2>
-                <h2>Service: {oneLead.serviceRequested}</h2>
-                <h2>Time Frame: {oneLead.timeFrame}</h2>
-                <h2>Notes: {oneLead.notes}</h2>
-                <h2>Called: {oneLead.isCalled ? "Called":"Not Called"}</h2>
+                <ul className="single-lead-card">
+                    <li>Name: {oneLead.firstName} {oneLead.lastName}</li>
+                    <li>Phone: {oneLead.phoneNumber}</li>
+                    <li>Email: {oneLead.email}</li>
+                    <li>Propety: {oneLead.propertyType}</li>
+                    <li>Surface: {oneLead.surfaceLocation}</li>
+                    <li>Service: {oneLead.serviceRequested}</li>
+                    <li>Time Frame: {oneLead.timeFrame}</li>
+                    <li>Notes: {oneLead.notes}</li>
+                    <li>Called: {oneLead.isCalled ? "Yes":"Not Called"}</li>
+                </ul>
                 <button type="submit" className="btn btn-outline-danger mt-3" onClick={ ()=> handleDelete(oneLead._id)}>Delete Lead</button><Link to={`/update/${oneLead._id}`}><button type="submit" className="btn btn-outline-dark mt-3">Edit</button></Link>
             </div> : ""
         }
