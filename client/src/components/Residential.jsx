@@ -1,28 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import residentialPainters from "../Images/residentialPainters.jpeg";
+
 
 const Residential = () => {
     return( 
-        <>
-        {/* <div className="resBannerImg">
-            <img src={residentialPainters} alt="painters"/>
-        </div>
-        <ul>
-            <li><Link to={'/'} style={{ textDecoration: 'none', color:'rgb(194, 193, 193)' }}>Zenco Structures</Link></li>
-            <li>
-            <Link to={'/commercialPainting'} style={{ textDecoration: 'none', color: 'rgb(194, 193, 193)' }}>Commercial Painting</Link> 
-            </li>
-        </ul> */}
-       
-        <div>
-            <h3>Residential Services </h3>
-            <p>Zenco Structures offers professional exterior house painting services. We are able to help with all exterior home surfaces. Including stucco, wood, vinyl siding, log homes and more!</p>
-        </div>
-        <div>
-
-        </div>
-        </>
+    <>
+        <div className="residentail-hero">   
+            <ul className="nav-bar">
+                <Link className="link-text" to={'/'}> <li>Zenco Structures</li> </Link>
+                <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
+                <Link className="link-text" to={'/about'}> <li>About</li> </Link>
+                <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
+                <Link className="link-text" to={'/quote'}> <li>Request a quote</li> </Link> 
+            </ul> 
+            <div className="res-services-slogan">
+                <div>
+                    <p>Zenco Structures offers professional residential painting services, for all home surfaces. </p>
+                </div>
+            </div>    
+        </div> 
+    </>
     );
 };
 
