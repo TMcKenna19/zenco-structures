@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import residentialPainters from "../Images/residentialPainters.jpeg";
 
-const ResPainting = () => {
+const Residential = () => {
     return( 
         <>
         {/* <div className="resBannerImg">
@@ -16,7 +16,7 @@ const ResPainting = () => {
         </ul> */}
        
         <div>
-            <h3>Exterior Home Services </h3>
+            <h3>Residential Services </h3>
             <p>Zenco Structures offers professional exterior house painting services. We are able to help with all exterior home surfaces. Including stucco, wood, vinyl siding, log homes and more!</p>
         </div>
         <div>
@@ -26,4 +26,4 @@ const ResPainting = () => {
     );
 };
 
-export default ResPainting;
+export default Residential;

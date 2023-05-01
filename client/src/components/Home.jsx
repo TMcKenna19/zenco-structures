@@ -12,8 +12,8 @@ const Home = () => {
         <div className="homePage"> 
           <ul className="navBar">
             {/* <Link className="link-text" to={'/'}> <li>Zenco Structures</li> </Link> */}
-            <Link className="link-text" to={'/residentialPainting'}> <li>Residential Services</li> </Link>
-            <Link className="link-text" to={'/commercialPainting'}> <li>Commercial Services</li></Link>
+            <Link className="link-text" to={'/residential'}> <li>Residential Services</li> </Link>
+            <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
             <Link className="link-text" to={'/about'}> <li>About</li> </Link>
             <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
             <Link className="link-text" to={'/quote'}> <li>Request a quote</li> </Link> 
