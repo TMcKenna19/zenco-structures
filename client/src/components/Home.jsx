@@ -15,13 +15,12 @@ const Home = () => {
             <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
             <Link className="link-text" to={'/about'}> <li>About</li> </Link>
             <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-            <Link className="link-text" to={'/quote'}> <li>Request a quote</li> </Link> 
+            <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
           </ul> 
-            <div>
-              <div className="home-page-slogan">
-                <p>Let Zenco Structures color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
-              </div>
+            <div className="home-page-slogan">
+              <p>Let Zenco Structures color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
             </div>
+                     
         </div>
         
       </>
