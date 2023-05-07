@@ -83,13 +83,22 @@ ul {
   background-color: rgba(253, 0, 0, 0.602);
 }
 
-.res-service-card{
-  display: flex;
-  flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
-  
+.res-service-card {
+  width: 20rem;
+  border-radius: 10px;
+  vertical-align: top;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
+  transition: 0.5s; 
 }
+
+.res-service-container {
+  padding: 2px 16px;
+}
+
+.res-service-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
 
 
 .quote-form {

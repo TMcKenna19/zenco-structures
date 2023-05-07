@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import painter from "../Images/painter.jpeg"
+import painter from "../Images/painter.jpeg";
+
+
 
 
 const Residential = () => {
@@ -23,13 +25,23 @@ const Residential = () => {
                 </div>
             </div>    
         </div> 
-        <div className="wrapper">
-            <div className="res-service-card">
-                <img src={painter} alt="painter" />
+        {/* <div className="res-service-card">
+            <img src={painter} alt="painter"/>
+            <div className="res-service-container">
                 <h3>Exterior Painting</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
-        </div>
+        </div> */}
+        <div className="res-service-card">
+            <img src={painter} className="card-img-top" alt="..."/>
+            <div className="res-card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               
+            </div>
+        </div>  
+        
+
         
     </>
     );
