@@ -54,16 +54,16 @@ ul {
   margin-top: 150px;
 }
 
-.residentail-hero{
+.residentail-hero {
   background-image: url(./Images/modernLivingRm.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
-  height: 800px;
+  height: 700px;
   width: auto;
   background-repeat: none;
   background-size: cover;
 }
 
-.res-services-slogan{
+.res-services-slogan {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,6 +84,9 @@ ul {
 }
 
 .res-service-card {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 10px;
   width: 20rem;
   border-radius: 10px;
   vertical-align: top;
@@ -91,14 +94,27 @@ ul {
   transition: 0.5s; 
 }
 
-.res-service-container {
-  padding: 2px 16px;
-}
-
 .res-service-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
 
+.res-service-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: 20px;
+  margin: 30px;
+  gap: 30px;
+  
+}
+
+.card-title {
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.res-card-text{
+  padding: 10px;
+}
 
 
 .quote-form {

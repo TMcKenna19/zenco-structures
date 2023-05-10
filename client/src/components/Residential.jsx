@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import painter from "../Images/painter.jpeg";
+import intPainters from "../Images/intPainters.jpeg"
+import extPainter from "../Images/extPainter.jpeg";
+import colorSelection from "../Images/colorSelection.jpeg";
+import woodDeck from "../Images/woodDeck.jpeg";
+ 
 
 
 
@@ -25,21 +29,40 @@ const Residential = () => {
                 </div>
             </div>    
         </div> 
-        {/* <div className="res-service-card">
-            <img src={painter} alt="painter"/>
-            <div className="res-service-container">
-                <h3>Exterior Painting</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-        </div> */}
-        <div className="res-service-card">
-            <img src={painter} className="card-img-top" alt="..."/>
-            <div className="res-card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               
-            </div>
-        </div>  
+        <div className="res-service-card-container">
+                <div className="res-service-card">
+                    <img src={colorSelection} className="card-img-top" alt="..."/>
+                    <div className="res-card-body">
+                        <h5 className="card-title">Color Consultation</h5>
+                        <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
+                        <button type="button" class="btn btn-outline-dark">Learn More</button>
+                    </div>
+                </div>  
+            <div className="res-service-card">
+                <img src={intPainters} className="card-img-top" alt="..."/>
+                <div className="res-card-body">
+                    <h5 className="card-title">Interior Painting</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+            <div className="res-service-card">
+                <img src={extPainter} className="card-img-top" alt="..."/>
+                <div className="res-card-body">
+                    <h5 className="card-title">Exterior Painting</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+            <div className="res-service-card">
+                <img src={woodDeck} className="card-img-top" alt="..."/>
+                <div className="res-card-body">
+                    <h5 className="card-title">Deck Staining</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+        </div>
         
 
         
