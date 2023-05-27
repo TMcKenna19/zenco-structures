@@ -33,7 +33,7 @@ const Residential = () => {
                 <div className="res-service-card">
                     <img src={colorSelection} className="card-img-top" alt="..."/>
                     <div className="res-card-body">
-                        <h5 className="card-title">Color Consultation</h5>
+                        <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
                         <button type="button" class="btn btn-outline-dark">Learn More</button>
                     </div>
@@ -41,7 +41,7 @@ const Residential = () => {
             <div className="res-service-card">
                 <img src={intPainters} className="card-img-top" alt="..."/>
                 <div className="res-card-body">
-                    <h5 className="card-title">Interior Painting</h5>
+                    <h5 className="res-card-title">Interior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <button type="button" class="btn btn-outline-dark">Learn More</button>
                 </div>
@@ -49,7 +49,7 @@ const Residential = () => {
             <div className="res-service-card">
                 <img src={extPainter} className="card-img-top" alt="..."/>
                 <div className="res-card-body">
-                    <h5 className="card-title">Exterior Painting</h5>
+                    <h5 className="res-card-title">Exterior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <button type="button" class="btn btn-outline-dark">Learn More</button>
                 </div>
@@ -57,7 +57,7 @@ const Residential = () => {
             <div className="res-service-card">
                 <img src={woodDeck} className="card-img-top" alt="..."/>
                 <div className="res-card-body">
-                    <h5 className="card-title">Deck Staining</h5>
+                    <h5 className="res-card-title">Deck Staining</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <button type="button" class="btn btn-outline-dark">Learn More</button>
                 </div>

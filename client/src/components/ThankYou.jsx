@@ -15,7 +15,9 @@ const ThankYou = () => {
     
     return(
         <>
-        <p>Thank you for your request. A Zenco Representative will contact you shortly</p>
+        <div className="thank-you">
+          <p>Thank you for your request. A Zenco Representative will contact you shortly</p>
+        </div>
         </>
     );
 };

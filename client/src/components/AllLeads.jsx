@@ -15,17 +15,17 @@ const AllLeads = props => {
     return(
         <>
         <h1>Leads:</h1>
-        <div className="allLeadsPage">
-        {
-            leads ? leads.map((lead, i) => <div key={i} className="leadCard">
-                <Link to={`/lead/${lead._id}`} style={{textDecoration: "none", color: "black"}}>
-                <h3>{lead.firstName} {lead.lastName}</h3>
-                <h3>{lead.phoneNumber}</h3>
-                <h3>{lead.email}</h3>
-                </Link>
-            </div>) : "No Leads"
-        }
-
+        <div className="lead-container">
+            {
+                leads ? leads.map((lead, i) => <div key={i} className="lead-card">
+                    <Link to={`/lead/${lead._id}`} className="link-text">
+                    <h3>{lead.firstName} {lead.lastName}</h3>
+                    <h3>{lead.phoneNumber}</h3>
+                    <h3>{lead.email}</h3>
+                    </Link>
+                </div>) : "No Leads"
+            }
+            
         </div>
 
         </>

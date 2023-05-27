@@ -15,13 +15,27 @@ ul {
   color: rgb(251, 251, 251);
 }
 
+.link-text:hover {
+  text-decoration: none;
+  color: rgb(251, 251, 251);
+  font-weight: 800;
+}
+
 .link-text-quote {
   text-decoration: none;
   background-color: rgba(253, 0, 0, 0.602);
   padding: 6px;
   border: 1px solid  rgb(251, 251, 251);
   border-radius: 5px;
-  font-weight:500;
+  color: rgb(251, 251, 251);
+}
+
+.link-text-quote:hover {
+  text-decoration: none;
+  background-color: rgba(253, 0, 0, 0.9);
+  padding: 6px;
+  border: 1px solid  rgb(251, 251, 251);
+  border-radius: 5px;
   color: rgb(251, 251, 251);
 }
 
@@ -83,6 +97,14 @@ ul {
   background-color: rgba(253, 0, 0, 0.602);
 }
 
+.res-service-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: 20px;
+  margin: 30px;
+  gap: 30px;
+}
+
 .res-service-card {
   color: #333333;
   background-color: #ffffff;
@@ -98,16 +120,7 @@ ul {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
 
-.res-service-card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: 20px;
-  margin: 30px;
-  gap: 30px;
-  
-}
-
-.card-title {
+.res-card-title {
   font-weight: 900;
   margin-top: 20px;
 }
@@ -115,7 +128,6 @@ ul {
 .res-card-text{
   padding: 10px;
 }
-
 
 .quote-form {
   display: flex;
@@ -126,15 +138,25 @@ ul {
   width: 400px;
 }
 
-.leadCard {
-  width: 300px;
-  height: auto;
-  border: 2px solid rgb(9, 9, 9);
+.lead-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: 20px;
+  margin: 30px;
+  gap: 30px;
+}
+
+.lead-card {
+  background-color: #004970;
+  padding: 10px;
+  width: 20rem;
   border-radius: 10px;
-  padding: 25px;
-  background-color: rgba(239, 239, 239);
-  margin: 5px;
-  color: rgb(42, 41, 41);
+  vertical-align: top;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
+  transition: 0.5s; 
+}
+.lead-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
 
 .single-lead-card {
@@ -142,15 +164,12 @@ ul {
   font-size: 20px;
 }
 
-.serviceCard {
-  width: 300px;
-  height: auto;
-  border: 2px solid rgb(9, 9, 9);
-  border-radius: 10px;
-  padding: 25px;
-  background-color: rgba(239, 239, 239);
-  margin: 5px;
-  color: rgb(42, 41, 41)
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  height: 780px;
+  color: rgb(251, 251, 251);
+  background-color: #33383e;
 }
-
-
