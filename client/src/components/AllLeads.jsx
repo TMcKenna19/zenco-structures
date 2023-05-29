@@ -12,6 +12,11 @@ const AllLeads = props => {
         .catch(err => console.log(err))
     }, []);
 
+    // background color updates to green if called 
+    const leadCalled = {
+         
+    }
+
     return(
         <>
         <h1>Current Leads</h1>
@@ -22,7 +27,6 @@ const AllLeads = props => {
                     <h3>{lead.firstName} {lead.lastName}</h3>
                     <h3>{lead.phoneNumber}</h3>
                     <h3>{lead.email}</h3>
-                    <h3>{lead.isCalled}</h3>
                     </Link>
                 </div>) : "No Leads"
             }
