@@ -31,7 +31,7 @@ const Residential = () => {
         </div> 
         <div className="res-service-card-container">
                 <div className="res-service-card">
-                    <img src={colorSelection} className="card-img-top" alt="..."/>
+                    <img src={colorSelection} className="card-img-top" alt="color cards"/>
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
@@ -39,7 +39,7 @@ const Residential = () => {
                     </div>
                 </div>  
             <div className="res-service-card">
-                <img src={intPainters} className="card-img-top" alt="..."/>
+                <img src={intPainters} className="card-img-top" alt="interior painters"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">Interior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -47,7 +47,7 @@ const Residential = () => {
                 </div>
             </div>  
             <div className="res-service-card">
-                <img src={extPainter} className="card-img-top" alt="..."/>
+                <img src={extPainter} className="card-img-top" alt="exterior painter"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">Exterior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -55,7 +55,7 @@ const Residential = () => {
                 </div>
             </div>  
             <div className="res-service-card">
-                <img src={woodDeck} className="card-img-top" alt="..."/>
+                <img src={woodDeck} className="card-img-top" alt="wood deck"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">Deck Staining</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

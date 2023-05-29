@@ -26,8 +26,11 @@ const OneLead = () => {
 
     return(
         <>
+        <Link to={"/leads"}>
+            <button type="button" className="btn btn-outline-dark">All Leads</button>
+        </Link>
         {
-            oneLead ? <div>
+            oneLead ? <div className="single-lead-container">
                 <ul className="single-lead-card">
                     <li>Name: {oneLead.firstName} {oneLead.lastName}</li>
                     <li>Phone: {oneLead.phoneNumber}</li>
@@ -42,6 +45,7 @@ const OneLead = () => {
                 <button type="submit" className="btn btn-outline-danger mt-3" onClick={ ()=> handleDelete(oneLead._id)}>Delete Lead</button><Link to={`/update/${oneLead._id}`}><button type="submit" className="btn btn-outline-dark mt-3">Edit</button></Link>
             </div> : ""
         }
+                
         </>
     );
 };

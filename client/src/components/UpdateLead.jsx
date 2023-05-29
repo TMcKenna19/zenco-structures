@@ -28,6 +28,7 @@ const UpdateLead = props => {
     }, [_id]);
 
     const changeHandler = e => {
+        console.log("click")
         setFormData({...formData, [e.target.name]: e.target.value})
     };
 
@@ -96,6 +97,14 @@ const UpdateLead = props => {
                     <label htmlFor="notes">Notes: </label>
                     <textarea type="textbox" name="notes" id="notes" className="form-control" value={formData.notes} onChange={changeHandler} />
                     { formErrors.notes ? <span><p class="text-danger">{formErrors.notes.message}</p></span> : ""}
+                </div>
+                <div>
+                    <label className="form-check-label" htmlFor="flexCheckDefault">Called</label>
+                    <input className="form-check-input" type="checkbox" name="isCalled" value="true" id="flexCheckDefault" onChange={changeHandler}/>
+                </div>
+                <div>
+                    <label className="form-check-label" htmlFor="flexCheckDefault">Not Called</label>
+                    <input className="form-check-input" type="checkbox" name="isCalled" value="false" id="flexCheckDefault" onChange={changeHandler}/>
                 </div>
                 <button type="submit" className="btn btn-outline-dark mt-3">Update</button>
             </div>

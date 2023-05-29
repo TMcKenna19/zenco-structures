@@ -14,7 +14,7 @@ const AllLeads = props => {
 
     return(
         <>
-        <h1>Leads:</h1>
+        <h1>Current Leads</h1>
         <div className="lead-container">
             {
                 leads ? leads.map((lead, i) => <div key={i} className="lead-card">
@@ -22,6 +22,7 @@ const AllLeads = props => {
                     <h3>{lead.firstName} {lead.lastName}</h3>
                     <h3>{lead.phoneNumber}</h3>
                     <h3>{lead.email}</h3>
+                    <h3>{lead.isCalled}</h3>
                     </Link>
                 </div>) : "No Leads"
             }
