@@ -12,8 +12,7 @@ ul {
 
 .link-text {
   text-decoration: none;
-  /* color: rgb(251, 251, 251); */
-  color: black;
+  color: rgb(251, 251, 251);
 }
 
 .link-text:hover {

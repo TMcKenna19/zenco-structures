@@ -14,11 +14,11 @@ const AllLeads = props => {
 
     // background color updates to green if lead is called 
     const isCalledColor = {
-        backgroundcolor: "Green"
+        backgroundColor: "#056205"
     };
 
     const notCalledColor = {
-        backgroundcolor: "Black"
+        backgroundColor: "#004970f0"
     };
 
     return(
@@ -31,7 +31,7 @@ const AllLeads = props => {
                     <h3>{lead.firstName} {lead.lastName}</h3>
                     <h3>{lead.phoneNumber}</h3>
                     <h3>{lead.email}</h3>
-                    <h3>Called: {lead.isCalled ? "Yes" : "No"}</h3>
+                    {/* <h3>Called: {lead.isCalled ? "Yes" : "No"}</h3> */}
                     </Link>
                 </div>) : "No Leads"
             }
