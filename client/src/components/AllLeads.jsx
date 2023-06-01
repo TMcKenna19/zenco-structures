@@ -12,24 +12,30 @@ const AllLeads = props => {
         .catch(err => console.log(err))
     }, []);
 
-    // background color updates to green if called 
-    const leadCalled = {
-         
-    }
+    // background color updates to green if lead is called 
+    const isCalledColor = {
+        backgroundcolor: "Green"
+    };
+
+    const notCalledColor = {
+        backgroundcolor: "Black"
+    };
 
     return(
         <>
         <h1>Current Leads</h1>
         <div className="lead-container">
             {
-                leads ? leads.map((lead, i) => <div key={i} className="lead-card">
-                    <Link to={`/lead/${lead._id}`} className="link-text">
+                leads ? leads.map((lead, i) => <div key={i} className="lead-card" style={lead.isCalled ? isCalledColor : notCalledColor }>
+                    <Link to={`/lead/${lead._id}`} className="link-text">          
                     <h3>{lead.firstName} {lead.lastName}</h3>
                     <h3>{lead.phoneNumber}</h3>
                     <h3>{lead.email}</h3>
+                    <h3>Called: {lead.isCalled ? "Yes" : "No"}</h3>
                     </Link>
                 </div>) : "No Leads"
             }
+
             
         </div>
 

@@ -12,7 +12,8 @@ ul {
 
 .link-text {
   text-decoration: none;
-  color: rgb(251, 251, 251);
+  /* color: rgb(251, 251, 251); */
+  color: black;
 }
 
 .link-text:hover {
@@ -148,7 +149,7 @@ ul {
 }
 
 .lead-card {
-  background-color: #004970f0;
+  /* background-color: #004970f0; */
   height: fit-content;
   padding: 20px;
   width: 20rem;
@@ -164,12 +165,10 @@ ul {
 
 .single-lead-container{ 
   height: 1080px;
-  background-color: #c7c7c8;
 }
 
 .single-lead-card {
   padding: 50px;
-  background-color: #c7c7c8;
   color: black;
   font-size: 20px;
 }
