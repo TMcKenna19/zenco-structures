@@ -9,6 +9,7 @@ import Reviews from './Components/Reviews';
 import About from './Components/About';
 import Quote from './Components/Quote';
 import AllLeads from './Components/AllLeads';
+import NewLeads from './Components/NewLeads';
 import OneLead from './Components/OneLead';
 import UpdateLead from './Components/UpdateLead';
 import ThankYou from './Components/ThankYou';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/reviews" element={<Reviews/>} />
         <Route path="/quote" element={<Quote/>} />
         <Route path="/leads" element={<AllLeads />} />
+        <Route path="/newleads" element={<NewLeads />} />
         <Route path="/lead/:_id" element={<OneLead/>} />
         <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />

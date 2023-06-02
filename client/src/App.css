@@ -138,6 +138,17 @@ ul {
   width: 400px;
 }
 
+.all-leads-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  height: 50px;
+  padding: 5px;
+  background-color: #333333;
+  color: rgb(251, 251, 251);
+}
+
 .lead-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -148,7 +159,8 @@ ul {
 }
 
 .lead-card {
-  /* background-color: #004970f0; */
+  background-color: #004970f0;
+  font-size: 20px;
   height: fit-content;
   padding: 20px;
   width: 20rem;
@@ -158,6 +170,11 @@ ul {
   transition: 0.5s; 
 }
 
+.call-dot{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
 .lead-card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
