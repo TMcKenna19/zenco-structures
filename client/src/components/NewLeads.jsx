@@ -11,6 +11,7 @@ const NewLeads = props => {
         .catch(err => console.log(err)) 
     }, []);
 
+    //filters allLeads where isCalled is false for newLeads map
     const newLeads = allLeads.filter((allLeads) => allLeads.isCalled === false);
     
     return(

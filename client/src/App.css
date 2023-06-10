@@ -12,7 +12,7 @@ ul {
 
 .link-text {
   text-decoration: none;
-  color: rgb(251, 251, 251);
+  color: #fbfbfb;
 }
 
 .link-text:hover {
@@ -160,6 +160,7 @@ ul {
 
 .lead-card {
   background-color: #004970f0;
+  /* background-color: #333333; */
   font-size: 20px;
   height: fit-content;
   padding: 20px;
