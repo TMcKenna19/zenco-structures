@@ -10,6 +10,7 @@ import About from './Components/About';
 import Quote from './Components/Quote';
 import AllLeads from './Components/AllLeads';
 import NewLeads from './Components/NewLeads';
+import CalledLeads from './Components/CalledLeads';
 import OneLead from './Components/OneLead';
 import UpdateLead from './Components/UpdateLead';
 import ThankYou from './Components/ThankYou';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/quote" element={<Quote/>} />
         <Route path="/leads" element={<AllLeads />} />
         <Route path="/newleads" element={<NewLeads />} />
+        <Route path="/calledleads" element={<CalledLeads />} />
         <Route path="/lead/:_id" element={<OneLead/>} />
         <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />

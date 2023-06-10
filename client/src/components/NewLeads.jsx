@@ -15,6 +15,12 @@ const NewLeads = props => {
     
     return(
         <>
+        <ul className="all-leads-nav">
+            <Link to={"/leads"} className="link-text"> <li>All Leads</li> </Link> 
+            <li>New Leads</li>
+            <Link to={"/calledLeads"} className="link-text"> <li>Called Leads</li> </Link>
+        </ul>
+
         <h1>New Leads</h1>
         <div className="lead-container">
             {   

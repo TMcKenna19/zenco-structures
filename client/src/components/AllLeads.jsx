@@ -13,27 +13,28 @@ const AllLeads = props => {
     }, []);
 
     // background color updates to green if lead is called 
-    const isCalledColor = {
-        backgroundColor: "#0C3A2F"
-    };
+    // const isCalledColor = {
+    //     backgroundColor: "#0C3A2F"
+    // };
 
-    const notCalledColor = {
-        backgroundColor: "#004970f0"
-    };
+    // const notCalledColor = {
+    //     backgroundColor: "#004970f0"
+    // };
 
     return(
         <>
         <ul className="all-leads-nav">
             <li>All Leads</li>
             <Link to={"/newleads"} className="link-text"> <li>New Leads</li> </Link>
-            <li>Called Leads</li>
+            <Link to={"/calledLeads"} className="link-text"> <li>Called Leads</li> </Link>
         </ul>
         
 
-        
+        <h1>All Leads</h1>
         <div className="lead-container">
+            
             {
-                leads ? leads.map((lead, i) => <ul key={i} className="lead-card" style={lead.isCalled ? isCalledColor : notCalledColor } >
+                leads ? leads.map((lead, i) => <ul key={i} className="lead-card">
                     <Link to={`/lead/${lead._id}`} className="link-text">          
                     <li>{lead.firstName} {lead.lastName}</li>
                     <li>{lead.phoneNumber}</li>
