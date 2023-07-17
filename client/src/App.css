@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   font-family: 'Kalam', cursive;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -60,6 +60,7 @@ ul {
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .home-page-slogan, img {
@@ -70,7 +71,6 @@ ul {
   color: rgb(236, 233, 233);
   font-size: 25px;
   margin-left: 30px;
-  /* margin-top: 150px; */
 }
 
 .residentail-hero {
@@ -80,6 +80,7 @@ ul {
   width: auto;
   background-repeat: none;
   background-size: cover;
+  text-align: center;
 }
 .commercial-hero {
   background-image: url(./Images/shoppingCenter.jpeg);
@@ -127,6 +128,7 @@ ul {
   justify-content: 20px;
   margin: 30px;
   gap: 30px;
+  text-align: center;
 }
 
 .res-service-card {
@@ -137,9 +139,14 @@ ul {
   border-radius: 10px;
   vertical-align: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
-  transition: 0.5s; 
+  transition: 0.5s;   
 }
 
+.res-service-card, img{
+  justify-content: center;
+  align-items: center;
+}
+/* center card image */
 .res-service-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
@@ -149,7 +156,7 @@ ul {
   margin-top: 20px;
 }
 
-.res-card-text{
+.res-card-text {
   padding: 10px;
 }
 
