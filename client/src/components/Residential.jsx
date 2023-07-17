@@ -4,6 +4,7 @@ import intPainters from "../Images/intPainters.jpeg"
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
 import woodDeck from "../Images/woodDeck.jpeg";
+import zencoLogo from "../Images/zencoLogo.png";
  
 
 
@@ -14,11 +15,11 @@ const Residential = () => {
     <>
         <div className="residentail-hero">   
             <ul className="nav-bar">
-                <Link className="link-text" to={'/'}> <li>Zenco Structures</li> </Link>
+                <Link className="link-text-logo" to={'/'}> <li><img src={zencoLogo} alt="" /></li> </Link>
                 <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
                 <Link className="link-text" to={'/about'}> <li>About</li> </Link>
                 <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-                <Link className="link-text" to={'/quote'}> <li>Request a quote</li> </Link> 
+                <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
             </ul> 
             <div className="res-services-slogan">
                 <div>

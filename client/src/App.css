@@ -15,6 +15,11 @@ ul {
   color: #fbfbfb;
 }
 
+.link-text-logo img{
+  height: 75px;
+  width: 75px;
+}
+
 .link-text:hover {
   text-decoration: none;
   color: rgb(251, 251, 251);
@@ -50,26 +55,34 @@ ul {
 
 .home-page {
   background-image: url(./Images/coverHouse.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.661);
   height: 100vh;
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.home-page-slogan {
+.home-page-slogan, img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgb(236, 233, 233);
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 30px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 
 .residentail-hero {
   background-image: url(./Images/modernLivingRm.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
+  height: 700px;
+  width: auto;
+  background-repeat: none;
+  background-size: cover;
+}
+.commercial-hero {
+  background-image: url(./Images/shoppingCenter.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
   height: 700px;
   width: auto;
@@ -84,6 +97,17 @@ ul {
   align-items: center;
   color: rgb(251, 251, 251);
   font-size: 45px;
+  margin-left: 30px;
+  margin-top: 150px;  
+}
+
+.comm-services-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(251, 251, 251);
+  font-size: 35px;
   margin-left: 30px;
   margin-top: 150px;  
 }
