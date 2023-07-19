@@ -1,16 +1,27 @@
 import React from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import intPainters from "../Images/intPainters.jpeg"
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
 import woodDeck from "../Images/woodDeck.jpeg";
 import zencoLogo from "../Images/zencoLogo.png";
- 
-
+import cabinets from "../Images/cabinets.jpeg";
+import garage from "../Images/garage.jpeg";
+import drywall from "../Images/drywall.jpeg";
+import leadHazard from "../Images/leadHazard.jpeg";
 
 
 
 const Residential = () => {
+
+    const ref = useRef(null);
+
+    const handleClick = () => {
+        ref.current?.scrollIntoView({behavior: 'auto'});
+    };
+
+
     return( 
     <>
         <div className="residentail-hero">   
@@ -36,7 +47,7 @@ const Residential = () => {
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
-                        <button type="button" class="btn btn-outline-dark" >Learn More</button>
+                        <button type="button" class="btn btn-outline-dark" onClick={handleClick} >Learn More</button>
                     </div>
                 </div>  
             <div className="res-service-card">
@@ -63,7 +74,49 @@ const Residential = () => {
                     <button type="button" class="btn btn-outline-dark">Learn More</button>
                 </div>
             </div>  
+            <div className="res-service-card">
+                <img src={cabinets} className="card-img-top" alt="wood deck"/>
+                <div className="res-card-body">
+                    <h5 className="res-card-title">Cabinet Painting / Refacing</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+            <div className="res-service-card">
+                <img src={garage} className="card-img-top" alt="wood deck"/>
+                <div className="res-card-body">
+                    <h5 className="res-card-title">Garage Floors</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+            <div className="res-service-card">
+                <img src={drywall} className="card-img-top" alt="wood deck"/>
+                <div className="res-card-body">
+                    <h5 className="res-card-title">Drywall Repair</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
+            <div className="res-service-card">
+                <img src={leadHazard} className="card-img-top" alt="wood deck"/>
+                <div className="res-card-body">
+                    <h5 className="res-card-title">EPA Lead Certified</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>  
         </div>
+        <div className="res-review">
+            <div>
+                <p>Not only did Zenco exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me.</p>
+            </div>
+
+        </div>
+        <div ref={ref} className="color-selection-container">
+            <p>Color selection with the pros</p>
+        </div>
+        
         
 
         
