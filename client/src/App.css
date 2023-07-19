@@ -63,14 +63,13 @@ ul {
   text-align: center;
 }
 
-.home-page-slogan, img {
+.home-page-slogan {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgb(236, 233, 233);
   font-size: 25px;
-  margin-left: 30px;
 }
 
 .residentail-hero {
@@ -82,6 +81,7 @@ ul {
   background-size: cover;
   text-align: center;
 }
+
 .commercial-hero {
   background-image: url(./Images/shoppingCenter.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
@@ -142,11 +142,6 @@ ul {
   transition: 0.5s;   
 }
 
-.res-service-card, img{
-  justify-content: center;
-  align-items: center;
-}
-/* center card image */
 .res-service-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
@@ -206,6 +201,7 @@ ul {
   width: 20px;
   border-radius: 50%;
 }
+
 .lead-card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }

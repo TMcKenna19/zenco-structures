@@ -36,7 +36,7 @@ const Residential = () => {
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
-                        <button type="button" class="btn btn-outline-dark">Learn More</button>
+                        <button type="button" class="btn btn-outline-dark" >Learn More</button>
                     </div>
                 </div>  
             <div className="res-service-card">
