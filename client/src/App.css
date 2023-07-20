@@ -3,6 +3,7 @@
   font-family: 'Kalam', cursive;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  background-color: #efefef;
 }
 
 ul {
@@ -12,12 +13,7 @@ ul {
 
 .link-text {
   text-decoration: none;
-  color: #fbfbfb;
-}
-
-.link-text-logo img{
-  height: 75px;
-  width: 75px;
+  color: #efefef;
 }
 
 .link-text:hover {
@@ -26,22 +22,28 @@ ul {
   font-weight: 800;
 }
 
+.link-text-logo img{
+  height: 75px;
+  width: 75px;
+}
+
 .link-text-quote {
   text-decoration: none;
-  background-color: rgba(253, 0, 0, 0.602);
+  background-color: #fbc71d79;
   padding: 6px;
   border: 1px solid  rgb(251, 251, 251);
   border-radius: 5px;
-  color: rgb(251, 251, 251);
+  color: #efefef;
 }
 
 .link-text-quote:hover {
   text-decoration: none;
-  background-color: rgba(253, 0, 0, 0.9);
+  background-color: #fbc71db8;
   padding: 6px;
   border: 1px solid  rgb(251, 251, 251);
   border-radius: 5px;
   color: rgb(251, 251, 251);
+  font-weight: 900;
 }
 
 .nav-bar {
@@ -68,7 +70,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(236, 233, 233);
+  color: #efefef;;
   font-size: 25px;
 }
 
@@ -82,33 +84,13 @@ ul {
   text-align: center;
 }
 
-.commercial-hero {
-  background-image: url(./Images/shoppingCenter.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
-  height: 700px;
-  width: auto;
-  background-repeat: none;
-  background-size: cover;
-}
-
 .res-services-slogan {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(251, 251, 251);
+  color: #efefef;
   font-size: 45px;
-  margin-left: 30px;
-  margin-top: 150px;  
-}
-
-.comm-services-slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(251, 251, 251);
-  font-size: 35px;
   margin-left: 30px;
   margin-top: 150px;  
 }
@@ -118,42 +100,30 @@ ul {
   padding: 4px;
   height: 70px;
   width: 500px;
-  border: 1px solid rgb(251, 251, 251);
-  background-color: rgba(253, 0, 0, 0.602);
+  border: 1px solid  #efefef;;
+  background-color: #344f27b8;
 }
 
 .res-service-card-container {
+  background-color: #efefef;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  justify-content: 20px;
   margin: 30px;
+  padding: 5px;
   gap: 30px;
   text-align: center;
 }
 
 .res-service-card {
   color: #333333;
-  background-color: #ffffff;
+  background-color: #fbfbfb;
   padding: 20px;
   width: 20rem;
   border-radius: 10px;
   vertical-align: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
   transition: 0.5s;   
-}
-
-.res-review {
-  background-image: url(./Images/resReview.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
-  background-repeat: none;
-  background-size: cover;
-  height: 600px;
-  margin: 35px;
-  font-size: 20px;
-  color: rgb(251, 251, 251);
-  justify-content: center;
-  align-items: center;
 }
 
 .res-service-card:hover {
@@ -169,12 +139,65 @@ ul {
   padding: 10px;
 }
 
+.res-review {
+  background-image: url(./Images/resReview.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
+  background-repeat: none;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+  color: #efefef;
+  font-size: 25px;
+  font-weight: 500;
+  height: 550px;
+  width: 100%;
+}
+
+.quote-banner {
+  text-decoration: none;
+  color: #fbfbfb;
+  background-color: #fbc71d79;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+  margin-top: 150px;
+  padding: 15px;
+  padding-bottom: 1px;
+  font-size: 25px;
+  font-weight: 500; 
+}
+
+.quote-banner:hover {
+  text-decoration: none;
+  color: #fbfbfb;
+  background-color: #fbc71db8;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+  margin-top: 150px;
+  padding: 15px;
+  padding-bottom: 1px;
+  font-size: 25px;
+  font-weight: 500; 
+}
+
+.eco-statement {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  color: #fbfbfb;
+  height: 500px;
+  margin: 3px;
+  gap: 30px;
+  font-size: 30px;
+}
+
 .quote-form {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   margin-left: 500px;
-  height: 500px;
+  height: 800px;
   width: 400px;
 }
 
@@ -214,20 +237,20 @@ ul {
   margin-top: 900px;
   height: 200px;
   width: auto;
-  background-color: #333333;
+  background-color: #ce5e5e;
 }
 
-.call-dot{
+.call-dot {
   height: 20px;
   width: 20px;
   border-radius: 50%;
 }
 
-.lead-card:hover{
+.lead-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
 
-.single-lead-container{ 
+.single-lead-container { 
   height: 1080px;
 }
 

@@ -90,7 +90,9 @@ const Quote = props => {
                     <textarea type="textbox" name="notes" id="notes" className="form-control" value={formData.notes} onChange={changeHandler} />
                     { formErrors.notes ? <span><p className="text-danger">{formErrors.notes.message}</p></span> : ""}
                 </div>
-                <button type="submit" className="btn btn-outline-dark mt-3" >Submit</button>
+                <div>
+                    <button type="submit" className="btn btn-outline-dark mt-3" >Submit</button>
+                </div>
             </div>
 
         </form>

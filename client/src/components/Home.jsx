@@ -21,7 +21,7 @@ const Home = () => {
           </ul> 
             <div className="home-page-slogan">
               <img src={zencoLogo} alt="" />
-              <p>Let Zenco Structures color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
+              <p>Let Zenco Coatings color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
 
             </div>
                      
