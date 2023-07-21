@@ -12,6 +12,12 @@ import leadHazard from "../Images/leadHazard.jpeg";
 import greenRoom from  "../Images/greenRoom.jpeg";
 import ecoFriend from "../Images/ecoFriend.jpeg";
 import ecoFlip from "../Images/ecoFlip.jpeg";
+import insureIcon from "../Images/insureIcon.jpeg";
+import warrantyIcon from "../Images/warrantyIcon.jpeg";
+import trustedIcon from "../Images/trustedIcon.jpeg";
+import chatIcon from "../Images/chatIcon.jpeg";
+import dollarIcon from "../Images/dollarIcon.jpeg";
+import bulbIcon from "../Images/bulbIcon.jpeg";
 
 
 const Residential = () => {
@@ -146,15 +152,58 @@ const Residential = () => {
                 <Link className="quote-banner" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
             </div>
         </div>
-
         <div className="eco-friend">
             <div className="eco-statement">
                 <ImageChangeOnMouseOver/>
-                <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet.</p>
+                <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet</p>
             </div>
         </div>
-        <div>
-            <h3>Our Highest priority is taking care of our customers</h3>
+        <div className="priority-container">
+            <div className="priority-card-title">
+            </div>
+            <div className="priority-card">
+                <img src={insureIcon} alt="pen/pad" />
+                <div className="priority-card-body">
+                    <h2>Fully Insured</h2>
+                    <p>Insured up to 30 million, Providing you with peace of mind and protection throughout the entirety of our services</p>
+                </div>
+            </div>
+            <div className="priority-card">
+                <img src={warrantyIcon} alt="warranty" />
+                <div className="priority-card-body">
+                    <h2>Life Time Warranty*</h2>
+                    <p>Our lifetime warranty, gives you complete confidence in the longevity and quality of our products, ensuring a lasting investment in your satisfaction</p>
+                </div>
+            </div>
+                <div className="priority-card">
+                    <img src={trustedIcon} alt="pen/pad" />
+                    <div className="priority-card-body">
+                        <h2>Community Trusted</h2>
+                        <p>Zenco has earned the trust of the community through 75 years of reliable service, exceptional craftsmanship, and a genuine commitment to customer satisfaction</p>
+                    </div>
+                </div>
+                <div className="priority-card">
+                    <img src={chatIcon} alt="pen/pad" />
+                    <div className="priority-card-body">
+                        <h2>Easy Communication</h2>
+                        <p>Experience hassle-free projects with our company's easy communication approach, ensuring seamless interactions and a smooth journey from start to finish</p>
+                    </div>
+                </div>
+                <div className="priority-card">
+                    <img src={dollarIcon} alt="pen/pad" />
+                    <div className="priority-card-body">
+                        <h2>Estimates</h2>
+                        <p>We take pride in our ability to accommodate any budget, offering flexible solutions and tailored packages without compromising on the quality of our services</p>
+                    </div>
+                </div>
+                <div className="priority-card">
+                    <img src={bulbIcon} alt="pen/pad" />
+                    <div className="priority-card-body">
+                        <h2>Insight</h2>
+                        <p>We stay at the forefront of the industry, constantly updating our knowledge on the latest technologies, trends, and practices to deliver cutting-edge solutions for our valued clients</p>
+                    </div>
+                </div>
+                
         </div>
 
 
