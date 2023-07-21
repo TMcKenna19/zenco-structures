@@ -29,10 +29,14 @@ const Residential = () => {
           <img onMouseOver={() => { 
               imageRef.current.src = secondaryImg; 
             }}
+            onMouseOut={() => {
+                imageRef.current.src= primaryImg;
+              }}
             src={primaryImg} 
             alt=""
             ref={imageRef}
           />
+          
         )
     }
 
@@ -148,6 +152,9 @@ const Residential = () => {
                 <ImageChangeOnMouseOver/>
                 <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet.</p>
             </div>
+        </div>
+        <div>
+            <h3>Our Highest priority is taking care of our customers</h3>
         </div>
 
 

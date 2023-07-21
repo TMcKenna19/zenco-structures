@@ -101,7 +101,7 @@ ul {
   height: 70px;
   width: 500px;
   border: 1px solid  #efefef;;
-  background-color: #344f27b8;
+  background-color: #2f5e4a;
 }
 
 .res-service-card-container {
@@ -184,7 +184,18 @@ ul {
 .eco-statement {
   display: flex;
   align-items: center;
-  background-color: #333333;
+  background-color: #fbfbfb;
+  color: #333333;
+  height: 500px;
+  margin: 3px;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.eco-statement:hover {
+  display: flex;
+  align-items: center;
+  background-color: #2f5e4a;
   color: #fbfbfb;
   height: 500px;
   margin: 3px;
