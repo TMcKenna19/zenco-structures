@@ -3,7 +3,8 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
-import woodDeck from "../Images/woodDeck.jpeg";
+// import woodDeck from "../Images/woodDeck.jpeg";
+import woodFence from "../Images/woodFence.jpeg";
 import zencoLogo from "../Images/zencoLogo.png";
 import cabinets from "../Images/cabinets.jpeg";
 import garage from "../Images/garage.jpeg";
@@ -18,6 +19,7 @@ import trustedIcon from "../Images/trustedIcon.jpeg";
 import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
+import colorDesign from "../Images/colorDesign.jpeg";
 
 
 const Residential = () => {
@@ -82,7 +84,7 @@ const Residential = () => {
                     <img src={colorSelection} className="card-img-top" alt="color cards"/>
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
-                        <p className="res-card-text">Work with our in house design team to find the perfect color palette that highlights your home's personality</p>
+                        <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <button type="button" className="btn btn-outline-dark" onClick={handleClick} >Learn More</button>
                     </div>
                 </div>  
@@ -103,7 +105,7 @@ const Residential = () => {
                 </div>
             </div>  
             <div className="res-service-card">
-                <img src={woodDeck} className="card-img-top" alt="wood deck"/>
+                <img src={woodFence} className="card-img-top" alt="wood deck"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">Deck / Fence Staining</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -175,44 +177,44 @@ const Residential = () => {
                     <p>Our lifetime warranty, gives you complete confidence in the longevity and quality of our products, ensuring a lasting investment in your satisfaction</p>
                 </div>
             </div>
-                <div className="priority-card">
-                    <img src={trustedIcon} alt="pen/pad" />
+            <div className="priority-card">
+                <img src={trustedIcon} alt="pen/pad" />
                     <div className="priority-card-body">
                         <h2>Community Trusted</h2>
                         <p>Zenco has earned the trust of the community through 75 years of reliable service, exceptional craftsmanship, and a genuine commitment to customer satisfaction</p>
                     </div>
                 </div>
-                <div className="priority-card">
-                    <img src={chatIcon} alt="pen/pad" />
+            <div className="priority-card">
+                <img src={chatIcon} alt="pen/pad" />
                     <div className="priority-card-body">
                         <h2>Easy Communication</h2>
                         <p>Experience hassle-free projects with our company's easy communication approach, ensuring seamless interactions and a smooth journey from start to finish</p>
                     </div>
                 </div>
-                <div className="priority-card">
-                    <img src={dollarIcon} alt="pen/pad" />
+            <div className="priority-card">
+                <img src={dollarIcon} alt="pen/pad" />
                     <div className="priority-card-body">
                         <h2>Estimates</h2>
                         <p>We take pride in our ability to accommodate any budget, offering flexible solutions and tailored packages without compromising on the quality of our services</p>
                     </div>
                 </div>
-                <div className="priority-card">
-                    <img src={bulbIcon} alt="pen/pad" />
+            <div className="priority-card">
+                <img src={bulbIcon} alt="pen/pad" />
                     <div className="priority-card-body">
                         <h2>Insight</h2>
                         <p>We stay at the forefront of the industry, constantly updating our knowledge on the latest technologies, trends, and practices to deliver cutting-edge solutions for our valued clients</p>
                     </div>
-                </div>
-                
+            </div>       
         </div>
-
-
         <div ref={ref} className="color-selection-container">
-            <p>Color selection with the pros</p>
+            <img src={colorDesign} alt="" />
+            <p>Working with our interior design team is an enriching and collaborative experience that begins with a deep understanding of your vision and preferences. Our team of skilled designers will listen attentively to your ideas, exploring your desired style, color schemes, and functional requirements. With this valuable insight, we present you with innovative design concepts and mood boards that bring your vision to life. Throughout the process, we actively encourage feedback and input, fostering a creative dialogue that ensures every detail is tailored to your satisfaction. Our dedicated team will guide you through material selections, furniture choices, and decorative accents, harmoniously blending aesthetics and functionality. The result is a space that resonates with your personality, elevates the ambiance, and exceeds your expectations, as we pride ourselves on creating interiors that inspire and delight for years to come.</p>
         </div>
        
-        
-        
+
+        <div className="space">
+        <p>fin</p>
+        </div>
 
         
     </>

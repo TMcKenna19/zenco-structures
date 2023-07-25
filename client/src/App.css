@@ -204,7 +204,7 @@ ul {
   background-color: #2f5e4a;
   color: #fbfbfb;
   height: 500px;
-  margin: 3px;
+  margin: 5px;
   gap: 30px;
   font-size: 30px;
 }
@@ -230,10 +230,25 @@ ul {
 }
 
 .color-selection-container {
-  margin-top: 900px;
-  height: 200px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  height: 334px;
   width: auto;
-  background-color: #ce5e5e;
+  background-color: #fbfbfb;
+  font-size: 20px;
+}
+
+.color-selection-container p  {
+  padding: 5px;
+  margin: 5px;
+}
+
+.space {
+  text-align: center;
+  align-items: center;
+  margin-top: 900px;
+  font-size: 50px;
 }
 
 /* quote */
@@ -280,8 +295,6 @@ ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
   transition: 0.5s; 
 }
-
-
 
 .call-dot {
   height: 20px;
