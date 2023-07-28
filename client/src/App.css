@@ -78,6 +78,11 @@ ul {
   font-size: 25px;
 }
 
+.home-page-slogan p {
+  padding: 20px;
+}
+
+
 /* residentail */
 
 .residentail-hero {
@@ -216,39 +221,51 @@ ul {
   flex-flow: row wrap;
   gap: 15px;
   text-align: center;
+  padding: 5px;
 }
 
 .priority-card {
   color: #333333;
   background-color: #ffffff;
-  padding: 15px;
   margin: 30px;
   width: 25rem;
+  height: 300px;
   border-radius: 10px;
   vertical-align: top;
   font-size: 15px;
+
 }
 
 .color-selection-container {
   display: flex;
-  flex-direction: row;
-  margin: 5px;
-  height: 334px;
+  flex-direction: row-reverse;
+  padding: 50px;
+  /* margin-top: 2px; */
+  height: 500px;
   width: auto;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
+}
+
+.color-selection-content p{
+  /* margin: 25px; */
   font-size: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-.color-selection-container p  {
-  padding: 5px;
-  margin: 5px;
-}
 
-.space {
+
+
+.extra-space {
   text-align: center;
   align-items: center;
   margin-top: 900px;
   font-size: 50px;
+}
+
+/* commercial */
+.commercial-hero {
+  text-align: center;
 }
 
 /* quote */

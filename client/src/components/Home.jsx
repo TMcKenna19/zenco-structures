@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import roofCoating from "../Images/roofCoating.mp4";
 import zencoLogo from "../Images/zencoLogo.png";
 
 
@@ -20,9 +19,8 @@ const Home = () => {
             <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
           </ul> 
             <div className="home-page-slogan">
-              <img src={zencoLogo} alt="" />
+              <img src={zencoLogo} alt="logo" />
               <p>Let Zenco Coatings color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
-
             </div>
                      
         </div>

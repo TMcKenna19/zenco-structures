@@ -20,32 +20,38 @@ import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
 import colorDesign from "../Images/colorDesign.jpeg";
+import trowl from "../Images/trowl.jpeg";
+import painterWall from "../Images/painterWall.jpeg";
 
 
 const Residential = () => {
     // onClick scroll 
-    const ref = useRef(null);
-    const handleClick = () => {
-        ref.current?.scrollIntoView({behavior: 'auto'});
+    const refColorSelect = useRef(null);
+    const handleColorSelect = () => {
+        refColorSelect.current?.scrollIntoView({behavior: 'auto'});
     };
 
+    // const refIntPaint = useRef(null);
+    // const handleIntPaint = () => {
+    //     refIntPaint.current?.scrollIntoView({behavior: 'auto'});
+    // };
+
     //Image flip 
-    const ImageToggleOnMouseOver = ({primaryImg, secondaryImg}) => {
+    function ImageToggleOnMouseOver({ primaryImg, secondaryImg }) {
         const imageRef = useRef(null);
-      
+
         return (
-          <img onMouseOver={() => { 
-              imageRef.current.src = secondaryImg; 
-            }}
-            onMouseOut={() => {
-                imageRef.current.src= primaryImg;
-              }}
-            src={primaryImg} 
-            alt=""
-            ref={imageRef}
-          />
-          
-        )
+            <img onMouseOver={() => {
+                imageRef.current.src = secondaryImg;
+            } }
+                onMouseOut={() => {
+                    imageRef.current.src = primaryImg;
+                } }
+                src={primaryImg}
+                alt=""
+                ref={imageRef} />
+
+        );
     }
 
     const ImageChangeOnMouseOver = () => {
@@ -85,7 +91,7 @@ const Residential = () => {
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-outline-dark" onClick={handleClick} >Learn More</button>
+                        <button type="button" className="btn btn-outline-dark" onClick={handleColorSelect} >Learn More</button>
                     </div>
                 </div>  
             <div className="res-service-card">
@@ -93,7 +99,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Interior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    <button onClick={handleColorSelect} type="button" className="btn btn-outline-dark">Learn More</button>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -206,13 +212,22 @@ const Residential = () => {
                     </div>
             </div>       
         </div>
-        <div ref={ref} className="color-selection-container">
-            <img src={colorDesign} alt="" />
-            <p>Working with our interior design team is an enriching and collaborative experience that begins with a deep understanding of your vision and preferences. Our team of skilled designers will listen attentively to your ideas, exploring your desired style, color schemes, and functional requirements. With this valuable insight, we present you with innovative design concepts and mood boards that bring your vision to life. Throughout the process, we actively encourage feedback and input, fostering a creative dialogue that ensures every detail is tailored to your satisfaction. Our dedicated team will guide you through material selections, furniture choices, and decorative accents, harmoniously blending aesthetics and functionality. The result is a space that resonates with your personality, elevates the ambiance, and exceeds your expectations, as we pride ourselves on creating interiors that inspire and delight for years to come.</p>
+        <div ref={refColorSelect} className="color-selection-container">
+            <img src={colorDesign} alt="color selection" />
+            <div className="color-selection-content">
+                <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire our professional painting services:</p>
+                <p> 1) <b>Consultation and Planning:</b> We'll start with a consultation, where our design team will discuss your vision, color preferences, and any specific requirements you have for the project. With this valuable insight, we present you with innovative design concepts and mood boards that bring your vision to life. </p>
+            </div>
+        </div>
+        <div className="color-selection-container">
+            <div className="color-selection-content">
+                <p> 2) <b>Surface Preparation:</b> Before we begin painting, we take great care in preparing the surfaces. This includes patching any holes, repairing imperfections, sanding rough areas, and properly cleaning the surfaces to ensure optimal paint adhesion.</p>
+            </div>
+        <img src={trowl} alt="trowl and spakel" />
         </div>
        
 
-        <div className="space">
+        <div className="extra-space">
         <p>fin</p>
         </div>
 
