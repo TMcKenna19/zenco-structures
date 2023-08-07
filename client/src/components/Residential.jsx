@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
-// import woodDeck from "../Images/woodDeck.jpeg";
 import woodFence from "../Images/woodFence.jpeg";
 import zencoLogo from "../Images/zencoLogo.png";
 import cabinets from "../Images/cabinets.jpeg";
@@ -20,8 +19,9 @@ import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
 import colorDesign from "../Images/colorDesign.jpeg";
-import trowl from "../Images/trowl.jpeg";
+import plaster from "../Images/plaster.jpeg";
 import painterWall from "../Images/painterWall.jpeg";
+import paintRoller from "../Images/paintRoller.jpeg";
 
 
 const Residential = () => {
@@ -160,15 +160,13 @@ const Residential = () => {
                 <Link className="quote-banner" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
             </div>
         </div>
-        <div className="eco-friend">
+        <div className="eco-friend-container">
             <div className="eco-statement">
                 <ImageChangeOnMouseOver/>
                 <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet</p>
             </div>
         </div>
         <div className="priority-container">
-            <div className="priority-card-title">
-            </div>
             <div className="priority-card">
                 <img src={insureIcon} alt="pen/pad" />
                 <div className="priority-card-body">
@@ -212,19 +210,32 @@ const Residential = () => {
                     </div>
             </div>       
         </div>
-        <div ref={refColorSelect} className="color-selection-container">
+        <div ref={refColorSelect} className="res-service-container">
             <img src={colorDesign} alt="color selection" />
-            <div className="color-selection-content">
-                <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire our professional painting services:</p>
-                <p> 1) <b>Consultation and Planning:</b> We'll start with a consultation, where our design team will discuss your vision, color preferences, and any specific requirements you have for the project. With this valuable insight, we present you with innovative design concepts and mood boards that bring your vision to life. </p>
+            <div className="int-paint-content">
+                <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
+                <p><b>Consultation and Planning</b> Our interior painting service begins with a detailed consultation, where we take the time to understand your vision, preferences, and specific requirements. Whether you're looking for a modern, minimalist look or a cozy, traditional feel, we'll work closely with you to select the perfect colors and finishes that harmonize with your space. </p>
             </div>
         </div>
-        <div className="color-selection-container">
-            <div className="color-selection-content">
-                <p> 2) <b>Surface Preparation:</b> Before we begin painting, we take great care in preparing the surfaces. This includes patching any holes, repairing imperfections, sanding rough areas, and properly cleaning the surfaces to ensure optimal paint adhesion.</p>
+        <div className="res-service-container">
+            <div className="int-paint-content">
+                <p><b>Preparation</b> is the key to a flawless paint job, and we take great care in prepping your walls, ceilings, and trim. Our experienced painters meticulously patch holes, repair imperfections, and sand surfaces to ensure an even and smooth canvas for painting. We also take measures to protect your furniture, flooring, and belongings from any paint spills or splatters.</p>
             </div>
-        <img src={trowl} alt="trowl and spakel" />
+        <img src={plaster} alt="trowl and spakel" />
         </div>
+        <div className="res-service-container">
+        <img src={painterWall} alt="painter" />
+            <div className="int-paint-content">
+                <p>Using the highest quality paints and materials, our skilled team applies paint with precision and attention to detail. From the first brushstroke to the final touch-up, we take pride in our craftsmanship, creating a seamless and professional finish in every room. </p>
+            </div>
+        </div>
+        <div className="res-service-container">
+            <div className="int-paint-content">
+                <p>At Zenco Coatings, we understand the value of your time and space. Our goal is to work efficiently while maintaining the highest level of quality, minimizing any disruption to your daily routine. Rest assured, we always leave your home in pristine condition after the project is completed. </p>
+            </div>
+        <img src={paintRoller} alt="painter" />
+        </div>
+
        
 
         <div className="extra-space">
