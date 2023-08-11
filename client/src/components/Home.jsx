@@ -18,10 +18,13 @@ const Home = () => {
             <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
             <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
           </ul> 
+          <div className="home-slogan-container">
             <div className="home-page-slogan">
-              <img src={zencoLogo} alt="logo" />
-              <p>Let Zenco Coatings color your world with our expert touch. Bring vibrancy and life to your residential or commercial space.</p>
-            </div>
+                <img src={zencoLogo} alt="logo" />
+                <p>Let Zenco Coatings color your world with our expert touch.</p>
+              </div>
+          </div>
+            
                      
         </div>
         

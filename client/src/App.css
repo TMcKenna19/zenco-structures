@@ -77,11 +77,15 @@ ul {
   align-items: center;
   color: #efefef;;
   font-size: 25px;
+  padding: 75px;
 }
 
-.home-page-slogan p {
-  padding: 20px;
+.home-page-slogan img {
+  height: 300px;
+  width: 300px;
 }
+
+
 
 
 /* residentail */
