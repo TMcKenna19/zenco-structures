@@ -22,20 +22,18 @@ import colorDesign from "../Images/colorDesign.jpeg";
 import plaster from "../Images/plaster.jpeg";
 import painterWall from "../Images/painterWall.jpeg";
 import paintRoller from "../Images/paintRoller.jpeg";
+import instagramIcon from "../Images/instagramIcon.png";
+import facebookIcon from "../Images/facebookIcon.png";
 
 
 const Residential = () => {
     // onClick scroll 
-    const refColorSelect = useRef(null);
-    const handleColorSelect = () => {
-        refColorSelect.current?.scrollIntoView({behavior: 'auto'});
-    };
-
-    // const refIntPaint = useRef(null);
-    // const handleIntPaint = () => {
-    //     refIntPaint.current?.scrollIntoView({behavior: 'auto'});
+    // const refColorSelect = useRef(null);
+    // const handleColorSelect = () => {
+    //     refColorSelect.current?.scrollIntoView({behavior: 'auto'});
     // };
 
+    
     //Image flip 
     function ImageToggleOnMouseOver({ primaryImg, secondaryImg }) {
         const imageRef = useRef(null);
@@ -91,7 +89,7 @@ const Residential = () => {
                     <div className="res-card-body">
                         <h5 className="res-card-title">Color Consultation</h5>
                         <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" className="btn btn-outline-dark" onClick={handleColorSelect} >Learn More</button>
+                        <Link className="link-text" to={'/colorconsult'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
                     </div>
                 </div>  
             <div className="res-service-card">
@@ -99,7 +97,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Interior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button onClick={handleColorSelect} type="button" className="btn btn-outline-dark">Learn More</button>
+                    <Link className="link-text"><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -210,7 +208,7 @@ const Residential = () => {
                     </div>
             </div>       
         </div>
-        <div ref={refColorSelect} className="res-service-container">
+        {/* <div ref={refColorSelect} className="res-service-container">
             <img src={colorDesign} alt="color selection" />
             <div className="int-paint-content">
                 <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
@@ -234,15 +232,14 @@ const Residential = () => {
                 <p>At Zenco Coatings, we understand the value of your time and space. Our goal is to work efficiently while maintaining the highest level of quality, minimizing any disruption to your daily routine. Rest assured, we always leave your home in pristine condition after the project is completed. </p>
             </div>
         <img src={paintRoller} alt="painter" />
+        </div> */}
+        <div className="footer-container">
+            <div className="footer">
+                <img src={instagramIcon} alt="instagram icon" />
+                <img src={facebookIcon} alt="facebook icon" />
+            </div>
         </div>
-
-       
-
-        <div className="extra-space">
-        <p>fin</p>
-        </div>
-
-        
+           
     </>
     );
 };

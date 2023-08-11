@@ -14,6 +14,7 @@ import CalledLeads from './Components/CalledLeads';
 import OneLead from './Components/OneLead';
 import UpdateLead from './Components/UpdateLead';
 import ThankYou from './Components/ThankYou';
+import ColorConsult from './Components/ColorConsult';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/reviews" element={<Reviews/>} />
         <Route path="/quote" element={<Quote/>} />
+        <Route path="/colorconsult" element={<ColorConsult />} />
         <Route path="/leads" element={<AllLeads />} />
         <Route path="/newleads" element={<NewLeads />} />
         <Route path="/calledleads" element={<CalledLeads />} />
