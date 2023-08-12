@@ -21,6 +21,7 @@ import bulbIcon from "../Images/bulbIcon.jpeg";
 import basilBloom from "../Images/basilBloom.jpeg";
 import instagramIcon from "../Images/instagramIcon.png";
 import facebookIcon from "../Images/facebookIcon.png";
+import tikTokIcon from "../Images/tikTokIcon.png";
 
 
 const Residential = () => {
@@ -206,28 +207,27 @@ const Residential = () => {
             </div>       
         </div>
         <div className="footer-container">
-            <div className="footer-content">
-                <div className="copyright-content">
-                    <ul>
-                        <li>Copyright &#169; 2023 Zenco Coatings LLC</li>
-                        <li>Find Zenco Coatings on Social Media</li>
-                        <li><Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link></li>
-                        <li><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link></li>
-                    </ul>
-                    <ul>
-                        <li>Contact Us:</li>
-                        <li>941.888.9378</li>
-                        <li>contact@zencocoatings.com</li>
-                        <li>11276 Bay St Sarasota, Fl 34277</li>
-                    </ul>
-                </div>
-                <div className="basil-content">
-                    <tbody>
-                    <td><img src={basilBloom} alt="basil bloom" /></td>
-                    <td><p>Website created by Basil Bloom</p></td>
-                    </tbody>   
+            <div className="copyright-content">
+                <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
+                <p>Zenco Coatings on Social Media</p>
+                <div className="social-links">
+                    <Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link>
+                    <Link to={"https://www.tiktok.com/"}><img src={tikTokIcon} alt="tik tok icon"/></Link>
                 </div>
             </div>
+            <div className="legal-info">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Do not sell my information</li>
+                </ul>
+            </div>
+            <div className="basil-content">
+                <tbody>
+                    <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
+                    <td>Website created by Basil Bloom LLC</td>
+                </tbody>   
+            </div>      
         </div>
            
     </>
