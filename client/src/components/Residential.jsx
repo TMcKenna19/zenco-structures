@@ -18,10 +18,7 @@ import trustedIcon from "../Images/trustedIcon.jpeg";
 import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
-import colorDesign from "../Images/colorDesign.jpeg";
-import plaster from "../Images/plaster.jpeg";
-import painterWall from "../Images/painterWall.jpeg";
-import paintRoller from "../Images/paintRoller.jpeg";
+import basilBloom from "../Images/basilBloom.jpeg";
 import instagramIcon from "../Images/instagramIcon.png";
 import facebookIcon from "../Images/facebookIcon.png";
 
@@ -208,35 +205,28 @@ const Residential = () => {
                     </div>
             </div>       
         </div>
-        {/* <div ref={refColorSelect} className="res-service-container">
-            <img src={colorDesign} alt="color selection" />
-            <div className="int-paint-content">
-                <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
-                <p><b>Consultation and Planning</b> Our interior painting service begins with a detailed consultation, where we take the time to understand your vision, preferences, and specific requirements. Whether you're looking for a modern, minimalist look or a cozy, traditional feel, we'll work closely with you to select the perfect colors and finishes that harmonize with your space. </p>
-            </div>
-        </div>
-        <div className="res-service-container">
-            <div className="int-paint-content">
-                <p><b>Preparation</b> is the key to a flawless paint job, and we take great care in prepping your walls, ceilings, and trim. Our experienced painters meticulously patch holes, repair imperfections, and sand surfaces to ensure an even and smooth canvas for painting. We also take measures to protect your furniture, flooring, and belongings from any paint spills or splatters.</p>
-            </div>
-        <img src={plaster} alt="trowl and spakel" />
-        </div>
-        <div className="res-service-container">
-        <img src={painterWall} alt="painter" />
-            <div className="int-paint-content">
-                <p>Using the highest quality paints and materials, our skilled team applies paint with precision and attention to detail. From the first brushstroke to the final touch-up, we take pride in our craftsmanship, creating a seamless and professional finish in every room. </p>
-            </div>
-        </div>
-        <div className="res-service-container">
-            <div className="int-paint-content">
-                <p>At Zenco Coatings, we understand the value of your time and space. Our goal is to work efficiently while maintaining the highest level of quality, minimizing any disruption to your daily routine. Rest assured, we always leave your home in pristine condition after the project is completed. </p>
-            </div>
-        <img src={paintRoller} alt="painter" />
-        </div> */}
         <div className="footer-container">
-            <div className="footer">
-                <img src={instagramIcon} alt="instagram icon" />
-                <img src={facebookIcon} alt="facebook icon" />
+            <div className="footer-content">
+                <div className="copyright-content">
+                    <ul>
+                        <li>Copyright &#169; 2023 Zenco Coatings LLC</li>
+                        <li>Find Zenco Coatings on Social Media</li>
+                        <li><Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link></li>
+                        <li><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link></li>
+                    </ul>
+                    <ul>
+                        <li>Contact Us:</li>
+                        <li>941.888.9378</li>
+                        <li>contact@zencocoatings.com</li>
+                        <li>11276 Bay St Sarasota, Fl 34277</li>
+                    </ul>
+                </div>
+                <div className="basil-content">
+                    <tbody>
+                    <td><img src={basilBloom} alt="basil bloom" /></td>
+                    <td><p>Website created by Basil Bloom</p></td>
+                    </tbody>   
+                </div>
             </div>
         </div>
            

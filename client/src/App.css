@@ -237,7 +237,11 @@ ul {
   border-radius: 10px;
   vertical-align: top;
   font-size: 15px;
+}
 
+.priority-card img {
+  height: 100px;
+  width: 100px;
 }
 
 /* .res-service-container {
@@ -257,16 +261,37 @@ ul {
 /* footer */
 
 .footer-container {
-  background-color: #2f5e4a;
+  color:#333333;
+  background-color: #e2e2e2;
   width: 100vw;
-  height: 500px;
+  height: 400px;
 }
 
-.footer img {
-  height: 100px;
-  width: 100px;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.footer-content img {
+  height: 50px;
+  width: 50px;
   padding: 10px;
 }
+
+.basil-content {
+  padding: 10px;
+}
+.basil-content img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+}
+
+.copyright-content {
+  padding: 25px;
+}
+
 
 /* .extra-space {
   text-align: center;
