@@ -244,19 +244,24 @@ ul {
   width: 100px;
 }
 
-/* .res-service-container {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 50px;
-  height: 400px;
+/* Color Consult */
+
+.color-consult-hero {
+  color: #efefef;
+  background-image: url(./Images/colorDesign.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.756); 
+  height: 500px;
   width: auto;
-  background-color: #e9e9e9;
+  background-repeat: none;
+  background-size: cover;
+  text-align: center;
 }
 
-.int-paint-content p{
+.color-consult-content {
+  color: #efefef;
   font-size: 20px;
-  padding: 20px;
-} */
+  padding: 50px;
+}
 
 /* footer */
 
@@ -291,17 +296,13 @@ ul {
   justify-content: space-around;
 }
 
-/* .legal-info {
-  padding: 25px;
-} */
 
-
-/* .extra-space {
+.extra-space {
   text-align: center;
   align-items: center;
   margin-top: 900px;
   font-size: 50px;
-} */
+}
 
 /* commercial */
 

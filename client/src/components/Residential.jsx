@@ -222,6 +222,13 @@ const Residential = () => {
                     <li>Do not sell my information</li>
                 </ul>
             </div>
+            <div className="contact-info">
+                <ul>
+                    <li>550 Bay street</li>
+                    <li>Sarasota, FL 37822</li>
+                    <li>contact@zenco.com</li>
+                </ul>
+            </div>
             <div className="basil-content">
                 <tbody>
                     <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
