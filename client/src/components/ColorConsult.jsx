@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import zencoLogo from "../Images/zencoLogo.png"
+import consultClient from "../Images/consultClient.jpeg";
+import consultDecor from "../Images/consultDecor.jpeg";
+import consultVid from "../Images/consultVid.mp4";
+import zencoLogo from "../Images/zencoLogo.png";
 import basilBloom from "../Images/basilBloom.jpeg";
 import instagramIcon from "../Images/instagramIcon.png";
 import facebookIcon from "../Images/facebookIcon.png";
@@ -19,10 +22,32 @@ const ColorConsult = () => {
                 <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
                 <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
             </ul> 
+            <div className="color-consult-hero-content">
+                <p>The painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
+            </div> 
+        </div>
+        <div className="color-consult-container">
             <div className="color-consult-content">
-                <p>The interior painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
-                <p><b>Consultation and Planning</b> Our interior painting service begins with a detailed consultation, where we take the time to understand your vision, preferences, and specific requirements. Whether you're looking for a modern, minimalist look or a cozy, traditional feel, we'll work closely with you to select the perfect colors and finishes that harmonize with your space. </p>
-            </div>  
+                <img src={consultClient} alt="color consultant" />
+                <p>Our skilled consultants collaborate closely with you, taking the time to understand your preferences, the ambiance you wish to create, and the specific elements you want to highlight.
+                With their expertise, they will guide you through an array of color palettes and combinations that perfectly match your desired aesthetic.
+                </p>
+            </div>
+        </div> 
+        <div className="color-consult-container">
+            <div className="color-consult-content-dark">
+                <p>This collaborative process extends beyond color selection, as our consultants consider lighting, room functionality, and the overall flow of your space.Their goal is to create a harmonious color scheme that resonates with your personality and complements your décor.</p>
+                <img src={consultDecor} alt="color consultant" />
+            </div>
+        </div> 
+        <div className="video-container">
+            <div>
+                <video>
+                    <source src={consultVid} type="video/webm" />
+                     Sorry, your browser doesn't support videos.
+                </video>
+            </div>
+
         </div>
         <div className="footer-container">
             <div className="copyright-content">
