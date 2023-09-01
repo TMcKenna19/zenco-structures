@@ -28,27 +28,19 @@ const ColorConsult = () => {
         </div>
         <div className="color-consult-container">
             <div className="color-consult-content">
-                <img src={consultClient} alt="color consultant" />
                 <p>Our skilled consultants collaborate closely with you, taking the time to understand your preferences, the ambiance you wish to create, and the specific elements you want to highlight.
                 With their expertise, they will guide you through an array of color palettes and combinations that perfectly match your desired aesthetic.
                 </p>
-            </div>
-        </div> 
-        <div className="color-consult-container">
-            <div className="color-consult-content-dark">
-                <p>This collaborative process extends beyond color selection, as our consultants consider lighting, room functionality, and the overall flow of your space.Their goal is to create a harmonious color scheme that resonates with your personality and complements your décor.</p>
-                <img src={consultDecor} alt="color consultant" />
+                <img src={consultClient} alt="color consultant" />
             </div>
         </div> 
         <div className="video-container">
-            <div>
-                <video>
-                    <source src={consultVid} type="video/webm" />
-                     Sorry, your browser doesn't support videos.
-                </video>
+            <div className="video-content">
+                <video src={consultVid} autoPlay loop muted type="video/webm" />
+                <p>This collaborative process extends beyond color selection, as our consultants consider lighting, room functionality, and the overall flow of your space.Their goal is to create a harmonious color scheme that resonates with your personality and complements your décor.</p>
             </div>
-
         </div>
+        
         <div className="footer-container">
             <div className="copyright-content">
                 <p>Copyright &#169; 2023 Zenco Coatings LLC</p>

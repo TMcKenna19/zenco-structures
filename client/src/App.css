@@ -278,17 +278,33 @@ ul {
   padding: 40px;
 }
 
-.color-consult-content-dark  {
-  display: flex;
-  flex-direction: row;
-  background-color: #778c6f;
-  font-size: 25px;
-  padding: 40px;
-}
-
 .color-consult-content p {
   padding: 25px;
 }
+
+.video-content-container {
+  height: 420px;
+}
+
+.video-content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.video-content p {
+  margin-top: 15px;
+  padding: 25px;
+}
+
+.video-content video {
+  padding: 10px;
+  height: 334px;
+  width: 525px;
+}
+
 
 /* footer */
 
