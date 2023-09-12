@@ -36,7 +36,7 @@ const ColorConsult = () => {
         </div> 
         <div className="consult-quote-container">
             <div className="consult-quote">
-                <p>"The color consultation team from this painting company was truly exceptional. They listened attentively to my preferences and offered expert guidance, helping me select a color scheme that beautifully transformed my space. Their attention to detail and creative insights made the entire process a breeze, resulting in an outcome that exceeded my expectations. I couldn't be happier with the results of their expertise."</p>
+                <p>"The color consultation team from Zenco Coatings was truly exceptional. They listened attentively to my preferences and offered expert guidance, helping me select a color scheme that beautifully transformed my space. Their attention to detail and creative insights made the entire process a breeze, resulting in an outcome that exceeded my expectations. I couldn't be happier with the results of their expertise."</p>
 
                 <p>- Rockwell, Homeowner</p>
             <Link className="constult-quote-link" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
