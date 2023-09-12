@@ -70,7 +70,7 @@ const Residential = () => {
                 <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
                 <Link className="link-text" to={'/about'}> <li>About</li> </Link>
                 <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-                <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
+                <Link className="link-text-quote" to={'/quote'}> <li>Request a Quote</li> </Link> 
             </ul> 
             <div className="res-services-slogan">
                 <div>
@@ -149,7 +149,7 @@ const Residential = () => {
         </div>
         <div className="res-review-container">
             <div className="res-review">
-                <p>Not only did Zenco Coatings exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me.
+                <p>"Not only did Zenco Coatings exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me."
                 </p>
 
                 <p>- Kona, Homeowner</p>
