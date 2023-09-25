@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost/zenco-structures-db", {
+mongoose.connect("mongodb://127.00.1:27017/zenco-structures-db", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

@@ -15,7 +15,7 @@ const CalledLeads = props => {
 
     // background color updates to green if lead is called 
     const isCalledColor = {
-        backgroundColor: "#0D561B"
+        backgroundColor: "#004970f0"
     };
 
     return(
