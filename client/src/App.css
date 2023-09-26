@@ -12,7 +12,7 @@ ul {
   text-decoration: none;
 }
 
-/* navbar */
+/********** navbar **********/
 
 .link-text {
   text-decoration: none;
@@ -58,7 +58,7 @@ ul {
   font-size: 20px; 
 }
 
-/* home */
+/********** home **********/
 
 .home-page {
   background-image: url(./Images/coverHouse.jpeg);
@@ -89,7 +89,7 @@ ul {
 
 
 
-/* residentail */
+/****** residentail ******/
 
 .residentail-hero {
   background-image: url(./Images/modernLivingRm.jpeg);
@@ -245,7 +245,7 @@ ul {
   width: 100px;
 }
 
-/* Color Consult */
+/******* Color Consult *******/
 
 .color-consult-hero {
   color: #efefef;
@@ -348,7 +348,7 @@ ul {
 }
 
 
-/* footer */
+/********** footer **********/
 
 .footer-container {
   color:#efefef;
@@ -389,13 +389,13 @@ ul {
   font-size: 50px;
 }
 
-/* commercial */
+/********* commercial *********/
 
 .commercial-hero {
   text-align: center;
 }
 
-/* quote */
+/*********** quote ************/
 
 .quote-form {
   display: flex;
@@ -406,7 +406,7 @@ ul {
   width: 400px;
 }
 
-/* Leads */
+/********** Leads ************/
 
 .all-leads-nav {
   display: flex;
@@ -419,6 +419,11 @@ ul {
   color: rgb(251, 251, 251);
 }
 
+.leads-dashboard {
+  text-align: center;
+  background-color:rgb(164, 167, 170)
+}
+
 .lead-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -426,13 +431,14 @@ ul {
   justify-content: 20px;
   margin: 30px;
   gap: 30px;
+  padding: 50px;
 }
 
 .lead-card {
   background-color: #0D561B;
   font-size: 20px;
   height: fit-content;
-  padding: 20px;
+  padding: 10px;
   width: 20rem;
   border-radius: 10px;
   vertical-align: top;

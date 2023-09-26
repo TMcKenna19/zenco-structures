@@ -29,22 +29,20 @@ const AllLeads = props => {
             <Link to={"/calledLeads"} className="link-text"> <li>Called Leads</li> </Link>
         </ul>
         
-
-        <h1>All Leads</h1>
-        <div className="lead-container">
-            
-            {
-                leads ? leads.map((lead, i) => <ul key={i} className="lead-card" style={lead.isCalled ? isCalledColor : notCalledColor } >
-                    <Link to={`/lead/${lead._id}`} className="link-text">          
-                    <li>{lead.firstName} {lead.lastName}</li>
-                    <li>{lead.phoneNumber}</li>
-                    <li>{lead.email}</li>
-                    <li>{lead.isCalled ? "Called" : "New Lead"}</li>
-                    </Link>
-                </ul>) : "No Leads"
-            }
-
-            
+        <div className="leads-dashboard">
+            <h1>All Leads</h1>
+            <div className="lead-container"> 
+                {
+                    leads ? leads.map((lead, i) => <ul key={i} className="lead-card" style={lead.isCalled ? isCalledColor : notCalledColor } >
+                        <Link to={`/lead/${lead._id}`} className="link-text">          
+                        <li>{lead.firstName} {lead.lastName}</li>
+                        <li>{lead.phoneNumber}</li>
+                        <li>{lead.email}</li>
+                        <li>{lead.isCalled ? "Called" : "New Lead"}</li>
+                        </Link>
+                    </ul>) : "No Leads"
+                }  
+            </div>
         </div>
 
         </>
