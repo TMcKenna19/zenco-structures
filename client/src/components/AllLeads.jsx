@@ -24,7 +24,7 @@ const AllLeads = props => {
     return(
         <>
         <ul className="all-leads-nav">
-            <li>All Leads</li>
+            <Link to={"/quote"} className="link-text"><li>Quote</li></Link>
             <Link to={"/newleads"} className="link-text"> <li>New Leads</li> </Link>
             <Link to={"/calledLeads"} className="link-text"> <li>Called Leads</li> </Link>
         </ul>
