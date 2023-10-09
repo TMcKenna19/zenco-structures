@@ -348,6 +348,27 @@ ul {
 }
 
 
+                                /********** Int Paint **********/
+.int-hero {
+  background-image: url(./Images/redCouch.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); 
+  height: 400px;
+  width: auto;
+  background-repeat: none;
+  background-size: cover;
+  background-position: right center;
+  text-align: center;
+}
+
+.int-hero-content {
+  display: flex;
+  flex-direction: column;
+  color: #efefef;
+  font-size: 20px;
+  padding: 40px;
+}
+
+
 /********** footer **********/
 
 .footer-container {

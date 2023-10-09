@@ -95,7 +95,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Interior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text"><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
+                    <Link className="link-text" to={'/interiorpaint'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
                 </div>
             </div>  
             <div className="res-service-card">
