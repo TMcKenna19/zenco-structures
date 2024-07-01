@@ -16,6 +16,14 @@ import UpdateLead from './Components/UpdateLead';
 import ThankYou from './Components/ThankYou';
 import ColorConsult from './Components/ColorConsult';
 import IntPaint from './Components/IntPaint';
+import ExtPaint from './Components/ExtPaint';
+import DeckFence from './Components/DeckFence';
+import Cabinets from './Components/Cabinets';
+import GarageFloors from './Components/GarageFloors';
+import DryWall from './Components/DryWall';
+import LeadTest from './Components/LeadTest';
+
+
 
 
 
@@ -32,13 +40,18 @@ function App() {
         <Route path="/quote" element={<Quote/>} />
         <Route path="/colorconsult" element={<ColorConsult />} />
         <Route path="/interiorpaint" element={<IntPaint />} />
+        <Route path="/exteriorpaint" element={<ExtPaint />} />
+        <Route path="/deckfence" element={<DeckFence />} />
+        <Route path="/cabinets" element={<Cabinets />} />
+        <Route path="/garagefloors" element={<GarageFloors />} />
+        <Route path="/drywall" element={<DryWall />} />
+        <Route path="/leadtest" element={<LeadTest />} />
         <Route path="/leads" element={<AllLeads />} />
         <Route path="/newleads" element={<NewLeads />} />
         <Route path="/calledleads" element={<CalledLeads />} />
         <Route path="/lead/:_id" element={<OneLead/>} />
         <Route path="/update/:_id" element={<UpdateLead/>} />
         <Route path="/thankyou" element={<ThankYou />} />
-        
       </Routes>
     </div>
   );

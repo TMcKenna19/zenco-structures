@@ -103,7 +103,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Exterior Painting</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    <Link className="link-text" to={'/exteriorpaint'}><button type="button" className="btn btn-outline-dark">Learn More</button> </Link>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -111,7 +111,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Deck / Fence Staining</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    <Link className="link-text" to={'/deckfence'}> <button type="button" className="btn btn-outline-dark">Learn More</button></Link>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -119,7 +119,7 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Cabinet Painting / Refacing</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    <Link className="link-text" to={'/cabinets'}> <button type="button" className="btn btn-outline-dark">Learn More</button></Link>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -127,7 +127,9 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Garage Floors</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Link className="link-text" to={'/garagefloors'}>
                     <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    </Link>
                 </div>
             </div>  
             <div className="res-service-card">
@@ -135,15 +137,19 @@ const Residential = () => {
                 <div className="res-card-body">
                     <h5 className="res-card-title">Drywall Repair</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Link className="link-text" to={'/drywall'}>
                     <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    </Link>
                 </div>
             </div>  
             <div className="res-service-card">
-                <img src={leadHazard} className="card-img-top" alt="wood deck"/>
+                <img src={leadHazard} className="card-img-top" alt="lead test"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">EPA Lead Certified</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Link className="link-text" to={'/leadtest'}>
                     <button type="button" className="btn btn-outline-dark">Learn More</button>
+                    </Link>
                 </div>
             </div>  
         </div>

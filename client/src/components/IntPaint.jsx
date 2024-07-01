@@ -15,9 +15,17 @@ const IntPaint = () => {
                 <Link className="link-text-quote" to={'/quote'}> <li>Request a Quote</li> </Link> 
             </ul>
             <div className="int-hero-content">
-                <p>What to expect when Zenco starts the painting process</p>
+                <h1>Zenco Interior Painting</h1>
+                <p>Schedule Your Fee Estimate </p>
                <p></p>
             </div>
+        </div>
+        <div className="int-service-container">
+            <h1>Interior Painting Services</h1>
+            <div className="service-card">
+                
+            </div>
+
         </div>
         </>
     )
