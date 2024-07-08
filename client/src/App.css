@@ -361,12 +361,31 @@ ul {
 }
 
 .int-hero-content {
+  color: #fbfbfb;
+  font-size: 30px;
+  padding: 65px;
+}
+
+.int-paint-container {
+  height: 420px;
+  width: auto;
+  background-color: #efefef;
+}
+
+.int-paint-content  {
   display: flex;
-  flex-direction: column;
-  color: #efefef;
+  flex-direction: row;
+  background-color: #fbfbfb;
   font-size: 20px;
   padding: 40px;
 }
+
+.int-paint-content p {
+  padding: 25px;
+}
+
+
+
 
 
 /********** footer **********/

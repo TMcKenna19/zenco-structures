@@ -30,7 +30,6 @@ import LeadTest from './Components/LeadTest';
 function App() {
   return (
     <div className="App">
-      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/residential" element={<Residential/>} />
