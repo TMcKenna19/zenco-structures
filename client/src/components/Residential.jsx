@@ -7,7 +7,8 @@ import woodFence from "../Images/woodFence.jpeg";
 import zencoLogo from "../Images/zencoLogo.png";
 import cabinets from "../Images/cabinets.jpeg";
 import garage from "../Images/garage.jpeg";
-import drywall from "../Images/drywall.jpeg";
+// import drywall from "../Images/drywall.jpeg";
+import trowl from "../Images/trowl.jpeg";
 import leadHazard from "../Images/leadHazard.jpeg";
 import greenRoom from  "../Images/greenRoom.jpeg";
 import ecoFriend from "../Images/ecoFriend.jpeg";
@@ -133,7 +134,7 @@ const Residential = () => {
                 </div>
             </div>  
             <div className="res-service-card">
-                <img src={drywall} className="card-img-top" alt="wood deck"/>
+                <img src={trowl} className="card-img-top" alt="trowl"/>
                 <div className="res-card-body">
                     <h5 className="res-card-title">Drywall Repair</h5>
                     <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

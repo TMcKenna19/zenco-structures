@@ -19,7 +19,7 @@ const IntPaint = () => {
             </ul>
             <div className="int-hero-content">  
                <Link className="link-text" to={'/quote'}><h1>Zenco Interior Painting</h1>
-                <p>Schedule Your Fee Estimate</p></Link>
+                <p>Schedule Your Free Estimate</p></Link>
             </div>
         </div>
         <div className="int-paint-container">
@@ -34,6 +34,9 @@ const IntPaint = () => {
             <div className="int-paint-content">
                 <img src={drywall} alt="trowl and plaster" />
                 <p>Before we begin painting, we take extensive measures to prepare your space for a flawless finish. Our team meticulously cleans and repairs all surfaces, filling holes and sanding any rough spots to ensure a smooth canvas. This thorough preparation is key to delivering the exceptional results you expect from Zenco.</p>
+            </div>
+            <div className="int-paint-content">
+                <p></p>
             </div>
         </div>
         </>
