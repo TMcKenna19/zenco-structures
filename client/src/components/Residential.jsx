@@ -7,7 +7,6 @@ import woodFence from "../Images/woodFence.jpeg";
 import zencoLogo from "../Images/zencoLogo.png";
 import cabinets from "../Images/cabinets.jpeg";
 import garage from "../Images/garage.jpeg";
-// import drywall from "../Images/drywall.jpeg";
 import trowl from "../Images/trowl.jpeg";
 import leadHazard from "../Images/leadHazard.jpeg";
 import greenRoom from  "../Images/greenRoom.jpeg";

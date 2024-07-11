@@ -3,6 +3,12 @@ import zencoLogo from "../Images/zencoLogo.png";
 import cover from "../Images/cover.jpeg";
 import colorPick from "../Images/colorPick.jpeg";
 import drywall from "../Images/drywall.jpeg";
+import paintRoller from "../Images/paintRoller.jpeg";
+import painterOwner from "../Images/painterOwner.jpeg";
+import instagramIcon from "../Images/instagramIcon.png";
+import facebookIcon from "../Images/facebookIcon.png";
+import tikTokIcon from "../Images/tikTokIcon.png";
+import basilBloom from "../Images/basilBloom.jpeg";
 
 
 const IntPaint = () => {
@@ -36,9 +42,45 @@ const IntPaint = () => {
                 <p>Before we begin painting, we take extensive measures to prepare your space for a flawless finish. Our team meticulously cleans and repairs all surfaces, filling holes and sanding any rough spots to ensure a smooth canvas. This thorough preparation is key to delivering the exceptional results you expect from Zenco.</p>
             </div>
             <div className="int-paint-content">
-                <p></p>
+                <p>At Zenco, we believe in delivering only the best results, which is why we exclusively use high-quality paint for all our projects. Our premium paints offer superior durability, vibrant colors, low / zero VOC and a flawless finish that stands the test of time. By choosing top-tier products, we ensure that your space not only looks stunning but also maintains its beauty for years to come. Trust us to provide a professional painting service that combines exceptional craftsmanship.</p>
+                <img src={paintRoller} alt="painter with roller" />
             </div>
+            <div className="int-paint-content">
+                <img src={painterOwner} alt="painter and homeowner" />
+                <p>At Zenco, we prioritize your satisfaction and ensure every detail is perfect before considering a job complete. As part of our commitment to excellence, we conduct a final walkthrough with you. During this walkthrough, we meticulously inspect every aspect of the project, addressing any touch-ups or concerns you may have. This collaborative review guarantees that the finished work meets your expectations and our high standards. We aim to leave you delighted with a beautifully transformed space and complete peace of mind.</p>
+            </div>
+            <div className="footer-container">
+            <div className="copyright-content">
+                <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
+                <p>Zenco Coatings on Social Media</p>
+                <div className="social-links">
+                    <Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link>
+                    <Link to={"https://www.tiktok.com/"}><img src={tikTokIcon} alt="tik tok icon"/></Link>
+                </div>
+            </div>
+            <div className="legal-info">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Do not sell my information</li>
+                </ul>
+            </div>
+            <div className="contact-info">
+                <ul>
+                    <li>550 Bay street</li>
+                    <li>Sarasota, FL 37822</li>
+                    <li>contact@zenco.com</li>
+                </ul>
+            </div>
+            <div className="basil-content">
+                <tbody>
+                    <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
+                    <td>Website created by Basil Bloom LLC</td>
+                </tbody>   
+            </div>      
         </div>
+        </div>
+       
         </>
     )
 }
