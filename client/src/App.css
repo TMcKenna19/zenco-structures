@@ -351,7 +351,7 @@ ul {
 /********** Int Paint **********/
 .int-hero {
   background-image: url(./Images/redCouch.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0); 
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
   height: 500px;
   width: auto;
   background-repeat: none;
@@ -382,6 +382,38 @@ ul {
 
 .int-paint-content p {
   padding: 25px;
+}
+
+/********** Ext Paint **********/
+.ext-hero {
+  background-image: url(./Images/extHero.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
+  height: 500px;
+  width: auto;
+  background-repeat: none;
+  background-size: cover;
+  background-position: right center;
+  text-align: center;
+}
+
+.ext-hero-content {
+  color: #fbfbfb;
+  font-size: 30px;
+  padding: 65px;
+}
+
+.ext-paint-container {
+  height: 420px;
+  width: auto;
+  background-color: #efefef;
+}
+
+.ext-paint-content  {
+  display: flex;
+  flex-direction: row;
+  background-color: #efefef;
+  font-size: 20px;
+  padding: 40px;
 }
 
 

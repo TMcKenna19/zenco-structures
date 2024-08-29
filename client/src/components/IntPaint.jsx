@@ -50,35 +50,35 @@ const IntPaint = () => {
                 <p>At Zenco, we prioritize your satisfaction and ensure every detail is perfect before considering a job complete. As part of our commitment to excellence, we conduct a final walkthrough with you. During this walkthrough, we meticulously inspect every aspect of the project, addressing any touch-ups or concerns you may have. This collaborative review guarantees that the finished work meets your expectations and our high standards. We aim to leave you delighted with a beautifully transformed space and complete peace of mind.</p>
             </div>
             <div className="footer-container">
-            <div className="copyright-content">
-                <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
-                <p>Zenco Coatings on Social Media</p>
-                <div className="social-links">
-                    <Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link>
-                    <Link to={"https://www.tiktok.com/"}><img src={tikTokIcon} alt="tik tok icon"/></Link>
+                <div className="copyright-content">
+                    <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
+                    <p>Zenco Coatings on Social Media</p>
+                    <div className="social-links">
+                        <Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link>
+                        <Link to={"https://www.tiktok.com/"}><img src={tikTokIcon} alt="tik tok icon"/></Link>
+                    </div>
                 </div>
+                <div className="legal-info">
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Do not sell my information</li>
+                    </ul>
+                </div>
+                <div className="contact-info">
+                    <ul>
+                        <li>550 Bay street</li>
+                        <li>Sarasota, FL 37822</li>
+                        <li>contact@zenco.com</li>
+                    </ul>
+                </div>
+                <div className="basil-content">
+                    <tbody>
+                        <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
+                        <td>Website created by Basil Bloom LLC</td>
+                    </tbody>   
+                </div>      
             </div>
-            <div className="legal-info">
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                    <li>Do not sell my information</li>
-                </ul>
-            </div>
-            <div className="contact-info">
-                <ul>
-                    <li>550 Bay street</li>
-                    <li>Sarasota, FL 37822</li>
-                    <li>contact@zenco.com</li>
-                </ul>
-            </div>
-            <div className="basil-content">
-                <tbody>
-                    <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
-                    <td>Website created by Basil Bloom LLC</td>
-                </tbody>   
-            </div>      
-        </div>
         </div>
        
         </>

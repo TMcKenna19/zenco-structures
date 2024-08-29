@@ -74,7 +74,7 @@ const Residential = () => {
             </ul> 
             <div className="res-services-slogan">
                 <div>
-                    <p>Zenco Coatings offers professional residential painting services, for all home surfaces. </p>
+                    <p>Zenco Coatings Residential Services. </p>
                 </div>
                 <div className="res-promo">
                     <p>--% promo offer</p>

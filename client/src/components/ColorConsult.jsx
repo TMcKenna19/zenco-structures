@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import consultClient from "../Images/consultClient.jpeg";
-import consultDecor from "../Images/consultDecor.jpeg";
 import consultVid from "../Images/consultVid.mp4";
 import zencoLogo from "../Images/zencoLogo.png";
 import basilBloom from "../Images/basilBloom.jpeg";
