@@ -403,9 +403,14 @@ ul {
 }
 
 .ext-paint-container {
-  height: 420px;
+  height: 720px;
   width: auto;
   background-color: #efefef;
+}
+
+.ext-paint-container h1 {
+  text-align: center;
+  padding-top: 20px;
 }
 
 .ext-paint-content  {
@@ -413,7 +418,12 @@ ul {
   flex-direction: row;
   background-color: #efefef;
   font-size: 20px;
-  padding: 40px;
+  padding: 60px;
+
+}
+
+.ext-paint-content p {
+  padding: 25px;
 }
 
 
