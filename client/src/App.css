@@ -1,10 +1,7 @@
 .App {
-  width: 100vw;
-  height: 100vh;
   font-family: 'Kalam', cursive;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  background-color: #efefef;
 }
 
 ul {
@@ -12,8 +9,9 @@ ul {
   text-decoration: none;
 }
 
+/****************************/
 /********** navbar **********/
-
+/****************************/
 .link-text {
   text-decoration: none;
   color: #efefef;
@@ -58,8 +56,9 @@ ul {
   font-size: 20px; 
 }
 
-/********** home **********/
-
+/**************************/
+/***** landing page ******/
+/*************************/
 .home-page {
   background-image: url(./Images/coverHouse.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.661);
@@ -88,17 +87,18 @@ ul {
 
 
 
-
+/*************************/
 /****** residentail ******/
-
+/*************************/
 .residentail-hero {
   background-image: url(./Images/modernLivingRm.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.323); 
-  height: 700px;
-  width: auto;
+  height: 40rem;
+  width: fill-content;
   background-repeat: none;
   background-size: cover;
   text-align: center;
+  background-position: 40% 20%;
 }
 
 .res-services-slogan {
@@ -121,25 +121,29 @@ ul {
   background-color: #2f5e4a;
 }
 
+/* Service Cards */
 .res-service-card-container {
-  background-color: #efefef;
+  background-color: var(--whtBackground);
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  padding: 30px;
+  padding: 30px 10rem;
   gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 4rem; */
   text-align: center;
 }
 
 .res-service-card {
   color: #333333;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
   padding: 20px;
   width: 20rem;
   border-radius: 10px;
   vertical-align: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .res-service-card:hover {
@@ -197,15 +201,20 @@ ul {
   font-weight: 500; 
 }
 
+.eco-statement img {
+  width: 300px;
+  height: 300px;
+}
+
 .eco-statement {
   display: flex;
   align-items: center;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
   color: #333333;
-  height: 500px;
-  margin: 3px;
+  height: 300px;
+  margin: 0px;
   gap: 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .eco-statement:hover {
@@ -213,10 +222,10 @@ ul {
   align-items: center;
   background-color: #2f5e4a;
   color: #fbfbfb;
-  height: 500px;
-  margin: 5px;
+  height: 300px;
+  margin: 0px;
   gap: 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .priority-container {
@@ -225,6 +234,7 @@ ul {
   flex-direction: row;
   flex-flow: row wrap;
   gap: 15px;
+  margin-left: 5rem;
   text-align: center;
   padding: 5px;
 }
@@ -245,18 +255,22 @@ ul {
   width: 100px;
 }
 
-/******* Color Consult *******/
+/******************************/
+/******* Color Consult ********/
+/******************************/
 
 .color-consult-hero {
   color: #efefef;
   background-image: url(./Images/colorDesign.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.550); 
-  height: 550px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.300); 
+  height: 40rem;
   width: auto;
   background-repeat: none;
   background-size: cover;
+  background-position: 75% 70%;
   text-align: center;
 }
+
 
 .color-consult-hero-content {
   color: #fbfbfb;
@@ -264,22 +278,45 @@ ul {
   padding: 65px;
 }
 
+.color-consult-welcome {
+  text-align: center;
+  width: 90rem;
+  padding: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content:  center;
+  font-size: 20px;
+}
+
+.consult-video {
+  margin-left: auto;
+  margin-right: auto;
+  height: 30rem;
+  width: 100rem;
+}
+
 .color-consult-container {
-  height: 420px;
   width: auto;
-  background-color: #efefef;
+  background-color: var(--whtBackground);
 }
 
 .color-consult-content  {
   display: flex;
   flex-direction: row;
-  background-color: #fbfbfb;
-  font-size: 25px;
-  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+  padding: 100px;
+  margin-top: 2rem;
 }
 
 .color-consult-content p {
-  padding: 25px;
+  margin-top: 25px;
+  padding: 5rem;
+}
+
+.color-consult-content img {
+  height: 300px;
+  width: 450px;
 }
 
 .consult-quote-container {
@@ -288,7 +325,7 @@ ul {
   background-repeat: none;
   background-size: cover;
   text-align: center;
-  padding: 45px;
+  padding: 60px;
   color: #efefef;
   font-size: 25px;
   font-weight: 500;
@@ -347,8 +384,9 @@ ul {
   width: 525px;
 }
 
-
+/*******************************/
 /********** Int Paint **********/
+/*******************************/
 .int-hero {
   background-image: url(./Images/redCouch.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
@@ -384,7 +422,9 @@ ul {
   padding: 25px;
 }
 
+/*******************************/
 /********** Ext Paint **********/
+/*******************************/
 .ext-hero {
   background-image: url(./Images/extHero.jpg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
@@ -426,9 +466,9 @@ ul {
   padding: 25px;
 }
 
-
-/********** footer **********/
-
+/*****************************/
+/********** footer ***********/
+/*****************************/
 .footer-container {
   color:#efefef;
   background-color: #767676;
@@ -468,14 +508,16 @@ ul {
   font-size: 50px;
 }
 
-/********* commercial *********/
-
+/*******************************/
+/********* commercial **********/
+/*******************************/
 .commercial-hero {
   text-align: center;
 }
 
-/*********** quote ************/
-
+/*******************************/
+/*********** quote *************/
+/*******************************/
 .quote-form {
   display: flex;
   flex-direction: column;
@@ -485,8 +527,9 @@ ul {
   width: 400px;
 }
 
-/********** Leads ************/
-
+/*******************************/
+/********** Leads **************/
+/*******************************/
 .all-leads-nav {
   display: flex;
   flex-direction: row;
@@ -553,4 +596,9 @@ ul {
   height: 780px;
   color: rgb(251, 251, 251);
   background-color: #33383e;
+}
+
+:root {
+  --whtBackground: hsl(0, 0%, 95%);
+  --size: #ef686870;
 }
