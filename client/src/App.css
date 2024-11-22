@@ -119,8 +119,9 @@ ul {
   padding: 4px;
   height: 70px;
   width: 500px;
-  border: 1px solid  #efefef;;
-  background-color: #2f5e4a;
+  border: 1px solid  #efefef;
+  border-radius: 3px;
+  background-color: var(--bullGreen);
 }
 
 /* Service Cards */
@@ -203,47 +204,54 @@ ul {
   font-weight: 500; 
 }
 
+
 .eco-statement img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .eco-statement {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
-  color: #333333;
-  height: 300px;
-  margin: 0px;
-  gap: 30px;
-  font-size: 20px;
+  background-color: var(--whtBackground);
+  height: 700px;
+  padding: 4rem;
 }
 
-.eco-statement:hover {
+.eco-statement p {
+  color: #333333;
+  font-size: 20px;
+  padding: 5rem;
+  margin-top: -5rem;
+}
+
+/* .eco-statement:hover {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: #2f5e4a;
+  background-color: var(--bullGreen);
   color: #fbfbfb;
   height: 300px;
   margin: 0px;
   gap: 30px;
   font-size: 20px;
-}
+} */
 
 .priority-container {
-  background-color: #ffffff;
+  background-color: var(--whtBackground);
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
   gap: 15px;
-  margin-left: 5rem;
+  margin: 8rem;
   text-align: center;
   padding: 5px;
 }
 
 .priority-card {
   color: #333333;
-  background-color: #ffffff;
+  background-color: var(--whtBackground);
   margin: 30px;
   width: 25rem;
   height: 300px;
@@ -409,13 +417,13 @@ ul {
 .int-paint-container {
   height: 420px;
   width: auto;
-  background-color: #efefef;
+  background-color: var(--whtBackground);
 }
 
 .int-paint-content  {
   display: flex;
   flex-direction: row;
-  background-color: #efefef;
+  background-color: var(--whtBackground);
   font-size: 20px;
   padding: 40px;
 }
@@ -601,6 +609,8 @@ ul {
 }
 
 :root {
-  --whtBackground: hsl(0, 0%, 95%);
+  --whtBackground: #ffffff;
   --size: #ef686870;
+  --bullGreen: #005432;
+  --bullGold: #CFC493;
 }

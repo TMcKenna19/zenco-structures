@@ -60,8 +60,8 @@ const Residential = () => {
           </div>
         )
     }
-    
 
+ 
     return( 
     <>
         <div className="residentail-hero">   
@@ -162,12 +162,15 @@ const Residential = () => {
                 <Link className="quote-banner" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
             </div>
         </div>
+        {/* image flip */}
         <div className="eco-friend-container">
             <div className="eco-statement">
                 <ImageChangeOnMouseOver/>
                 <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet</p>
             </div>
         </div>
+      
+        {/* priority cards */}
         <div className="priority-container">
             <div className="priority-card">
                 <img src={insureIcon} alt="pen/pad" />
