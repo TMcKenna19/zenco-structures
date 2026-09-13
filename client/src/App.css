@@ -1,9 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   font-family: 'Kalam', cursive;
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  margin: 0px;
-  padding: 0px;
 }
 
 ul {
@@ -16,12 +19,12 @@ ul {
 /****************************/
 .link-text {
   text-decoration: none;
-  color: #efefef;
+  color: var(--alabaster);
 }
 
 .link-text:hover {
   text-decoration: none;
-  color: rgb(251, 251, 251);
+  color: var(--purewhite);
   font-weight: 800;
 }
 
@@ -36,7 +39,7 @@ ul {
   padding: 6px;
   border: 1px solid  rgb(251, 251, 251);
   border-radius: 5px;
-  color: #efefef;
+  color: var(--purewhite);
 }
 
 .link-text-quote:hover {
@@ -45,7 +48,7 @@ ul {
   padding: 6px;
   border: 1px solid  rgb(251, 251, 251);
   border-radius: 5px;
-  color: rgb(251, 251, 251);
+  color: var(--purewhite);
   font-weight: 900;
 }
 
@@ -77,7 +80,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #efefef;;
+  color: var(--purewhite);
   font-size: 25px;
   padding: 75px;
 }
@@ -86,8 +89,6 @@ ul {
   height: 300px;
   width: 300px;
 }
-
-
 
 /*************************/
 /****** residentail ******/
@@ -108,52 +109,39 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #efefef;
+  color: var(--purewhite);
   font-size: 45px;
-  margin-left: 30px;
   margin-top: 150px;  
-}
-
-.res-promo {
-  font-size: 40px;
-  padding: 4px;
-  height: 70px;
-  width: 500px;
-  border: 1px solid  #efefef;
-  border-radius: 3px;
-  background-color: var(--bullGreen);
 }
 
 /* Service Cards */
 .res-service-card-container {
-  background-color: var(--whtBackground);
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  padding: 30px 10rem;
-  gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-left: 4rem; */
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20rem, 20rem));
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: var(--alabaster);
 }
 
 .res-service-card {
-  color: #333333;
-  background-color: #ffffff;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 20rem;
+  padding: 1.25rem;
+  color: var(--softblack);
+  background-color: var(--alabaster);
   border-radius: 10px;
-  vertical-align: top;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.537);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
   transition: 0.3s;
 }
 
-.res-service-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
-}
-
 .res-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 900;
   margin-top: 20px;
 }
@@ -162,6 +150,19 @@ ul {
   padding: 10px;
 }
 
+.res-service-card .link-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.res-service-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+/* ******************* */
+/*  Residental Review  */
+/* ******************* */
 .res-review {
   background-image: url(./Images/resReview.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
@@ -169,7 +170,7 @@ ul {
   background-size: cover;
   text-align: center;
   padding: 50px;
-  color: #efefef;
+  color: var(--purewhite);
   font-size: 25px;
   font-weight: 500;
   height: 550px;
@@ -220,49 +221,50 @@ ul {
 }
 
 .eco-statement p {
-  color: #333333;
+  color: var(--softblack);
   font-size: 20px;
   padding: 5rem;
   margin-top: -5rem;
 }
 
-/* .eco-statement:hover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--bullGreen);
-  color: #fbfbfb;
-  height: 300px;
-  margin: 0px;
-  gap: 30px;
-  font-size: 20px;
-} */
-
+/* ************ */
+/* Prioity info */
+/* ************ */
 .priority-container {
-  background-color: var(--whtBackground);
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  gap: 15px;
-  margin: 8rem;
-  text-align: center;
-  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 25rem));
+  gap: .5rem;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: var(--alabaster);
 }
 
 .priority-card {
-  color: #333333;
-  background-color: var(--whtBackground);
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--softblack);
+  background-color: var(--purewhite);
   width: 25rem;
-  height: 300px;
+  height: 20rem;
   border-radius: 10px;
-  vertical-align: top;
-  font-size: 15px;
+  padding: 1rem;
 }
 
 .priority-card img {
-  height: 100px;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+}
+
+.priority-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /******************************/
@@ -270,7 +272,7 @@ ul {
 /******************************/
 
 .color-consult-hero {
-  color: #efefef;
+  color: var(--purewhite);
   background-image: url(./Images/colorDesign.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.300); 
   height: 40rem;
@@ -480,14 +482,13 @@ ul {
 /********** footer ***********/
 /*****************************/
 .footer-container {
-  color:#efefef;
-  background-color: #767676;
-  width: 100vw;
   height: 200px;
   padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  color: var(--softblack);
+  background-color: var(--foggy);
 }
 
 .basil-content img {
@@ -609,8 +610,10 @@ ul {
 }
 
 :root {
-  --whtBackground: #ffffff;
-  --size: #ef686870;
-  --bullGreen: #005432;
-  --bullGold: #CFC493;
+  --check: #687aef70;
+  --purewhite: #ffffff;
+  --alabaster: #fafafa;
+  --foggy: #e1e1e1;
+  --softblack: #333333;
+
 }

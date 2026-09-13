@@ -76,20 +76,17 @@ const Residential = () => {
                 <div>
                     <p>Zenco Coatings Residential Services. </p>
                 </div>
-                <div className="res-promo">
-                    <p>--% promo offer</p>
-                </div>
             </div>    
         </div> 
         <div className="res-service-card-container">
-                <div className="res-service-card">
-                    <img src={colorSelection} className="card-img-top" alt="color cards"/>
-                    <div className="res-card-body">
-                        <h5 className="res-card-title">Color Consultation</h5>
-                        <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <Link className="link-text" to={'/colorconsult'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
-                    </div>
-                </div>  
+            <div className="res-service-card">
+                <img src={colorSelection} className="card-img-top" alt="color cards"/>
+                <div className="res-card-body">
+                    <h5 className="res-card-title">Color Consultation</h5>
+                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Link className="link-text" to={'/colorconsult'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
+                </div>
+            </div>  
             <div className="res-service-card">
                 <img src={greenRoom} className="card-img-top" alt="interior painters"/>
                 <div className="res-card-body">
