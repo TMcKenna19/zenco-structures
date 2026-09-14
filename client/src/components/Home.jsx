@@ -12,11 +12,11 @@ const Home = () => {
       <>
         <div className="home-page"> 
           <ul className="home-nav-bar">
-            <Link className="link-text" to={'/residential'}> <li>Residential Services</li> </Link>
-            <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
-            <Link className="link-text" to={'/about'}> <li>About</li> </Link>
-            <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-            <Link className="link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
+            <Link className="home-nav-link-text" to={'/residential'}> <li>Residential Services</li> </Link>
+            <Link className="home-nav-link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
+            <Link className="home-nav-link-text" to={'/about'}> <li>About</li> </Link>
+            <Link className="home-nav-link-text" to={'/reviews'}> <li>Reviews</li> </Link>
+            <Link className="home-nav-link-text-quote" to={'/quote'}> <li>Request a quote</li> </Link> 
           </ul> 
           <div className="home-slogan-container">
             <div className="home-page-slogan">

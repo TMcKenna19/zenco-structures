@@ -15,7 +15,7 @@ ul {
 }
 
 /****************************/
-/********** navbar **********/
+/********** Navbar **********/
 /****************************/
 
 .nav-bar {
@@ -63,6 +63,11 @@ ul {
   font-weight: 900;
 }
 
+
+/***********************/
+/***** Home page ******/
+/**********************/
+
 .home-nav-bar {
   display: flex;
   flex-direction: row;
@@ -72,9 +77,31 @@ ul {
   font-size: 20px; 
 }
 
-/**************************/
-/***** landing page ******/
-/*************************/
+.home-nav-link-text {
+  text-decoration: none;
+  color: var(--alabaster);
+}
+
+.home-nav-link-text:hover {
+  text-decoration: none;
+  color: var(--purewhite);
+  font-weight: 900;
+}
+
+.home-nav-link-text-logo img{
+  height: 75px;
+  width: 75px;
+}
+
+.home-nav-link-text-quote {
+  text-decoration: none;
+  background-color: var(--cta);
+  padding: 6px;
+  border: 1px solid  var(--purewhite);
+  border-radius: 5px;
+  color: var(--purewhite);
+}
+
 .home-page {
   background-image: url(./Images/coverHouse.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.661);
@@ -102,7 +129,7 @@ ul {
 }
 
 /*************************/
-/****** residentail ******/
+/****** Residentail ******/
 /*************************/
 .residentail-hero {
   background-image: url(./Images/modernLivingRm.jpeg);
