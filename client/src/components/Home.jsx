@@ -11,7 +11,7 @@ const Home = () => {
     return(
       <>
         <div className="home-page"> 
-          <ul className="nav-bar">
+          <ul className="home-nav-bar">
             <Link className="link-text" to={'/residential'}> <li>Residential Services</li> </Link>
             <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
             <Link className="link-text" to={'/about'}> <li>About</li> </Link>

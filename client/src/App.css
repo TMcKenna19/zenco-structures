@@ -17,6 +17,17 @@ ul {
 /****************************/
 /********** navbar **********/
 /****************************/
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px; 
+  font-size: 20px; 
+  background-color: var(--softblack);
+}
+
 .link-text {
   text-decoration: none;
   color: var(--alabaster);
@@ -25,7 +36,7 @@ ul {
 .link-text:hover {
   text-decoration: none;
   color: var(--purewhite);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .link-text-logo img{
@@ -52,7 +63,7 @@ ul {
   font-weight: 900;
 }
 
-.nav-bar {
+.home-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;

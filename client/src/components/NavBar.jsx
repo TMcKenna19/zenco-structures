@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import zencoLogo from "../Images/zencoLogo.png";
 
 
 const NavBar = () => {
@@ -9,12 +9,14 @@ const NavBar = () => {
 
     return (
         <div>
-          {/* <ul className="navBar">
-            <Link className="link-text" to={'/'}> <li>Zenco Structures</li> </Link>
-            <Link className="link-text" to={'/services'}><li>Services</li> </Link>
-            <Link className="link-text" to={'/about'}> <li>About</li> </Link>
-            <Link className="link-text" to={'/quote'}> <li>Request a quote</li> </Link> 
-          </ul>  */}
+            <ul className="nav-bar">
+                <Link className="link-text-logo" to={'/'}> <li><img src={zencoLogo} alt="" /></li> </Link>
+                <Link className="link-text" to={'/residential'}> <li>Residential Services</li></Link>
+                <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
+                <Link className="link-text" to={'/about'}> <li>About</li> </Link>
+                <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
+                <Link className="link-text-quote" to={'/quote'}> <li>Request a Quote</li> </Link> 
+            </ul>
         </div>
         
     )    

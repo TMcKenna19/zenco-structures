@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className="basil-content">
                 <tbody>
-                    <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
+                    <td><Link to="https://basilbloomcreative.com/" target="_blank"><img src={basilBloom} alt="basil bloom" /></Link></td>
                     <td>Website created by Basil Bloom LLC</td>
                 </tbody>   
             </div>     

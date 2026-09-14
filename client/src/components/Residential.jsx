@@ -18,11 +18,8 @@ import trustedIcon from "../Images/trustedIcon.jpeg";
 import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
-import basilBloom from "../Images/basilBloom.jpeg";
-import instagramIcon from "../Images/instagramIcon.png";
-import facebookIcon from "../Images/facebookIcon.png";
-import tikTokIcon from "../Images/tikTokIcon.png";
 import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 
 const Residential = () => {
@@ -65,14 +62,8 @@ const Residential = () => {
  
     return( 
     <>
+        <NavBar/>
         <div className="residentail-hero">   
-            <ul className="nav-bar">
-                <Link className="link-text-logo" to={'/'}> <li><img src={zencoLogo} alt="" /></li> </Link>
-                <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
-                <Link className="link-text" to={'/about'}> <li>About</li> </Link>
-                <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-                <Link className="link-text-quote" to={'/quote'}> <li>Request a Quote</li> </Link> 
-            </ul> 
             <div className="res-services-slogan">
                 <div>
                     <p>Zenco Coatings Residential Services. </p>

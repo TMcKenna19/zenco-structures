@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 
 const Quote = props => {
@@ -42,6 +43,7 @@ const Quote = props => {
 
     return(
         <>
+        <NavBar/>
         <h5>Request a Quote</h5>
         <form onSubmit={submitHandler}>
             <div className="quote-form">
