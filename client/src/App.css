@@ -35,18 +35,18 @@ ul {
 
 .link-text-quote {
   text-decoration: none;
-  background-color: #fbc71d79;
+  background-color: var(--cta);
   padding: 6px;
-  border: 1px solid  rgb(251, 251, 251);
+  border: 1px solid  var(--purewhite);
   border-radius: 5px;
   color: var(--purewhite);
 }
 
 .link-text-quote:hover {
   text-decoration: none;
-  background-color: #fbc71db8;
+  background-color: var(--ctahover);
   padding: 6px;
-  border: 1px solid  rgb(251, 251, 251);
+  border: 1px solid  var(--purewhite);
   border-radius: 5px;
   color: var(--purewhite);
   font-weight: 900;
@@ -179,8 +179,8 @@ ul {
 
 .quote-banner {
   text-decoration: none;
-  color: #fbfbfb;
-  background-color: #fbc71d79;
+  color: var(--purewhite);
+  background-color: var(--cta);
   display: inline-block;
   text-align: center;
   border: solid 1px;
@@ -193,8 +193,8 @@ ul {
 
 .quote-banner:hover {
   text-decoration: none;
-  color: #fbfbfb;
-  background-color: #fbc71db8;
+  color: var(--purewhite);
+  background-color: var(--ctahover);
   display: inline-block;
   text-align: center;
   border: solid 1px;
@@ -207,16 +207,16 @@ ul {
 
 
 .eco-statement img {
-  width: 400px;
-  height: 400px;
+  width: 20rem;
+  height: 20rem;
 }
 
 .eco-statement {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--whtBackground);
-  height: 700px;
+  background-color: var(--purewhite);
+  height: 40rem;
   padding: 4rem;
 }
 
@@ -224,7 +224,6 @@ ul {
   color: var(--softblack);
   font-size: 20px;
   padding: 5rem;
-  margin-top: -5rem;
 }
 
 /* ************ */
@@ -272,7 +271,7 @@ ul {
 /******************************/
 
 .color-consult-hero {
-  color: var(--purewhite);
+  color: red;
   background-image: url(./Images/colorDesign.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.300); 
   height: 40rem;
@@ -285,7 +284,6 @@ ul {
 
 
 .color-consult-hero-content {
-  color: #fbfbfb;
   font-size: 30px;
   padding: 65px;
 }
@@ -301,8 +299,11 @@ ul {
 }
 
 .consult-video {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
   height: 30rem;
   width: 100rem;
 }
@@ -615,5 +616,7 @@ ul {
   --alabaster: #fafafa;
   --foggy: #e1e1e1;
   --softblack: #333333;
+  --cta: #fbc71d79;
+  --ctahover: #fbc71db8;
 
 }

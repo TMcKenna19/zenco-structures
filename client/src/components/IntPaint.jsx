@@ -9,6 +9,7 @@ import instagramIcon from "../Images/instagramIcon.png";
 import facebookIcon from "../Images/facebookIcon.png";
 import tikTokIcon from "../Images/tikTokIcon.png";
 import basilBloom from "../Images/basilBloom.jpeg";
+import Footer from "./Footer";
 
 
 const IntPaint = () => {
@@ -49,7 +50,7 @@ const IntPaint = () => {
                 <img src={painterOwner} alt="painter and homeowner" />
                 <p>At Zenco, we prioritize your satisfaction and ensure every detail is perfect before considering a job complete. As part of our commitment to excellence, we conduct a final walkthrough with you. During this walkthrough, we meticulously inspect every aspect of the project, addressing any touch-ups or concerns you may have. This collaborative review guarantees that the finished work meets your expectations and our high standards. We aim to leave you delighted with a beautifully transformed space and complete peace of mind.</p>
             </div>
-            <div className="footer-container">
+            {/* <div className="footer-container">
                 <div className="copyright-content">
                     <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
                     <p>Zenco Coatings on Social Media</p>
@@ -78,9 +79,10 @@ const IntPaint = () => {
                         <td>Website created by Basil Bloom LLC</td>
                     </tbody>   
                 </div>      
-            </div>
+            </div> */}
+           
+            <Footer/> 
         </div>
-       
         </>
     )
 }

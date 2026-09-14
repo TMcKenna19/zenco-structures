@@ -7,6 +7,9 @@ import facebookIcon from "../Images/facebookIcon.png";
 import tikTokIcon from "../Images/tikTokIcon.png";
 import basilBloom from "../Images/basilBloom.jpeg";
 import estimator from "../Images/estimator.jpg";
+import Footer from "./Footer";
+
+
 const ExtPaint = () => {
 return (
     <>
@@ -31,7 +34,7 @@ return (
                 <p>At Zenco, we offer a <b>free</b>, <b>no-obligation</b> estimate to help you plan your painting project with confidence. Our estimator will visit your home to discuss your needs, assess the space, and answer any questions you may have. During this visit, we provide a detailed breakdown of the costs involved and a clear, realistic project timeline tailored to your schedule. This transparent approach ensures you have all the information you need to make the best decision for your home, with no pressure or commitment. We're here to make your painting experience seamless and stress-free from start to finish.</p>
             </div>
         </div>
-        <div className="footer-container">
+        {/* <div className="footer-container">
             <div className="copyright-content">
                 <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
                 <p>Zenco Coatings on Social Media</p>
@@ -60,8 +63,8 @@ return (
                     <td>Website created by Basil Bloom LLC</td>
                 </tbody>   
             </div>      
-        </div>
-        
+        </div> */}
+         <Footer/> 
     </>
     )
 }
