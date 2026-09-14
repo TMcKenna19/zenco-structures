@@ -1,10 +1,10 @@
 import React from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import modernLivingRm from "../Images/modernLivingRm.jpeg";
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
 import woodFence from "../Images/woodFence.jpeg";
-import zencoLogo from "../Images/zencoLogo.png";
 import cabinets from "../Images/cabinets.jpeg";
 import garage from "../Images/garage.jpeg";
 import trowl from "../Images/trowl.jpeg";
@@ -63,13 +63,14 @@ const Residential = () => {
     return( 
     <>
         <NavBar/>
-        <div className="residentail-hero">   
+        <div className="residential-hero">  
+            <div className="residential-hero-image">
+                <img src={modernLivingRm} alt="Modern living room" />
+             </div> 
             <div className="res-services-slogan">
-                <div>
-                    <p>Zenco Coatings Residential Services. </p>
-                </div>
+                <p>Zenco Coatings Residential Services.</p>
             </div>    
-        </div> 
+        </div>
         <div className="res-service-card-container">
             <div className="res-service-card">
                 <img src={colorSelection} className="card-img-top" alt="color cards"/>

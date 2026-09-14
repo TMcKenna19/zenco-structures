@@ -5,9 +5,7 @@ import zencoLogo from "../Images/zencoLogo.png";
 
 
 const Home = () => {
-
-
-
+  
     return(
       <>
         <div className="home-page"> 
