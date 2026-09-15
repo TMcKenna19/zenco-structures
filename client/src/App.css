@@ -50,7 +50,7 @@ ul {
   background-color: var(--cta);
   padding: 6px;
   border: 1px solid  var(--purewhite);
-  border-radius: 5px;
+  border-radius: .3rem;
   color: var(--purewhite);
 }
 
@@ -59,7 +59,7 @@ ul {
   background-color: var(--ctahover);
   padding: 6px;
   border: 1px solid  var(--purewhite);
-  border-radius: 5px;
+  border-radius: .3rem;
   color: var(--purewhite);
   font-weight: 900;
 }
@@ -80,7 +80,7 @@ ul {
 
 .home-nav-link-text {
   text-decoration: none;
-  color: var(--alabaster);
+  color: var(--smoke);
 }
 
 .home-nav-link-text:hover {
@@ -200,7 +200,7 @@ ul {
   padding: 1.25rem;
   color: var(--softblack);
   background-color: var(--alabaster);
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
   transition: 0.3s;
 }
@@ -230,18 +230,56 @@ ul {
 /* ******************* */
 /*  Residental Review  */
 /* ******************* */
-.res-review {
-  background-image: url(./Images/resReview.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
-  background-repeat: none;
-  background-size: cover;
-  text-align: center;
-  padding: 50px;
-  color: var(--purewhite);
-  font-size: 25px;
-  font-weight: 500;
-  height: 550px;
+
+.res-review-container {
+  position: relative;
   width: 100%;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.res-review-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.res-review-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+/* Transparent dark overlay */
+.res-review-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Text */
+.res-review {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  text-align: center;
+  color: var(--purewhite);
+}
+
+.res-review p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 .quote-banner {
@@ -251,10 +289,10 @@ ul {
   display: inline-block;
   text-align: center;
   border: solid 1px;
-  margin-top: 150px;
-  padding: 15px;
-  padding-bottom: 1px;
-  font-size: 25px;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 500; 
 }
 
@@ -265,32 +303,72 @@ ul {
   display: inline-block;
   text-align: center;
   border: solid 1px;
-  margin-top: 150px;
-  padding: 15px;
-  padding-bottom: 1px;
-  font-size: 25px;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 500; 
 }
 
+/* ************* */
+/* Eco Statment  */
+/* ************* */
 
-.eco-statement img {
-  width: 20rem;
-  height: 20rem;
+.eco-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purewhite);
+  height: 35rem;
+  padding: 3rem;
 }
 
 .eco-statement {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: var(--purewhite);
-  height: 40rem;
-  padding: 4rem;
+  height: 30rem;
+}
+
+.eco-image img {
+  height: 30rem;
+  width: 25rem;
 }
 
 .eco-statement p {
   color: var(--softblack);
-  font-size: 20px;
-  padding: 5rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+/* eco img anamation */
+.image-toggle {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.toggle-image.secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.toggle-image.visible {
+  opacity: 1;
+}
+
+.toggle-image.hidden {
+  opacity: 0;
 }
 
 /* ************ */
@@ -682,6 +760,7 @@ ul {
   --purewhite: #ffffff;
   --alabaster: #fafafa;
   --foggy: #e1e1e1;
+  --smoke: #b0b0b0;
   --softblack: #333333;
   --cta: #fbc71d79;
   --ctahover: #fbc71db8;

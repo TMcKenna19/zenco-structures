@@ -1,6 +1,6 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
 import modernLivingRm from "../Images/modernLivingRm.jpeg";
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
@@ -12,6 +12,7 @@ import leadHazard from "../Images/leadHazard.jpeg";
 import greenRoom from  "../Images/greenRoom.jpeg";
 import ecoFriend from "../Images/ecoFriend.jpeg";
 import ecoFlip from "../Images/ecoFlip.jpeg";
+import resReview from "../Images/resReview.jpeg";
 import insureIcon from "../Images/insureIcon.jpeg";
 import warrantyIcon from "../Images/warrantyIcon.jpeg";
 import trustedIcon from "../Images/trustedIcon.jpeg";
@@ -19,46 +20,81 @@ import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 
 const Residential = () => {
-    // onClick scroll 
-    // const refColorSelect = useRef(null);
-    // const handleColorSelect = () => {
-    //     refColorSelect.current?.scrollIntoView({behavior: 'auto'});
-    // };
+ 
+// Image changes when it comes into view
+function ImageToggleOnView({ primaryImg, secondaryImg }) {
+    const containerRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const [showSecondary, setShowSecondary] = useState(false);
 
-    
-    //Image flip 
-    function ImageToggleOnMouseOver({ primaryImg, secondaryImg }) {
-        const imageRef = useRef(null);
+    useEffect(() => {
+        const element = containerRef.current;
 
-        return (
-            <img onMouseOver={() => {
-                imageRef.current.src = secondaryImg;
-            } }
-                onMouseOut={() => {
-                    imageRef.current.src = primaryImg;
-                } }
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting);
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        if (element) {
+            observer.observe(element);
+        }
+
+        return () => {
+            if (element) {
+                observer.unobserve(element);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isVisible) {
+            setShowSecondary(false);
+            return;
+        }
+
+        const interval = setInterval(() => {
+            setShowSecondary((current) => !current);
+        }, 1500);
+
+        return () => clearInterval(interval);
+    }, [isVisible]);
+
+    return (
+        <div className="image-toggle" ref={containerRef}>
+            <img
                 src={primaryImg}
                 alt=""
-                ref={imageRef} />
+                className={`toggle-image ${
+                    showSecondary ? "hidden" : "visible"
+                }`}
+            />
 
-        );
-    }
+            <img
+                src={secondaryImg}
+                alt=""
+                className={`toggle-image secondary ${
+                    showSecondary ? "visible" : "hidden"
+                }`}
+            />
+        </div>
+    );
+}
 
-    const ImageChangeOnMouseOver = () => {
-        return (
-          <div>
-            <ImageToggleOnMouseOver
-              primaryImg={ecoFriend}
-              secondaryImg={ecoFlip}
-              alt="" />
-          </div>
-        )
-    }
-
+const ImageChangeOnView = () => {
+    return (
+        <ImageToggleOnView
+            primaryImg={ecoFriend}
+            secondaryImg={ecoFlip}
+        />
+    );
+};
  
     return( 
     <>
@@ -144,22 +180,25 @@ const Residential = () => {
             </div>  
         </div>
         <div className="res-review-container">
+            <div className="res-review-image">
+                <img src={resReview} alt="homeowner" />
+            </div>
             <div className="res-review">
                 <p>"Not only did Zenco Coatings exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me."
                 </p>
-
                 <p>- Kona, Homeowner</p>
                 <Link className="quote-banner" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
             </div>
         </div>
         {/* image flip */}
-        <div className="eco-friend-container">
+        <div className="eco-container">
             <div className="eco-statement">
-                <ImageChangeOnMouseOver/>
+                <div className="eco-image">
+                    <ImageChangeOnView />
+                </div>
                 <p>Zenco Coatings is committed to both exceptional results and the environment, which is why we exclusively use environmentally friendly products that are zero or low VOC (Volatile Organic Compounds), ensuring a healthier and more sustainable painting experience for our clients and the planet</p>
             </div>
         </div>
-      
         {/* priority cards */}
         <div className="priority-container">
             <div className="priority-card">
