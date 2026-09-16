@@ -10,7 +10,7 @@ const Footer = () => {
         <>
         <div className="footer-container">
             <div className="copyright-content">
-                <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
+                <p>Copyright &#169; 2026 Zenco Coatings LLC</p>
                 <p>Zenco Coatings on Social Media</p>
                 <div className="social-links">
                     <Link to="https://www.instagram.com/" target="_blank"><img src={instagramIcon} alt="instagram icon" /></Link><Link to="https://www.facebook.com/" target="_blank"><img src={facebookIcon} alt="facebook icon" /></Link>

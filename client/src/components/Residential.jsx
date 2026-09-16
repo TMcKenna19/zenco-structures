@@ -102,8 +102,8 @@ const ImageChangeOnView = () => {
         <div className="residential-hero">  
             <div className="residential-hero-image">
                 <img src={modernLivingRm} alt="Modern living room" />
-             </div> 
-            <div className="res-services-slogan">
+            </div> 
+            <div className="res-services-copy">
                 <p>Zenco Coatings Residential Services.</p>
             </div>    
         </div>

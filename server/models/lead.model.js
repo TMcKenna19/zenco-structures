@@ -1,46 +1,83 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const LeadSchema = new mongoose.Schema({
-    firstName: {
-        type: String,
-        required: [true, "First name is required"]
-    },
-    lastName: {
-        type: String, 
-        required: [true, "Last name is required"]
-    },
-    phoneNumber: {
-        type: String,
-        required: [true, "Phone number is required"]
-    },
-    email: {
-        type: String,
-        required: [true, "Email is required"]
-    },
-    propertyType: {
-        type: String,
-        required: [true, "Select Residentail or Commercial"]
-    },
-    surfaceLocation: {
-        type: String,
-        required: [true, "Interior, Exterior or Both"]
-    },
-    serviceRequested: {
-        type: String,
-        required: [true, "What service(s) are needed?"]
-    },
-    timeFrame: {
-        type: String,
-        required: [true, "How soon are you looking to have work done?"]
-    },
-    notes: {
-        type: String
-    },
-    isCalled: { 
-        type: Boolean
-    } 
+const LeadSchema = new mongoose.Schema(
+    {
+        firstName: {
+            type: String,
+            required: [true, "First name is required"],
+            trim: true
+        },
 
-}, {timesstamps: true})
+        lastName: {
+            type: String,
+            required: [true, "Last name is required"],
+            trim: true
+        },
+
+        phoneNumber: {
+            type: String,
+            required: [true, "Phone number is required"],
+            trim: true
+        },
+
+        email: {
+            type: String,
+            required: [true, "Email is required"],
+            trim: true,
+            lowercase: true
+        },
+
+        propertyType: {
+            type: String,
+            required: [true, "Select Residential or Commercial"],
+            enum: {
+                values: ["Residential", "Commercial"],
+                message: "Please select Residential or Commercial"
+            }
+        },
+
+        surfaceLocation: {
+            type: String,
+            required: [true, "Select Interior, Exterior, or Interior & Exterior"],
+            enum: {
+                values: ["Interior", "Exterior", "Interior & Exterior"],
+                message: "Please select Interior, Exterior, or Interior & Exterior"
+            }
+        },
+
+        serviceRequested: {
+            type: [String],
+            required: [true, "What service is needed?"],
+            trim: true
+        },
+
+        timeFrame: {
+            type: String,
+            required: [true, "How soon are you looking to have work done?"],
+            enum: {
+                values: [
+                    "As soon as possible",
+                    "Within 1 month",
+                    "1–3 months",
+                    "3+ months",
+                    "Just getting estimates"
+                ],
+                message: "Please select a time frame"
+            }
+        },
+
+        notes: {
+            type: String,
+            trim: true
+        },
+
+        isCalled: {
+            type: Boolean,
+            default: false
+        }
+    },
+    { timestamps: true }
+);
 
 const Lead = mongoose.model("Lead", LeadSchema);
 
