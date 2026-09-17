@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import modernHouse from "../Images/modernHouse.jpg";
 
 
@@ -350,6 +351,7 @@ const Quote = props => {
 
             </div>
         </form>
+        <Footer/>
         </>
     );
 };

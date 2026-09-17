@@ -681,7 +681,7 @@ ul {
 }
 
 /*******************************/
-/*********** Quote *************/
+/******** Quote Form ***********/
 /*******************************/
 
 .quote-hero {
@@ -829,8 +829,7 @@ textarea.form-control {
 
 .text-danger {
   margin: 0.4rem 0 0;
-  font-size: 0.85rem;
-  color: #c62828;
+  font-size: .8rem;
 }
 
 .form-submit {
