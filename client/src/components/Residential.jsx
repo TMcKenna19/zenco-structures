@@ -99,14 +99,14 @@ const ImageChangeOnView = () => {
     return( 
     <>
         <NavBar/>
-        <div className="residential-hero">  
-            <div className="residential-hero-image">
+        <section className="hero">
+            <div className="hero-image">
                 <img src={modernLivingRm} alt="Modern living room" />
             </div> 
-            <div className="res-services-copy">
-                <p>Zenco Coatings Residential Services.</p>
+            <div className="hero-copy">
+                <h1>Zenco Coatings Residential Services.</h1>
             </div>    
-        </div>
+        </section>
         <div className="res-service-card-container">
             <div className="res-service-card">
                 <img src={colorSelection} className="card-img-top" alt="color cards"/>

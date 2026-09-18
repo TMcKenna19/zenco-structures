@@ -14,10 +14,81 @@ ul {
   text-decoration: none;
 }
 
+/***********************/
+/***** Home page ******/
+/**********************/
+.home-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px; 
+  font-size: 20px; 
+}
+
+.home-nav-link-text {
+  text-decoration: none;
+  color: var(--smoke);
+}
+
+.home-nav-link-text:hover {
+  text-decoration: none;
+  color: var(--purewhite);
+  font-weight: 900;
+}
+
+.home-nav-link-text-logo img{
+  height: 75px;
+  width: 75px;
+}
+
+.home-nav-link-text-quote {
+  text-decoration: none;
+  background-color: var(--cta);
+  padding: 6px;
+  border: 1px solid  var(--purewhite);
+  border-radius: 5px;
+  color: var(--purewhite);
+}
+
+.home-nav-link-text-quote:hover {
+  text-decoration: none;
+  background-color: var(--ctahover);
+  padding: 6px;
+  border: 1px solid  var(--purewhite);
+  border-radius: 5px;
+  color: var(--purewhite);
+}
+
+.home-page {
+  background-image: url(./Images/coverHouse.jpeg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.home-page-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--purewhite);
+  font-size: 25px;
+  padding: 75px;
+}
+
+.home-page-slogan img {
+  height: 300px;
+  width: 300px;
+}
+
 /****************************/
 /********** Navbar **********/
 /****************************/
-
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -64,104 +135,30 @@ ul {
   font-weight: 900;
 }
 
-
-/***********************/
-/***** Home page ******/
-/**********************/
-
-.home-nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px; 
-  font-size: 20px; 
-}
-
-.home-nav-link-text {
-  text-decoration: none;
-  color: var(--smoke);
-}
-
-.home-nav-link-text:hover {
-  text-decoration: none;
-  color: var(--purewhite);
-  font-weight: 900;
-}
-
-.home-nav-link-text-logo img{
-  height: 75px;
-  width: 75px;
-}
-
-.home-nav-link-text-quote {
-  text-decoration: none;
-  background-color: var(--cta);
-  padding: 6px;
-  border: 1px solid  var(--purewhite);
-  border-radius: 5px;
-  color: var(--purewhite);
-}
-
-.home-nav-link-text-quote:hover {
-  text-decoration: none;
-  background-color: var(--ctahover);
-  padding: 6px;
-  border: 1px solid  var(--purewhite);
-  border-radius: 5px;
-  color: var(--purewhite);
-}
-
-.home-page {
-  background-image: url(./Images/coverHouse.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.661);
-  padding: 15px;
-  height: 100vh;
-  width: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.home-page-slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--purewhite);
-  font-size: 25px;
-  padding: 75px;
-}
-
-.home-page-slogan img {
-  height: 300px;
-  width: 300px;
-}
-
-/*************************/
-/****** Residentail ******/
-/*************************/
-.residential-hero {
+/* ***************** */
+/* ** All Heros *** */
+/* **************** */
+.hero {
   position: relative;
   width: 100%;
   height: 40rem;
   overflow: hidden;
 }
 
-.residential-hero-image {
+.hero-image {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.residential-hero-image img {
+.hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Transparent dark overlay */
-.residential-hero::after {
+.hero::after {
   content: "";
   position: absolute;
   top: 0;
@@ -173,7 +170,7 @@ ul {
 }
 
 /* Text */
-.res-services-copy {
+.hero-copy {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -184,11 +181,15 @@ ul {
   color: var(--purewhite);
 }
 
-.res-services-copy p {
+.hero-copy h1 {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
 }
+
+/*************************/
+/****** Residential ******/
+/*************************/
 
 /* Service Cards */
 .res-service-card-container {
@@ -237,7 +238,7 @@ ul {
 }
 
 /* ******************* */
-/*  Residental Review  */
+/*  Residential Review  */
 /* ******************* */
 
 .res-review-container {
@@ -322,7 +323,6 @@ ul {
 /* ************* */
 /* Eco Statment  */
 /* ************* */
-
 .eco-container {
   display: flex;
   align-items: center;
@@ -423,24 +423,6 @@ ul {
 /******************************/
 /******* Color Consult ********/
 /******************************/
-
-.color-consult-hero {
-  background-image: url(./Images/colorDesign.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.300); 
-  height: 40rem;
-  width: auto;
-  background-repeat: none;
-  background-size: cover;
-  background-position: 75% 70%;
-  text-align: center;
-}
-
-
-.color-consult-hero-content {
-  font-size: 30px;
-  padding: 65px;
-}
-
 .color-consult-welcome {
   text-align: center;
   width: 90rem;
@@ -454,11 +436,8 @@ ul {
 .consult-video {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  /* margin-left: auto;
-  margin-right: auto; */
-  height: 30rem;
-  width: 100rem;
 }
 
 .color-consult-container {
@@ -553,23 +532,6 @@ ul {
 /*******************************/
 /********** Int Paint **********/
 /*******************************/
-.int-hero {
-  background-image: url(./Images/redCouch.jpeg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
-  height: 500px;
-  width: auto;
-  background-repeat: none;
-  background-size: cover;
-  background-position: right center;
-  text-align: center;
-}
-
-.int-hero-content {
-  color: #fbfbfb;
-  font-size: 30px;
-  padding: 65px;
-}
-
 .int-paint-container {
   height: 420px;
   width: auto;
@@ -684,56 +646,6 @@ ul {
 /******** Quote Form ***********/
 /*******************************/
 
-.quote-hero {
-  position: relative;
-  width: 100%;
-  height: 40rem;
-  overflow: hidden;
-}
-
-.quote-hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.quote-hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Text */
-.quote-hero-copy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 90%;
-  text-align: center;
-  color: var(--purewhite);
-}
-
-.quote-hero-copy p {
-  font-size: 3rem;
-  font-weight: 300;
-  margin: 0;
-}
-
-/* Transparent dark overlay */
-.quote-hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-/* Quote Form */
 .quote-form-wrapper {
   width: 100%;
   padding: 4rem 1.5rem;
@@ -842,7 +754,7 @@ textarea.form-control {
   border: none;
   border-radius: 6px;
   background-color: var(--wolf);
-  color: var(--purewhite);
+  color: var(--purewhite); 
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;

@@ -1,28 +1,28 @@
 import { Link } from "react-router-dom";
-import zencoLogo from "../Images/zencoLogo.png";
+import NavBar from "./NavBar";
+import redCouch from "../Images/redCouch.jpeg";
 import cover from "../Images/cover.jpeg";
 import colorPick from "../Images/colorPick.jpeg";
 import drywall from "../Images/drywall.jpeg";
 import paintRoller from "../Images/paintRoller.jpeg";
 import painterOwner from "../Images/painterOwner.jpeg";
-import instagramIcon from "../Images/instagramIcon.png";
-import facebookIcon from "../Images/facebookIcon.png";
-import tikTokIcon from "../Images/tikTokIcon.png";
-import basilBloom from "../Images/basilBloom.jpeg";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 
 const IntPaint = () => {
     return(
         <>
         <NavBar/>
-        <div className="int-hero">
-            <div className="int-hero-content">  
-               <Link className="link-text" to={'/quote'}><h1>Zenco Interior Painting</h1>
-                <p>Schedule Your Free Estimate</p></Link>
+        <section className="hero">
+            <div className="hero-image">
+                <img src={redCouch} alt="red couch" />
             </div>
-        </div>
+            <div className="hero-copy">  
+               <Link className="link-text" to={'/quote'}><h1>Zenco Interior Painting</h1>
+                <p>Request a Free Quote</p></Link>
+            </div>
+        </section>
+
         <div className="int-paint-container">
             <div className="int-paint-content">
                 <img src={colorPick} alt="person picking a color" />
@@ -44,37 +44,6 @@ const IntPaint = () => {
                 <img src={painterOwner} alt="painter and homeowner" />
                 <p>At Zenco, we prioritize your satisfaction and ensure every detail is perfect before considering a job complete. As part of our commitment to excellence, we conduct a final walkthrough with you. During this walkthrough, we meticulously inspect every aspect of the project, addressing any touch-ups or concerns you may have. This collaborative review guarantees that the finished work meets your expectations and our high standards. We aim to leave you delighted with a beautifully transformed space and complete peace of mind.</p>
             </div>
-            {/* <div className="footer-container">
-                <div className="copyright-content">
-                    <p>Copyright &#169; 2023 Zenco Coatings LLC</p>
-                    <p>Zenco Coatings on Social Media</p>
-                    <div className="social-links">
-                        <Link to={"https://www.instagram.com/"}><img src={instagramIcon} alt="instagram icon" /></Link><Link to={"https://www.facebook.com/"}><img src={facebookIcon} alt="facebook icon" /></Link>
-                        <Link to={"https://www.tiktok.com/"}><img src={tikTokIcon} alt="tik tok icon"/></Link>
-                    </div>
-                </div>
-                <div className="legal-info">
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                        <li>Do not sell my information</li>
-                    </ul>
-                </div>
-                <div className="contact-info">
-                    <ul>
-                        <li>550 Bay street</li>
-                        <li>Sarasota, FL 37822</li>
-                        <li>contact@zenco.com</li>
-                    </ul>
-                </div>
-                <div className="basil-content">
-                    <tbody>
-                        <td><Link to={"https://basilbloomcreative.com/"}><img src={basilBloom} alt="basil bloom" /></Link></td>
-                        <td>Website created by Basil Bloom LLC</td>
-                    </tbody>   
-                </div>      
-            </div> */}
-           
             <Footer/> 
         </div>
         </>

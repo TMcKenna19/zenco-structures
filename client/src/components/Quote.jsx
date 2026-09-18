@@ -59,14 +59,14 @@ const Quote = props => {
     return(
         <>
         <NavBar/>
-        <div className="quote-hero">
-            <div className="quote-hero-image">
+        <section className="hero">
+            <div className="hero-image">
                 <img src={modernHouse} alt="really nice house" />
             </div>
-            <div className="quote-hero-copy">
-                <p>Request a Free Quote</p>
+            <div className="hero-copy">
+                <h1>Request a Free Quote</h1>
             </div>
-        </div>
+        </section>
         <form onSubmit={submitHandler} className="quote-form-wrapper">
             <div className="quote-form">
 

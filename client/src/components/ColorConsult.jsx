@@ -1,27 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
+import colorDesign from "../Images/colorDesign.jpeg";
 import consultClient from "../Images/consultClient.jpeg";
 import consultVid from "../Images/consultVid.mov";
-import zencoLogo from "../Images/zencoLogo.png";
-import basilBloom from "../Images/basilBloom.jpeg";
-import instagramIcon from "../Images/instagramIcon.png";
-import facebookIcon from "../Images/facebookIcon.png";
-import tikTokIcon from "../Images/tikTokIcon.png";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 
 const ColorConsult = () => {
     return (
     <>
         <NavBar/>
-        <div className="color-consult-hero">
-            
-            <div className="color-consult-hero-content">
+        <section className="hero">
+            <div className="hero-image">
+                <img src={colorDesign} alt="color design" />
+            </div>
+            <div className="hero-copy">
                 <Link className="link-text" to={'/quote'}><h1>Zenco Color Consultation</h1>
-                <p>Schedule Your Free Estimate</p></Link>
+                <p>Request a Free Quote</p>
+                </Link>
             </div> 
-        </div>
+        </section>
         <div className="color-consult-container">
             <div className="color-consult-welcome">
                 <h3>Color Consulting</h3>
@@ -30,8 +29,8 @@ const ColorConsult = () => {
                 With their expertise, they will guide you through an array of color palettes and combinations that perfectly match your desired aesthetic.
                 </p>
             </div>
-            <div>
-                <video className="consult-video" src={consultVid} autoPlay loop muted type="video/webm" />
+            <div className="consult-video">
+                <video src={consultVid} autoPlay loop muted type="video/webm" />
             </div>
             <div className="color-consult-content">
             <p>This collaborative process extends beyond color selection, as our consultants consider lighting, room functionality, and the overall flow of your space.Their goal is to create a harmonious color scheme that resonates with your personality and complements your décor.</p>
