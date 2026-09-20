@@ -1,26 +1,25 @@
 import React from "react";
+import NavBar from "./NavBar";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import zencoLogo from "../Images/zencoLogo.png";
-import instagramIcon from "../Images/instagramIcon.png";
-import facebookIcon from "../Images/facebookIcon.png";
-import tikTokIcon from "../Images/tikTokIcon.png";
-import basilBloom from "../Images/basilBloom.jpeg";
 import estimator from "../Images/estimator.jpg";
+import extHero from "../Images/extHero.jpg";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 
 const ExtPaint = () => {
 return (
     <>  
         <NavBar/>
-        <div className="ext-hero">
-            <div className="ext-hero-content">
-                <Link className="link-text" to={'/quote'}><h1>Zenco Exterior Painting</h1>
-                <p>Schedule Your Free Estimate</p></Link>
+        <section className="hero">
+            <div className="hero-image">
+                <img src={extHero} alt="exterior of white house" />
             </div>
-        </div>
+            <div className="hero-copy">
+                <Link className="link-text" to={'/quote'}><h1>Zenco Exterior Painting</h1>
+                <p>Get Your Free Estimate</p></Link>
+            </div>
+        </section>
         <div className="ext-paint-container">
                 <h1> The Zenco Process</h1>
             <div className="ext-paint-content">

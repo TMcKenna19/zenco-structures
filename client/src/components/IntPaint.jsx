@@ -19,7 +19,7 @@ const IntPaint = () => {
             </div>
             <div className="hero-copy">  
                <Link className="link-text" to={'/quote'}><h1>Zenco Interior Painting</h1>
-                <p>Request a Free Quote</p></Link>
+                <p>Get Your Free Estimate</p></Link>
             </div>
         </section>
 

@@ -17,7 +17,7 @@ const ColorConsult = () => {
             </div>
             <div className="hero-copy">
                 <Link className="link-text" to={'/quote'}><h1>Zenco Color Consultation</h1>
-                <p>Request a Free Quote</p>
+                <p>Get Your Free Estimate</p>
                 </Link>
             </div> 
         </section>

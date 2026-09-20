@@ -553,22 +553,6 @@ ul {
 /*******************************/
 /********** Ext Paint **********/
 /*******************************/
-.ext-hero {
-  background-image: url(./Images/extHero.jpg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35); 
-  height: 500px;
-  width: auto;
-  background-repeat: none;
-  background-size: cover;
-  background-position: right center;
-  text-align: center;
-}
-
-.ext-hero-content {
-  color: #fbfbfb;
-  font-size: 30px;
-  padding: 65px;
-}
 
 .ext-paint-container {
   height: 720px;

@@ -64,9 +64,12 @@ const Quote = props => {
                 <img src={modernHouse} alt="really nice house" />
             </div>
             <div className="hero-copy">
-                <h1>Request a Free Quote</h1>
+                <h1>Tell Us About Your Project</h1>
             </div>
         </section>
+        <div>
+            <p>Share your contact information and a few details about your painting project. We’ll be in touch to discuss your project and schedule your free estimate.</p>
+        </div>
         <form onSubmit={submitHandler} className="quote-form-wrapper">
             <div className="quote-form">
 
@@ -345,7 +348,7 @@ const Quote = props => {
 
                 <div className="form-submit">
                     <button type="submit" className="quote-submit">
-                        Request a Free Quote
+                    Request My Free Estimate
                     </button>
                 </div>
 

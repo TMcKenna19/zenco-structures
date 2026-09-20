@@ -15,7 +15,7 @@ const NavBar = () => {
                 <Link className="link-text" to={'/commercial'}> <li>Commercial Services</li></Link>
                 <Link className="link-text" to={'/about'}> <li>About</li> </Link>
                 <Link className="link-text" to={'/reviews'}> <li>Reviews</li> </Link>
-                <Link className="link-text-quote" to={'/quote'}> <li>Request a Quote </li> </Link> 
+                <Link className="link-text-quote" to={'/quote'}> <li>Free Estimate</li> </Link> 
             </ul>
         </div>
         
