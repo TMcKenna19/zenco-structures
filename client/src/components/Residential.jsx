@@ -179,15 +179,15 @@ const ImageChangeOnView = () => {
                 </div>
             </div>  
         </div>
-        <div className="res-review-container">
-            <div className="res-review-image">
+        <div className="review-container">
+            <div className="review-image">
                 <img src={resReview} alt="homeowner" />
             </div>
-            <div className="res-review">
+            <div className="review-copy">
                 <p>"Not only did Zenco Coatings exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me."
                 </p>
                 <p>- Kona, Homeowner</p>
-                <Link className="quote-banner" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
+                <Link className="review-estimate-cta" to={'/quote'}> <p>GET YOUR FREE ESTIMATE</p> </Link>
             </div>
         </div>
         {/* image flip */}

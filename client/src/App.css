@@ -241,20 +241,20 @@ ul {
 /*  Residential Review  */
 /* ******************* */
 
-.res-review-container {
+.review-container {
   position: relative;
   width: 100%;
   height: 40rem;
   overflow: hidden;
 }
 
-.res-review-image {
+.review-image {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.res-review-image img {
+.review-image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -263,7 +263,7 @@ ul {
 }
 
 /* Transparent dark overlay */
-.res-review-container::after {
+.review-container::after {
   content: "";
   position: absolute;
   top: 0;
@@ -275,7 +275,7 @@ ul {
 }
 
 /* Text */
-.res-review {
+.review-copy {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -286,13 +286,13 @@ ul {
   color: var(--purewhite);
 }
 
-.res-review p {
+.review-copy p {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0;
 }
 
-.quote-banner {
+.review-estimate-cta {
   text-decoration: none;
   color: var(--purewhite);
   background-color: var(--cta);
@@ -306,7 +306,7 @@ ul {
   font-weight: 500; 
 }
 
-.quote-banner:hover {
+.review-estimate-cta:hover {
   text-decoration: none;
   color: var(--purewhite);
   background-color: var(--ctahover);
@@ -464,7 +464,7 @@ ul {
   width: 450px;
 }
 
-.consult-quote-container {
+/* .consult-quote-container {
   background-image: url(./Images/consultDecor.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
   background-repeat: none;
@@ -504,7 +504,7 @@ ul {
   padding-bottom: 1px;
   font-size: 25px;
   font-weight: 500; 
-}
+} */
 
 .video-content-container {
   height: 420px;

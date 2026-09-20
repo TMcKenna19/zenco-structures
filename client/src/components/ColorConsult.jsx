@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import colorDesign from "../Images/colorDesign.jpeg";
 import consultClient from "../Images/consultClient.jpeg";
+import consultDecor from "../Images/consultDecor.jpeg";
 import consultVid from "../Images/consultVid.mov";
 import Footer from "./Footer";
 
@@ -37,12 +38,15 @@ const ColorConsult = () => {
                 <img src={consultClient} alt="color consultant" />
             </div>
         </div> 
-        <div className="consult-quote-container">
-            <div className="consult-quote">
+        <div className="review-container">
+            <div className="review-image">
+                <img src={consultDecor} alt="color consutlants working" />
+            </div>
+            <div className="review-copy">
                 <p>"The color consultation team from Zenco Coatings was truly exceptional. They listened attentively to my preferences and offered expert guidance, helping me select a color scheme that beautifully transformed my space. Their attention to detail and creative insights made the entire process a breeze, resulting in an outcome that exceeded my expectations. I couldn't be happier with the results of their expertise."</p>
 
                 <p>- Rockwell, Homeowner</p>
-            <Link className="constult-quote-link" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
+            <Link className="review-estimate-cta" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
             </div>
         </div>
         
