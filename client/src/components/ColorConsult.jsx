@@ -23,14 +23,14 @@ const ColorConsult = () => {
             </div> 
         </section>
         <section class="color-consultation">
-            <div class="container">
+            <div class="color-consultation-container">
                 <div class="section-heading">
-                  <p class="eyebrow">Interior Color Consultation</p>
+                  <p class="eyebrow">Your Color Consultation</p>
                   <h2>Find the Right Colors for Your Home</h2>
                 </div>
                 <div class="consultation-layout">
                   <div class="consultation-grid">
-                    <article class="consultation-item">
+                    <article class="consultation-card">
                       <h3>Start With Your Vision</h3>
                       <p>
                         Your home should feel like you. Our experienced color consultants
@@ -38,7 +38,7 @@ const ColorConsult = () => {
                         and the atmosphere you want to create.
                       </p>
                     </article>
-                    <article class="consultation-item">
+                    <article class="consultation-card">
                       <h3>Find the Right Palette</h3>
                       <p>
                         We help narrow the possibilities and guide you toward palettes
@@ -46,7 +46,7 @@ const ColorConsult = () => {
                         vision to life.
                       </p>
                     </article>
-                    <article class="consultation-item">
+                    <article class="consultation-card">
                       <h3>Consider the Whole Space</h3>
                       <p>
                         We consider lighting, room function, architectural details,
@@ -54,7 +54,7 @@ const ColorConsult = () => {
                         to the next.
                       </p>
                     </article>
-                    <article class="consultation-item">
+                    <article class="consultation-card">
                       <h3>Create a Home That Flows</h3>
                       <p>
                         Our goal is to create a cohesive color story that feels intentional,

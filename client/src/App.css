@@ -427,12 +427,12 @@ ul {
 /******* Color Consult ********/
 /******************************/
 .color-consultation {
-  background-color: var(--mo);
+  background-color: var(--alabaster);
   padding: 5rem 1.5rem;
   height: 55rem;
 }
 
-.container {
+.color-consultation-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -445,7 +445,7 @@ ul {
 }
 
 .eyebrow {
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -469,24 +469,24 @@ ul {
   gap: 1rem;
 }
 
-.consultation-item {
+.consultation-card {
   color: var(--softblack);
   background-color: var(--moss);
   padding: 2rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 
-.consultation-item h3 {
+.consultation-card h3 {
   padding: .3rem;
   text-align: center;
-  color: var(--alabaster);
+  color: var(--purewhite);
 }
 
-.consultation-item p {
+.consultation-card p {
   margin: 0;
   line-height: 1.6;
   text-align: center;
-  color: var(--alabaster);
+  color: var(--purewhite);
 }
 
 .consultation-image {
@@ -527,22 +527,112 @@ ul {
 /*******************************/
 /********** Int Paint **********/
 /*******************************/
-.int-paint-container {
-  background-color: var(--check);
+
+.int-paint {
+  padding: 4rem 1.5rem;
+  background-color: var(--alabaster);
 }
 
-.int-paint-content  {
+.int-paint-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.int-paint-heading {
+  max-width: 700px;
+  margin: 0 auto 5rem;
+  text-align: center;
+  color: var(--softblack);
+}
+
+.int-paint-heading span {
+  display: block;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.int-paint-heading h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.int-paint-heading p {
+  line-height: 1.7;
+}
+
+.int-paint-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  background-color: var(--olive);
+}
+
+.int-paint-content.reverse .int-paint-image {
+  order: 2;
+}
+
+.int-paint-content.reverse .int-paint-text {
+  order: 1;
+}
+
+.int-paint-image img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.int-paint-text {
+  max-width: 500px;
+  justify-self: center;
+}
+
+.step-number {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.int-paint-text h3 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.int-paint-text p {
+  margin: 0;
+  line-height: 1.7;
+
+}
+
+.int-paint-cta {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--alabaster);
-  font-size: 20px;
-  padding: 40px;
+  height: 20rem;
+  background-color: var(--checkagain);
 }
 
-.int-paint-content p {
-  padding: 5rem;
+@media (max-width: 768px) {
+  .int-paint-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+  }
+
+  .int-paint-content.reverse .int-paint-image,
+  .int-paint-content.reverse .int-paint-text {
+      order: initial;
+  }
+
+  .int-paint-image img {
+      height: 350px;
+  }
 }
 
 /*******************************/
@@ -858,13 +948,14 @@ textarea.form-control {
 
 :root {
   --check: #687aef70;
+  --checkagain: #c068ef70;
   --purewhite: #ffffff;
   --alabaster: #fafafa;
   --foggy: #e1e1e1;
   --smoke: #b0b0b0;
   --wolf: #8b8b8b;
   --moss: #78877a;
-  --mo: hsl(128, 6%, 90%);
+  --mo: #e4e7e4;
   --softblack: #333333;
   --cta: #fbc71d79;
   --ctahover: #fbc71db8;
