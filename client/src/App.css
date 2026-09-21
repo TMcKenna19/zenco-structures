@@ -135,9 +135,9 @@ ul {
   font-weight: 900;
 }
 
-/* ***************** */
-/* ** All Heros *** */
-/* **************** */
+/* ********************* */
+/* ** Universial Hero ** */
+/* ********************* */
 .hero {
   position: relative;
   width: 100%;
@@ -190,7 +190,6 @@ ul {
 /*************************/
 /****** Residential ******/
 /*************************/
-
 /* Service Cards */
 .res-service-card-container {
   display: grid;
@@ -207,12 +206,17 @@ ul {
   justify-content: center;
   align-items: center;
   width: 20rem;
-  padding: 1.25rem;
+  overflow: hidden;
+  padding: 1rem;
   color: var(--softblack);
-  background-color: var(--alabaster);
+  background-color: var(--purewhite);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.537);
   transition: 0.3s;
+}
+
+.res-service-card img {
+  border-radius: 1rem;
 }
 
 .res-card-title {
@@ -220,11 +224,11 @@ ul {
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .res-card-text {
-  padding: 10px;
+  padding: .5rem;
 }
 
 .res-service-card .link-text {
@@ -234,13 +238,12 @@ ul {
 }
 
 .res-service-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,1);
 }
 
 /* ******************* */
 /*  Residential Review  */
 /* ******************* */
-
 .review-container {
   position: relative;
   width: 100%;
@@ -423,95 +426,128 @@ ul {
 /******************************/
 /******* Color Consult ********/
 /******************************/
-.color-consult-welcome {
+.color-consultation {
+  background-color: var(--mo);
+  padding: 5rem 1.5rem;
+  height: 55rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto 48px;
   text-align: center;
-  width: 90rem;
-  padding: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content:  center;
-  font-size: 20px;
+  color: var(--softblack);
 }
 
-.consult-video {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+.eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.color-consult-container {
-  width: auto;
-  background-color: var(--whtBackground);
+.section-heading h2 {
+  margin: 0;
 }
 
-.color-consult-content  {
-  display: flex;
-  flex-direction: row;
+.consultation-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.consultation-item {
+  color: var(--softblack);
+  background-color: var(--moss);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.consultation-item h3 {
+  padding: .3rem;
   text-align: center;
-  font-size: 20px;
-  padding: 100px;
-  margin-top: 2rem;
+  color: var(--alabaster);
 }
 
-.color-consult-content p {
-  margin-top: 25px;
-  padding: 5rem;
+.consultation-item p {
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--alabaster);
 }
 
-.color-consult-content img {
-  height: 300px;
-  width: 450px;
+.consultation-image {
+  min-height: 100%;
 }
 
-.video-content-container {
-  height: 420px;
-}
-
-.video-content{
-  display: flex;
-  flex-direction: row;
+.consultation-image img {
   width: 100%;
-  padding: 30px;
-  font-size: 25px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-.video-content p {
-  margin-top: 15px;
-  padding: 25px;
+@media (max-width: 900px) {
+  .consultation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-image {
+    min-height: 450px;
+  }
 }
 
-.video-content video {
-  padding: 10px;
-  height: 334px;
-  width: 525px;
+@media (max-width: 600px) {
+  .consultation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .color-consultation {
+    padding: 56px 20px;
+  }
+
+  .consultation-image {
+    min-height: 320px;
+  }
 }
 
 /*******************************/
 /********** Int Paint **********/
 /*******************************/
 .int-paint-container {
-  height: 420px;
-  width: auto;
-  background-color: var(--whtBackground);
+  background-color: var(--check);
 }
 
 .int-paint-content  {
   display: flex;
   flex-direction: row;
-  background-color: var(--whtBackground);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--alabaster);
   font-size: 20px;
   padding: 40px;
 }
 
 .int-paint-content p {
-  padding: 25px;
+  padding: 5rem;
 }
 
 /*******************************/
 /********** Ext Paint **********/
 /*******************************/
-
 .ext-paint-container {
   height: 720px;
   width: auto;
@@ -587,6 +623,16 @@ ul {
 /*******************************/
 /******** Quote Form ***********/
 /*******************************/
+.quote-page-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  height: 10rem;
+  font-size: 1.3rem;
+  background-color: var(--alabaster);
+}
 
 .quote-form-wrapper {
   width: 100%;
@@ -817,8 +863,14 @@ textarea.form-control {
   --foggy: #e1e1e1;
   --smoke: #b0b0b0;
   --wolf: #8b8b8b;
+  --moss: #78877a;
+  --mo: hsl(128, 6%, 90%);
   --softblack: #333333;
   --cta: #fbc71d79;
   --ctahover: #fbc71db8;
+  /* test colors */
+  --mist: #d0d6d8;
+  --olive: #d8d8d0;
+
 
 }

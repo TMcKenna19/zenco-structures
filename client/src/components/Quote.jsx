@@ -67,7 +67,7 @@ const Quote = props => {
                 <h1>Tell Us About Your Project</h1>
             </div>
         </section>
-        <div>
+        <div className="quote-page-copy">
             <p>Share your contact information and a few details about your painting project. We’ll be in touch to discuss your project and schedule your free estimate.</p>
         </div>
         <form onSubmit={submitHandler} className="quote-form-wrapper">

@@ -22,22 +22,52 @@ const ColorConsult = () => {
                 </Link>
             </div> 
         </section>
-        <div className="color-consult-container">
-            <div className="color-consult-welcome">
-                <h3>Color Consulting</h3>
-                <p> The painting process is designed to transform your living space into a beautifully refreshed and inviting environment. Here's what you can expect when you hire Zenco Coatings</p>
-                <p>Our skilled consultants collaborate closely with you, taking the time to understand your preferences, the ambiance you wish to create, and the specific elements you want to highlight.
-                With their expertise, they will guide you through an array of color palettes and combinations that perfectly match your desired aesthetic.
-                </p>
+        <section class="color-consultation">
+            <div class="container">
+                <div class="section-heading">
+                  <p class="eyebrow">Interior Color Consultation</p>
+                  <h2>Find the Right Colors for Your Home</h2>
+                </div>
+                <div class="consultation-layout">
+                  <div class="consultation-grid">
+                    <article class="consultation-item">
+                      <h3>Start With Your Vision</h3>
+                      <p>
+                        Your home should feel like you. Our experienced color consultants
+                        take the time to understand your style, preferences, existing décor,
+                        and the atmosphere you want to create.
+                      </p>
+                    </article>
+                    <article class="consultation-item">
+                      <h3>Find the Right Palette</h3>
+                      <p>
+                        We help narrow the possibilities and guide you toward palettes
+                        and combinations that complement your home while bringing your
+                        vision to life.
+                      </p>
+                    </article>
+                    <article class="consultation-item">
+                      <h3>Consider the Whole Space</h3>
+                      <p>
+                        We consider lighting, room function, architectural details,
+                        furnishings, and how colors transition naturally from one space
+                        to the next.
+                      </p>
+                    </article>
+                    <article class="consultation-item">
+                      <h3>Create a Home That Flows</h3>
+                      <p>
+                        Our goal is to create a cohesive color story that feels intentional,
+                        inviting, and beautifully connected throughout your home.
+                      </p>
+                    </article>
+                  </div>
+                  <div class="consultation-image">
+                    <img src={consultClient} alt="Interior designer reviewing paint colors in a residential space"/>
+                  </div>
+                </div>
             </div>
-            <div className="consult-video">
-                <video src={consultVid} autoPlay loop muted type="video/webm" />
-            </div>
-            <div className="color-consult-content">
-            <p>This collaborative process extends beyond color selection, as our consultants consider lighting, room functionality, and the overall flow of your space.Their goal is to create a harmonious color scheme that resonates with your personality and complements your décor.</p>
-                <img src={consultClient} alt="color consultant" />
-            </div>
-        </div> 
+        </section>
         <div className="review-container">
             <div className="review-image">
                 <img src={consultDecor} alt="color consutlants working" />
