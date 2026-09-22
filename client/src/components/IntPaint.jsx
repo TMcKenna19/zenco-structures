@@ -97,7 +97,7 @@ const IntPaint = () => {
                 Tell us about your interior painting project and we'll help you
                 determine the next steps.
             </p>
-            <Link className="" to={'/quote'}>
+            <Link className="cta-link" to={'/quote'}>
             <p>Get Your Free Estimate</p></Link>
         </div>
         <Footer/> 

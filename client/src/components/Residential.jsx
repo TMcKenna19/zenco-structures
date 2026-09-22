@@ -21,6 +21,80 @@ import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
 import Footer from "./Footer";
 
+const residentialServices = [
+    {
+      id: 1,
+      title: "Color Consultation",
+      image: colorSelection,
+      alt: "color cards",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/colorconsult",
+    },
+    {
+      id: 2,
+      title: "Interior Painting",
+      image: greenRoom,
+      alt: "interior painters",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/interiorpaint",
+    },
+    {
+      id: 3,
+      title: "Exterior Painting",
+      image: extPainter,
+      alt: "exterior painter",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/exteriorpaint",
+    },
+    {
+      id: 4,
+      title: "Deck / Fence Staining",
+      image: woodFence,
+      alt: "wood deck",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/deckfence",
+    },
+    {
+      id: 5,
+      title: "Cabinet Painting / Refacing",
+      image: cabinets,
+      alt: "painted cabinets",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/cabinets",
+    },
+    {
+      id: 6,
+      title: "Garage Floors",
+      image: garage,
+      alt: "garage floor",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/garagefloors",
+    },
+    {
+      id: 7,
+      title: "Drywall Repair",
+      image: trowl,
+      alt: "drywall repair",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/drywall",
+    },
+    {
+      id: 8,
+      title: "EPA Lead Certified",
+      image: leadHazard,
+      alt: "lead test",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "/leadtest",
+    },
+];
 
 const Residential = () => {
  
@@ -108,76 +182,33 @@ const ImageChangeOnView = () => {
             </div>    
         </section>
         <div className="res-service-card-container">
-            <div className="res-service-card">
-                <img src={colorSelection} className="card-img-top" alt="color cards"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Color Consultation</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/colorconsult'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={greenRoom} className="card-img-top" alt="interior painters"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Interior Painting</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/interiorpaint'}><button type="button" className="btn btn-outline-dark">Learn More</button></Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={extPainter} className="card-img-top" alt="exterior painter"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Exterior Painting</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/exteriorpaint'}><button type="button" className="btn btn-outline-dark">Learn More</button> </Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={woodFence} className="card-img-top" alt="wood deck"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Deck / Fence Staining</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/deckfence'}> <button type="button" className="btn btn-outline-dark">Learn More</button></Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={cabinets} className="card-img-top" alt="wood deck"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Cabinet Painting / Refacing</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/cabinets'}> <button type="button" className="btn btn-outline-dark">Learn More</button></Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={garage} className="card-img-top" alt="wood deck"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Garage Floors</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/garagefloors'}>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
-                    </Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={trowl} className="card-img-top" alt="trowl"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">Drywall Repair</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/drywall'}>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
-                    </Link>
-                </div>
-            </div>  
-            <div className="res-service-card">
-                <img src={leadHazard} className="card-img-top" alt="lead test"/>
-                <div className="res-card-body">
-                    <h5 className="res-card-title">EPA Lead Certified</h5>
-                    <p className="res-card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link className="link-text" to={'/leadtest'}>
-                    <button type="button" className="btn btn-outline-dark">Learn More</button>
-                    </Link>
-                </div>
-            </div>  
+              {residentialServices.map((service) => (
+                <Link
+                  to={service.link}
+                  className="res-service-card"
+                  key={service.id}
+                >
+                  <img
+                    src={service.image}
+                    className="card-img-top"
+                    alt={service.alt}
+                  />
+
+                  <div className="res-card-body">
+                    <h5 className="res-card-title">
+                      {service.title}
+                    </h5>
+
+                    <p className="res-card-text">
+                      {service.description}
+                    </p>
+
+                    <span className="btn btn-outline-dark">
+                      Learn More
+                    </span>
+                  </div>
+                </Link>
+              ))}
         </div>
         <div className="review-container">
             <div className="review-image">
