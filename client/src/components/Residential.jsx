@@ -28,7 +28,7 @@ const residentialServices = [
       image: colorSelection,
       alt: "color cards",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Find the perfect palette for your space with professional color guidance tailored to your style.",
       link: "/colorconsult",
     },
     {
@@ -37,7 +37,7 @@ const residentialServices = [
       image: greenRoom,
       alt: "interior painters",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Refresh your home with professional interior painting that delivers clean lines, smooth finishes, and lasting results.",
       link: "/interiorpaint",
     },
     {
@@ -46,7 +46,7 @@ const residentialServices = [
       image: extPainter,
       alt: "exterior painter",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Protect and refresh your home’s exterior with professional painting designed for a beautiful, durable finish.",
       link: "/exteriorpaint",
     },
     {
@@ -55,7 +55,7 @@ const residentialServices = [
       image: woodFence,
       alt: "wood deck",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Restore and protect your outdoor wood with professional staining that enhances its natural beauty and helps it stand up to the elements.",
       link: "/deckfence",
     },
     {
@@ -64,7 +64,7 @@ const residentialServices = [
       image: cabinets,
       alt: "painted cabinets",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Give your kitchen or bathroom a fresh new look with professional cabinet painting and resurfacing for a smooth, durable finish.",
       link: "/cabinets",
     },
     {
@@ -73,7 +73,7 @@ const residentialServices = [
       image: garage,
       alt: "garage floor",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Upgrade your garage with a durable floor coating that creates a clean, polished look built to handle everyday wear.",
       link: "/garagefloors",
     },
     {
@@ -82,7 +82,7 @@ const residentialServices = [
       image: trowl,
       alt: "drywall repair",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Repair cracks, holes, and damaged drywall for a smooth, seamless surface that’s ready for paint.",
       link: "/drywall",
     },
     {
@@ -91,7 +91,7 @@ const residentialServices = [
       image: leadHazard,
       alt: "lead test",
       description:
-        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "Safely address old lead-based paint with EPA lead-certified removal and careful preparation to protect your home and create a clean surface for repainting.",
       link: "/leadtest",
     },
 ];
