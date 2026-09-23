@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import colorDesign from "../Images/colorDesign.jpeg";
 import consultClient from "../Images/consultClient.jpeg";
-import consultDecor from "../Images/consultDecor.jpeg";
+import bluehouse from "../Images/bluehouse.jpg";
+import RefreshCta from "./RefreshCta";
 import Footer from "./Footer";
 
 
@@ -67,18 +68,53 @@ const ColorConsult = () => {
                 </div>
             </div>
         </section>
-        <div className="review-container">
-            <div className="review-image">
-                <img src={consultDecor} alt="color consutlants working" />
+        <section className="testimonial-section">
+          <div className="testimonial-card">
+            <div className="testimonial-image-wrapper">
+              <img
+                src={bluehouse}
+                alt="Freshly painted residential home exterior"
+                className="testimonial-image"
+              />
+              <div className="project-label">
+                <strong>Exterior Painting</strong>
+                <span>Vince, FL</span>
+              </div>
             </div>
-            <div className="review-copy">
-                <p>"The color consultation team from Zenco Coatings was truly exceptional. They listened attentively to my preferences and offered expert guidance, helping me select a color scheme that beautifully transformed my space. Their attention to detail and creative insights made the entire process a breeze, resulting in an outcome that exceeded my expectations. I couldn't be happier with the results of their expertise."</p>
-
-                <p>- Rockwell, Homeowner</p>
-            <Link className="review-estimate-cta" to={'/quote'}> <p>GET YOUR FREE ESTIMATE</p> </Link>
+            <div className="testimonial-content">
+              <p className="testimonial-eyebrow">
+                What Homeowners Are Saying
+              </p>
+              <h2>Paint jobs people are happy to come home to.</h2>
+              <div
+                className="testimonial-stars"
+                aria-label="5 out of 5 stars"
+              >
+                ★★★★★
+              </div>
+              <blockquote>
+                “They completely transformed our home. The crew was
+                professional, clean and finished right on schedule. Our house
+                looks amazing and we’ve already recommended them to friends!”
+              </blockquote>
+              <div className="testimonial-footer">
+                <div className="testimonial-customer">
+                  <div>
+                    <p className="customer-name">Rockwell M.</p>
+                    <p className="customer-details">
+                      Exterior Painting <span>•</span> Vince, FL
+                    </p>
+                  </div>
+                </div>
+                <Link to={"/reviews"} className="testimonial-button">
+                  See More Reviews
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
             </div>
-        </div>
-        
+          </div>
+        </section>
+        <RefreshCta/>
         <Footer/>
     </>    
     )

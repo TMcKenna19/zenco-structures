@@ -13,13 +13,13 @@ import leadHazard from "../Images/leadHazard.jpeg";
 import greenRoom from  "../Images/greenRoom.jpeg";
 import ecoFriend from "../Images/ecoFriend.jpeg";
 import ecoFlip from "../Images/ecoFlip.jpeg";
-import resReview from "../Images/resReview.jpeg";
 import insureIcon from "../Images/insureIcon.jpeg";
 import warrantyIcon from "../Images/warrantyIcon.jpeg";
 import trustedIcon from "../Images/trustedIcon.jpeg";
 import chatIcon from "../Images/chatIcon.jpeg";
 import dollarIcon from "../Images/dollarIcon.jpeg";
 import bulbIcon from "../Images/bulbIcon.jpeg";
+import fauxfinish from "../Images/fauxfinish.jpg";
 import Footer from "./Footer";
 
 const residentialServices = [
@@ -211,17 +211,6 @@ const ImageChangeOnView = () => {
                 </Link>
               ))}
         </div>
-        <div className="review-container">
-            <div className="review-image">
-                <img src={resReview} alt="homeowner" />
-            </div>
-            <div className="review-copy">
-                <p>"Not only did Zenco Coatings exceed my expectations in terms of the quality of their work, but they also demonstrated excellent project management. They completed the project within the agreed-upon timeframe and budget, making the entire process seamless and stress-free for me."
-                </p>
-                <p>- Kona, Homeowner</p>
-                <Link className="review-estimate-cta" to={'/quote'}> <p>GET YOUR FREE ESTIMATE</p> </Link>
-            </div>
-        </div>
         {/* image flip */}
         <div className="eco-container">
             <div className="eco-statement">
@@ -276,6 +265,50 @@ const ImageChangeOnView = () => {
                     </div>
             </div>       
         </div>
+        <section className="testimonial-section">
+          <div className="testimonial-card">
+            <div className="testimonial-image-wrapper">
+              <img
+                src={fauxfinish}
+                alt="Freshly painted residential home interior"
+                className="testimonial-image"
+              />
+              <div className="project-label">
+                <strong>Interior Faux Finish</strong>
+                <span>Lido, FL</span>
+              </div>
+            </div>
+            <div className="testimonial-content">
+              <p className="testimonial-eyebrow">
+                What Homeowners Are Saying
+              </p>
+              <h2>The kind of paint job you can’t stop looking at.</h2>
+              <div
+                className="testimonial-stars"
+                aria-label="5 out of 5 stars"
+              >
+                ★★★★★
+              </div>
+              <blockquote>
+              “The faux finish turned out even better than we imagined. The texture and depth add so much character to the space, and the attention to detail was incredible. It completely transformed the room and gave it the look and feel we were hoping for.”
+              </blockquote>
+              <div className="testimonial-footer">
+                <div className="testimonial-customer">
+                  <div>
+                    <p className="customer-name">Kona P.</p>
+                    <p className="customer-details">
+                     Interior Faux Finish <span>•</span> Lido Key, FL
+                    </p>
+                  </div>
+                </div>
+                <Link to={"/reviews"} className="testimonial-button">
+                  See More Reviews
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
         <RefreshCta/>
         <Footer/> 
     </>
