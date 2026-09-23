@@ -4,7 +4,6 @@ import NavBar from "./NavBar";
 import colorDesign from "../Images/colorDesign.jpeg";
 import consultClient from "../Images/consultClient.jpeg";
 import consultDecor from "../Images/consultDecor.jpeg";
-import consultVid from "../Images/consultVid.mov";
 import Footer from "./Footer";
 
 

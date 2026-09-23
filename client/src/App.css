@@ -87,7 +87,7 @@ ul {
 }
 
 /****************************/
-/***** Universal Navbar *****/
+/***** Navbar Component *****/
 /****************************/
 .nav-bar {
   display: flex;
@@ -187,9 +187,9 @@ ul {
   margin: 0;
 }
 
-/* ************ */
-/* Refresh CTA  */
-/* *********** */
+/* ********************* */
+/* Refresh CTA Component */
+/* ********************* */
 .refresh-cta {
   display: flex;
   flex-direction: column;
@@ -219,7 +219,7 @@ ul {
   font-size: 2rem;
   color: var(--softblack);
   border: solid 1px var(--purewhite);
-  background-color: var(--softblack);
+  background-color: var(--mossdark);
   color: var(--alabaster);
   border-radius: 1rem;
 }
@@ -518,9 +518,8 @@ ul {
 
 .consultation-card {
   color: var(--softblack);
-  background-color: var(--moss);
+  background-color: var(--blueshoes);
   padding: 2rem;
-  /* border-radius: 1rem; */
 }
 
 .consultation-card h3 {
@@ -1098,13 +1097,15 @@ textarea.form-control {
   --smoke: #b0b0b0;
   --wolf: #8b8b8b;
   --moss: #78877a;
-  --mo: #e4e7e4;
+  --mossdark: rgb(96, 108, 96);
+  --blueshoes: #546979;
   --softblack: #333333;
   --cta: #fbc71d79;
   --ctahover: #fbc71db8;
   /* test colors */
   --mist: #d0d6d8;
   --olive: #d8d8d0;
+  --terracotta: #B37B64;
 
 
 }
