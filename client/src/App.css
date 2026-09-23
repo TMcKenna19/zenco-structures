@@ -439,7 +439,7 @@ ul {
   width: 20rem;
   overflow: hidden;
   text-decoration: none;
-  padding: 1rem;
+  padding: .5rem 1rem;
   color: var(--softblack);
   background-color: var(--purewhite);
   border-radius: 1rem;

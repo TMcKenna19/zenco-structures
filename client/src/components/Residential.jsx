@@ -275,7 +275,7 @@ const ImageChangeOnView = () => {
               />
               <div className="project-label">
                 <strong>Interior Faux Finish</strong>
-                <span>Lido, FL</span>
+                <span>Lido Key, FL</span>
               </div>
             </div>
             <div className="testimonial-content">
