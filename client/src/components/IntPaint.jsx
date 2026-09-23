@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
+import RefreshCta from "./RefreshCta";
 import redCouch from "../Images/redCouch.jpeg";
 import cover from "../Images/cover.jpeg";
 import colorPick from "../Images/colorPick.jpeg";
 import drywall from "../Images/drywall.jpeg";
 import paintRoller from "../Images/paintRoller.jpeg";
 import painterOwner from "../Images/painterOwner.jpeg";
+import epaCert from "../Images/epaCert.svg";
+import leadSafe from "../Images/leadSafe.svg";
 import Footer from "./Footer";
 
 const interiorSteps = [
@@ -91,15 +94,73 @@ const IntPaint = () => {
                 </div>
             </div>
         </section>
-        <div className="int-paint-cta">
-            <h2>Ready to Refresh Your Home?</h2>
-            <p>
-                Tell us about your interior painting project and we'll help you
-                determine the next steps.
-            </p>
-            <Link className="cta-link" to={'/quote'}>
-            <p>Get Your Free Estimate</p></Link>
+        <section className="interior-safety">
+          <div className="interior-safety__container">
+            <div className="interior-safety__content">
+              <p className="interior-safety__eyebrow">
+                Painting With Your Home in Mind
+              </p>
+
+              <h2>Your Home Deserves More Than a Good Paint Job</h2>
+
+              <p className="interior-safety__intro">
+                Interior painting happens where your family lives, sleeps, cooks,
+                and spends its time. That&apos;s why the products we use and the way
+                we prepare your home matter just as much as the finished color.
+              </p>
+
+              <div className="interior-safety__items">
+                <div className="interior-safety__item">
+                  <h3>EPA Lead-Safe Certified</h3>
+                  <p>
+                    We are an EPA Lead-Safe Certified Firm, and our painters are
+                    trained and certified in lead-safe practices. For homes where
+                    lead-based paint may be present, we follow the proper procedures
+                    to help minimize dust and protect your home throughout the
+                    painting process.
+                  </p>
+                </div>
+
+                <div className="interior-safety__item">
+                  <h3>Low &amp; No VOC Paint Options</h3>
+                  <p>
+                    We offer low and no VOC products that help reduce paint odors
+                    and airborne chemicals inside your home without sacrificing a
+                    beautiful, durable finish.
+                  </p>
+                </div>
+
+                <div className="interior-safety__item">
+                  <h3>Proper Prep From Start to Finish</h3>
+                  <p>
+                    A lasting paint job starts with the right preparation. We
+                    protect surrounding surfaces, address imperfections, properly
+                    prepare walls and trim, use the right products for each surface,
+                    and inspect the finished work before the job is complete.
+                  </p>
+                </div>
+              </div>
+
+              <p className="interior-safety__closing">
+                Because a beautiful finish should also come with peace of mind.
+              </p>
+            </div>
+          </div>
+          <div className="interior-safety__certifications">
+          <img
+            src={epaCert}
+            alt="EPA Lead-Safe Certified"
+            className="interior-safety__logo"
+          />
+
+          <img
+            src={leadSafe}
+            alt="EPA Lead-Safe Certified Firm"
+            className="interior-safety__logo"
+          />
         </div>
+        </section>
+        <RefreshCta/>
         <Footer/> 
         </>
     )

@@ -76,7 +76,7 @@ const ColorConsult = () => {
                 <p>"The color consultation team from Zenco Coatings was truly exceptional. They listened attentively to my preferences and offered expert guidance, helping me select a color scheme that beautifully transformed my space. Their attention to detail and creative insights made the entire process a breeze, resulting in an outcome that exceeded my expectations. I couldn't be happier with the results of their expertise."</p>
 
                 <p>- Rockwell, Homeowner</p>
-            <Link className="review-estimate-cta" to={'/quote'}> <p>GET A FREE ESTIMATE</p> </Link>
+            <Link className="review-estimate-cta" to={'/quote'}> <p>GET YOUR FREE ESTIMATE</p> </Link>
             </div>
         </div>
         

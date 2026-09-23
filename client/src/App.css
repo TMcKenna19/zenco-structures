@@ -87,7 +87,7 @@ ul {
 }
 
 /****************************/
-/********** Navbar **********/
+/***** Universal Navbar *****/
 /****************************/
 .nav-bar {
   display: flex;
@@ -185,6 +185,43 @@ ul {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
+}
+
+/* ************ */
+/* Refresh CTA  */
+/* *********** */
+.refresh-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 20rem;
+  font-size: 1rem;
+  background-color: var(--moss);
+  color: var(--alabaster);
+}
+
+.cta-link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem;
+  color: var(--alabaster);
+  border: solid 1px var(--purewhite);
+  border-radius: 1rem;
+}
+
+.cta-link:hover {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--softblack);
+  border: solid 1px var(--purewhite);
+  background-color: var(--softblack);
+  color: var(--alabaster);
+  border-radius: 1rem;
 }
 
 /*************************/
@@ -619,26 +656,110 @@ ul {
 
 }
 
-.int-paint-cta {
+/* Safty */
+.interior-safety {
+  padding: 80px 24px;
+  background: var(--alabaster);
+}
+
+.interior-safety__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  height: 50rem;
+  grid-template-rows: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  align-items: start;
+  background-color: var(--alabaster);
+}
+
+.interior-safety__certifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.interior-safety__logo {
+  display: block;
+  width: 100%;
+  max-width: 5rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.interior-safety__eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.interior-safety__content h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+}
+
+.interior-safety__intro {
+  max-width: 700px;
+  margin: 0 0 40px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.interior-safety__items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 20rem;
-  background-color: var(--purewhite);
+  gap: 32px;
 }
 
-.cta-link {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: var(--softblack);
+.interior-safety__item {
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.cta-link:hover {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: var(--softblack);
+.interior-safety__item h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
 }
+
+.interior-safety__item p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.interior-safety__closing {
+  margin: 40px 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .interior-safety {
+    padding: 56px 20px;
+  }
+
+  .interior-safety__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .interior-safety__certifications {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .interior-safety__logo {
+    max-width: 150px;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .int-paint-content {

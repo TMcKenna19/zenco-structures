@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
+import RefreshCta from "./RefreshCta";
 import modernLivingRm from "../Images/modernLivingRm.jpeg";
 import extPainter from "../Images/extPainter.jpeg";
 import colorSelection from "../Images/colorSelection.jpeg";
@@ -275,7 +276,7 @@ const ImageChangeOnView = () => {
                     </div>
             </div>       
         </div>
-        
+        <RefreshCta/>
         <Footer/> 
     </>
     );
