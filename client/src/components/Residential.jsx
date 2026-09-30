@@ -283,10 +283,7 @@ const ImageChangeOnView = () => {
                 What Homeowners Are Saying
               </p>
               <h2>The kind of paint job you can’t stop looking at.</h2>
-              <div
-                className="testimonial-stars"
-                aria-label="5 out of 5 stars"
-              >
+              <div className="testimonial-stars" aria-label="5 out of 5 stars">
                 ★★★★★
               </div>
               <blockquote>
@@ -294,16 +291,13 @@ const ImageChangeOnView = () => {
               </blockquote>
               <div className="testimonial-footer">
                 <div className="testimonial-customer">
-                  <div>
-                    <p className="customer-name">Kona P.</p>
-                    <p className="customer-details">
-                     Interior Faux Finish <span>•</span> Lido Key, FL
-                    </p>
+                  <div className="customer-name">
+                    <p>- Kona P.</p>
                   </div>
                 </div>
                 <Link to={"/reviews"} className="testimonial-button">
                   See More Reviews
-                  <span aria-hidden="true">→</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>

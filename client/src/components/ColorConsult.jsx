@@ -25,8 +25,8 @@ const ColorConsult = () => {
         <section class="color-consultation">
             <div class="color-consultation-container">
                 <div class="section-heading">
-                  <p class="eyebrow">Your Color Consultation</p>
-                  <h2>Find the Right Colors for Your Home</h2>
+                  <h1 class="eyebrow">How Consultation Works:</h1>
+                  <h2>Finding the Right Colors for Your Home</h2>
                 </div>
                 <div class="consultation-layout">
                   <div class="consultation-grid">
@@ -78,7 +78,7 @@ const ColorConsult = () => {
               />
               <div className="project-label">
                 <strong>Exterior Painting</strong>
-                <span>Vince, FL</span>
+                <span>Venice, FL</span>
               </div>
             </div>
             <div className="testimonial-content">
@@ -86,10 +86,7 @@ const ColorConsult = () => {
                 What Homeowners Are Saying
               </p>
               <h2>Paint jobs people are happy to come home to.</h2>
-              <div
-                className="testimonial-stars"
-                aria-label="5 out of 5 stars"
-              >
+              <div className="testimonial-stars" aria-label="5 out of 5 stars">
                 ★★★★★
               </div>
               <blockquote>
@@ -99,16 +96,13 @@ const ColorConsult = () => {
               </blockquote>
               <div className="testimonial-footer">
                 <div className="testimonial-customer">
-                  <div>
-                    <p className="customer-name">Rockwell M.</p>
-                    <p className="customer-details">
-                      Exterior Painting <span>•</span> Vince, FL
-                    </p>
+                  <div className="customer-name">
+                    <p>- Rockwell M.</p>
                   </div>
                 </div>
                 <Link to={"/reviews"} className="testimonial-button">
                   See More Reviews
-                  <span aria-hidden="true">→</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
