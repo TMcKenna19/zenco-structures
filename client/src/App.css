@@ -572,11 +572,11 @@ ul {
 .color-consultation {
   background-color: var(--alabaster);
   padding: 5rem 1.5rem;
-  height: 55rem;
+  height: 50rem;
 }
 
 .color-consultation-container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
