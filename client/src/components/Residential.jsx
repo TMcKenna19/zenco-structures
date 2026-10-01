@@ -92,7 +92,7 @@ const residentialServices = [
       image: leadHazard,
       alt: "lead test",
       description:
-        "Safely address old lead-based paint with EPA lead-certified removal and careful preparation to protect your home and create a clean surface for repainting.",
+        "Safely address old lead-based paint with EPA lead-certified removal.",
       link: "/leadtest",
     },
 ];
@@ -279,12 +279,12 @@ const ImageChangeOnView = () => {
               </div>
             </div>
             <div className="testimonial-content">
-              <p className="testimonial-eyebrow">
+              <p className="testimonial-subheader">
                 What Homeowners Are Saying
               </p>
               <h2>The kind of paint job you can’t stop looking at.</h2>
               <div className="testimonial-stars" aria-label="5 out of 5 stars">
-                ★★★★★
+                &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
               <blockquote>
               “The faux finish turned out even better than we imagined. The texture and depth add so much character to the space, and the attention to detail was incredible. It completely transformed the room and gave it the look and feel we were hoping for.”

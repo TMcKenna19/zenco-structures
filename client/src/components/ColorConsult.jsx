@@ -24,8 +24,8 @@ const ColorConsult = () => {
         </section>
         <section class="color-consultation">
             <div class="color-consultation-container">
-                <div class="section-heading">
-                  <h1 class="eyebrow">How Consultation Works:</h1>
+                <div class="color-consultation-section-heading">
+                  <h1 class="color-consultation-subheader">How Consultation Works:</h1>
                   <h2>Finding the Right Colors for Your Home</h2>
                 </div>
                 <div class="consultation-layout">
@@ -82,12 +82,12 @@ const ColorConsult = () => {
               </div>
             </div>
             <div className="testimonial-content">
-              <p className="testimonial-eyebrow">
+              <p className="testimonial-subheader">
                 What Homeowners Are Saying
               </p>
               <h2>Paint jobs people are happy to come home to.</h2>
               <div className="testimonial-stars" aria-label="5 out of 5 stars">
-                ★★★★★
+              &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
               <blockquote>
                 “They completely transformed our home. The crew was

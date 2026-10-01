@@ -13,35 +13,35 @@ import Footer from "./Footer";
 
 const interiorSteps = [
     {
-      number: "01",
+      number: "1",
       title: "Color & Project Planning",
       image: colorPick,
       alt: "Homeowner selecting an interior paint color",
       description: "Once you've selected your colors, our project manager works with you to schedule your painting project around your home, routine, and availability."
     },
     {
-      number: "02",
+      number: "2",
       title: "Protecting Your Home",
       image: cover,
       alt: "Furniture protected before interior painting",
       description: "Before painting begins, we carefully protect floors, furniture, fixtures, and surrounding surfaces."
     },
     {
-      number: "03",
+      number: "3",
       title: "Surface Preparation",
       image: drywall,
       alt: "Wall being prepared before interior painting",
       description: "We clean and prepare surfaces, repair minor imperfections, fill holes, and sand rough areas before painting."
     },
     {
-      number: "04",
+      number: "4",
       title: "Premium Paint & Application",
       image: paintRoller,
       alt: "Professional painter applying interior paint",
       description: "We use high-quality paints designed for durability, beautiful color, and a professional finish."
     },
     {
-      number: "05",
+      number: "5",
       title: "Final Walkthrough",
       image: painterOwner,
       alt: "Painter completing final walkthrough with homeowner",
@@ -65,7 +65,7 @@ const IntPaint = () => {
         <section className="int-paint">
             <div className="int-paint-container">
                 <div className="int-paint-heading">
-                    <span>Our Process</span>
+                    <p>Our Process:</p>
                     <h2>What to Expect From Your Interior Painting Project</h2>
                     <p>
                         From choosing colors to the final walkthrough, we take care of
@@ -85,7 +85,7 @@ const IntPaint = () => {
                                 <img src={step.image} alt={step.alt} />
                             </div>
                             <div className="int-paint-text">
-                                <span className="step-number">{step.number}</span>
+                                <span className="step-number">Step: {step.number}</span>
                                 <h3>{step.title}</h3>
                                 <p>{step.description}</p>
                                 </div>
@@ -95,22 +95,16 @@ const IntPaint = () => {
             </div>
         </section>
         <section className="interior-safety">
-          <div className="interior-safety__container">
-            <div className="interior-safety__content">
-              <p className="interior-safety__eyebrow">
-                Painting With Your Home in Mind
-              </p>
-
+          <div className="interior-safety-container">
+            <div className="interior-safety-content">
               <h2>Your Home Deserves More Than a Good Paint Job</h2>
-
-              <p className="interior-safety__intro">
+              <p className="interior-safety-intro">
                 Interior painting happens where your family lives, sleeps, cooks,
                 and spends its time. That&apos;s why the products we use and the way
                 we prepare your home matter just as much as the finished color.
               </p>
-
-              <div className="interior-safety__items">
-                <div className="interior-safety__item">
+              <div className="interior-safety-items">
+                <div className="interior-safety-item">
                   <h3>EPA Lead-Safe Certified</h3>
                   <p>
                     We are an EPA Lead-Safe Certified Firm, and our painters are
@@ -120,8 +114,7 @@ const IntPaint = () => {
                     painting process.
                   </p>
                 </div>
-
-                <div className="interior-safety__item">
+                <div className="interior-safety-item">
                   <h3>Low &amp; No VOC Paint Options</h3>
                   <p>
                     We offer low and no VOC products that help reduce paint odors
@@ -129,8 +122,7 @@ const IntPaint = () => {
                     beautiful, durable finish.
                   </p>
                 </div>
-
-                <div className="interior-safety__item">
+                <div className="interior-safety-item">
                   <h3>Proper Prep From Start to Finish</h3>
                   <p>
                     A lasting paint job starts with the right preparation. We
@@ -140,24 +132,15 @@ const IntPaint = () => {
                   </p>
                 </div>
               </div>
-
-              <p className="interior-safety__closing">
+              <p className="interior-safety-closing">
                 Because a beautiful finish should also come with peace of mind.
               </p>
             </div>
           </div>
-          <div className="interior-safety__certifications">
+          <div className="interior-safety-certifications">
+          <img src={epaCert} alt="EPA Lead-Safe Certified" className="interior-safety-logo"/>
           <img
-            src={epaCert}
-            alt="EPA Lead-Safe Certified"
-            className="interior-safety__logo"
-          />
-
-          <img
-            src={leadSafe}
-            alt="EPA Lead-Safe Certified Firm"
-            className="interior-safety__logo"
-          />
+            src={leadSafe} alt="EPA Lead-Safe Certified Firm" className="interior-safety-logo"/>
         </div>
         </section>
         <RefreshCta/>

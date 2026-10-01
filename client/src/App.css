@@ -283,12 +283,9 @@ ul {
   padding: 4rem;
 }
 
-.testimonial-eyebrow {
-  margin: 0 0 1rem;
-  font-size: .8rem;
+.testimonial-subheader {
+  font-size: .9rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--softblack);
 }
 
@@ -580,14 +577,14 @@ ul {
   margin: 0 auto;
 }
 
-.section-heading {
+.color-consultation-section-heading {
   max-width: 750px;
   margin: 0 auto 48px;
   text-align: center;
   color: var(--softblack);
 }
 
-.eyebrow {
+.color-consultation-subheader {
   font-size: 1rem;
   letter-spacing: .1rem;
   margin-bottom: 1rem;
@@ -672,7 +669,7 @@ ul {
 
 .int-paint {
   padding: 4rem 1.5rem;
-  background-color: var(--alabaster);
+  background-color: var(--purewhite);
 }
 
 .int-paint-container {
@@ -682,26 +679,13 @@ ul {
 
 .int-paint-heading {
   max-width: 700px;
-  margin: 0 auto 5rem;
+  margin: 0 auto 3rem;
   text-align: center;
   color: var(--softblack);
 }
 
-.int-paint-heading span {
-  display: block;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-}
-
 .int-paint-heading h2 {
-  margin-bottom: 1rem;
-  font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.int-paint-heading p {
-  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 .int-paint-content {
@@ -710,6 +694,7 @@ ul {
   align-items: center;
   gap: 4rem;
   margin-bottom: 1rem;
+  border-radius: 1rem;
   background-color: var(--olive);
 }
 
@@ -724,8 +709,9 @@ ul {
 .int-paint-image img {
   display: block;
   width: 100%;
-  height: 450px;
+  height: 350px;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .int-paint-text {
@@ -736,7 +722,7 @@ ul {
 .step-number {
   display: block;
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
+  font-size: .8rem;
   font-weight: 700;
 }
 
@@ -751,32 +737,32 @@ ul {
 
 }
 
-/* Safty */
+/* Safety */
 .interior-safety {
-  padding: 80px 24px;
+  padding: 5rem 24px;
   background: var(--alabaster);
+  height: 65rem;
 }
 
-.interior-safety__container {
-  max-width: 1200px;
+.interior-safety-container {
+  max-width: 1500px;
   margin: 0 auto;
-  display: grid;
+  padding: 3rem;
   height: 50rem;
-  grid-template-rows: minmax(220px, 0.7fr) minmax(0, 1.3fr);
-  align-items: start;
   background-color: var(--alabaster);
 }
 
-.interior-safety__certifications {
+.interior-safety-certifications {
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-
+  gap: 1rem;
 }
 
-.interior-safety__logo {
+.interior-safety-logo {
   display: block;
   width: 100%;
   max-width: 5rem;
@@ -784,49 +770,36 @@ ul {
   object-fit: contain;
 }
 
-.interior-safety__eyebrow {
-  margin: 0 0 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.interior-safety__content h2 {
+.interior-safety-content h2 {
   margin: 0 0 20px;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.08;
+  color: var(--epagreen);
 }
 
-.interior-safety__intro {
+.interior-safety-intro {
   max-width: 700px;
   margin: 0 0 40px;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1.3rem;
 }
 
-.interior-safety__items {
+.interior-safety-items {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
-.interior-safety__item {
+.interior-safety-item {
   padding-top: 24px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid var(--foggy)
 }
 
-.interior-safety__item h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-}
-
-.interior-safety__item p {
+.interior-safety-item p {
   margin: 0;
   line-height: 1.7;
 }
 
-.interior-safety__closing {
+.interior-safety-closing {
   margin: 40px 0 0;
   font-size: 1.15rem;
   font-weight: 700;
@@ -1196,6 +1169,7 @@ textarea.form-control {
   --mossdark: #606c60;
   --blueshoes: #546979;
   --softblack: #333333;
+  --epagreen: #419d58;
   --goldstar: #f5a623;
   --cta: #fbc71d79;
   --ctahover: #fbc71db8;
